@@ -115,7 +115,7 @@ export default {
   margin: -15px -15px;
 }
 .project-box {
-  /* width: 380px; */
+  width: 380px;
   height: 50vh;
   background: rgb(32, 32, 34);
   /* background: #36454f; */
