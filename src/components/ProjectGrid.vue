@@ -109,9 +109,8 @@ export default {
   width: 380px;
   height: 50vh;
   background: rgb(32, 32, 34);
-  /* background: #36454f; */
   padding-left: 40px;
-  padding-right: 20px;
+  padding-right: 40px;
   padding-top: 40px;
   border-radius: 5px;
   margin: 5px 20px;
@@ -119,10 +118,8 @@ export default {
   line-height: 0.8;
 }
 .project-box:hover {
-  width: 390;
+  /* width: 390; */
   height: 55vh;
-  /* transform: translateX(-20px);
-  transition: all 0.2s ease-in-out; */
   box-shadow: 2px 9px 19px 15px #0000001f;
   transform: scale(1.1);
   -webkit-transition: all 200ms ease-in;
@@ -136,9 +133,12 @@ export default {
 .status p {
   color: rgb(148, 148, 149);
 }
+.status h3 {
+   font-size: 1.7em; 
+}
 .title {
   padding-top: 30px;
-  font-size: var(--fs-500);
+  font-size: 1.4em;
 }
 .main {
   padding-top: 30px;
@@ -152,7 +152,6 @@ export default {
 .icon {
 }
 .las {
-  /* margin: 0px 10px; */
   color: rgb(148, 148, 149);
   font-size: 24px;
 }

@@ -118,7 +118,6 @@ export default {
   width: 380px;
   height: 50vh;
   background: rgb(32, 32, 34);
-  /* background: #36454f; */
   padding-left: 40px;
   padding-right: 40px;
   padding-top: 40px;
@@ -129,8 +128,6 @@ export default {
   transition: all 0.2s ease-in-out;
 }
 .project-box:hover {
-  /* width: 390px;
-  height: 55vh; */
   box-shadow: 2px 9px 19px 15px #0000001f;
   transform: scale(1.1);
   -webkit-transition: all 200ms ease-in;
@@ -140,8 +137,7 @@ export default {
   -moz-transition: all 200ms ease-in;
   -moz-transform: scale(1.1);
   transition: all 200ms ease-in;
-  /* transform: translateX(20px);
-  transition: all 0.2s ease-in-out; */
+ 
 }
 .status p {
   color: rgb(148, 148, 149);
