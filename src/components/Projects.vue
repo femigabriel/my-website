@@ -24,12 +24,14 @@ export default {
           title: "Dad's Joke",
           description: "Every funny daddy's jokes ",
           url: "hhttps://laughing-dubinsky-710f9c.netlify.app",
+          video: "CLick here.....",
         },
         {
           framework: "JAVASCRIPT",
           title: "Todo List",
           description: "Plan your day ahead!",
           url: "hhttps://laughing-dubinsky-710f9c.netlify.app",
+          video: "CLick here.....",
         },
         {
           framework: "VUE.JS",
@@ -37,12 +39,14 @@ export default {
           description:
             "Cake store house where you can can buy all sorts of cakes ",
           url: "hhttps://laughing-dubinsky-710f9c.netlify.app",
+          video: "CLick here.....",
         },
         {
           framework: "VUE.JS",
           title: "Dad's Joke",
           description: "Every funny daddy's jokes ",
           url: "hhttps://laughing-dubinsky-710f9c.netlify.app",
+          video: "CLick here.....",
         },
       ],
     };
@@ -58,21 +62,19 @@ export default {
   margin: 10px 10px;
 }
 .project-box {
-  width: 760px;
+  /* width: 760px; */
   height: 30vh;
   background: rgb(32, 32, 34);
   padding-left: 60px;
   padding-right: 40px;
   padding-top: 20px;
   border-radius: 5px;
-  /* margin: 30px 0px; */
   margin-bottom: 10px;
   cursor: pointer;
-  /* margin: 10px 10px; */
-  /* transition: all 0.2s ease-in-out; */
+ 
 }
 .project-box:hover {
-  width: 790px;
+  /* width: 790px; */
   height: 30vh;
   transform: scale(1.3);
   box-shadow: 2px 9px 19px 15px #0000001f;
@@ -83,7 +85,7 @@ export default {
   -moz-transition: all 200ms ease-in;
   -moz-transform: scale(1.1);
   transition: all 200ms ease-in;
-  /* transform: translateY(10px); */
+
 }
 .project-box h2 {
   font-size: 28px;
@@ -97,6 +99,12 @@ export default {
   font-size: 18px;
   color: rgb(148, 148, 149);
 }
+.rating a {
+  margin: 5px 10px;
+  text-decoration: none;
+  color: rgb(148, 148, 149);
+  font-size: 18px;
+}
 .rating {
   /* margin: 20px 10px; */
   color: rgb(148, 148, 149);
@@ -108,6 +116,7 @@ export default {
 }
 .lar {
   /* margin: 0px 10px; */
-  color: ;
+  font-size: 24px;
+  color: rgb(148, 148, 149);
 }
 </style>

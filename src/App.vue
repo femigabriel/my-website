@@ -76,12 +76,16 @@ body {
   background: rgb(21, 21, 21);
   font-family: "Inter var", sans-serif;
 }
+#app {
+  width: 100%;
+}
 .app {
+  width: 100%;
   display: flex;
   margin-left: auto;
   margin-right: auto;
-  padding-left: 80px;
-  /* padding-right: 80px; */
+  padding-left: 60px; 
+  padding-right: 60px;
   /* position: fixed; */
 }
 .profile {
