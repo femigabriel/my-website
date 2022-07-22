@@ -72,17 +72,17 @@ export default {
   line-height: 1;
 }
 h1 {
-  font-size: var(--fs-800);
+  font-size: 7.2em;
   margin-bottom: 10px;
 }
 h2 {
-  font-size: var(--fs-600);
+  font-size: 2.4em;
   margin-bottom: 32px;
 }
 .about p {
   color: rgb(148, 148, 149);
   line-height: 1.9;
-  width: 32em;
+  width: 30em;
   font-size: 20px;
 }
 @media (max-width: 680px) {
@@ -94,19 +94,15 @@ h2 {
     line-height: 1;
   }
   h1 {
-    font-size: var(--fs-600);
+    font-size: 3em;
     width: 12em;
     margin-bottom: 10px;
   }
   h2 {
-    font-size: var(--fs-400);
+    font-size: 1.4em;
     margin-bottom: 32px;
   }
-  .about p {
-    line-height: 1.9;
-    width: 28em;
-    /* font-size: 16px; */
-  }
+ 
   .skills {
     display: none;
   }
@@ -116,7 +112,7 @@ h2 {
   text-decoration: underline;
 }
 .line {
-  background: hsl(var(--clr-light));
+  background: rgb(255, 255, 255);
   width: 5em;
   height: 2px;
   margin: 10px 20px;
@@ -142,7 +138,7 @@ h2 {
   cursor: pointer;
 }
 .list:hover {
-  color: hsl(var(--clr-light));
+  color: rgb(255, 255, 255);
    transition: all 0.2s ease-in-out;
 }
 .list .line {
@@ -154,7 +150,7 @@ h2 {
 .list .line:hover {
   width: 5em;
   transition: all 0.2s ease-in-out;
-  /* background: hsl(var(--clr-light)); */
+ 
 }
 
 .skills {
@@ -174,7 +170,6 @@ li {
   margin: 30px 10px;
 }
 .profile-pics {
-  /* padding-top: 30px; */
   margin: -20px 0px;
   color: rgb(148, 148, 149);
 }

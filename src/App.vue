@@ -40,26 +40,7 @@ export default {
   margin-top: 60px;
 }
 
-:root {
-  --clr-dark: 230 35% 7%;
-  --clr-light: 231 77% 90%;
-  --clr-white: 0 0% 100%;
 
-  /* fonts-sizes */
-  --fs-900: 9.075rem;
-  --fs-800: 6.25rem;
-  --fs-700: 3.5rem;
-  --fs-600: 2.2rem;
-  --fs-500: 1.75rem;
-  --fs-400: 1.25rem;
-  --fs-300: 1rem;
-  --fs-200: 0.875rem;
-
-  /* font-families */
-  --ff-serif: "Bellefair", serif;
-  --ff-sans-cond: "Barlow Condensed", sans-serif;
-  --ff-sans-normal: "Barlow", sans-serif;
-}
 *,
 :after,
 :before {
@@ -71,7 +52,6 @@ export default {
 /* set up the body */
 body {
   line-height: 1.5;
-  font-size: var(--fs-400);
   color: rgb(255, 255, 255);
   background: rgb(21, 21, 21);
   font-family: "Inter var", sans-serif;
@@ -94,7 +74,7 @@ body {
 .project-work {
   overflow-y: auto;
   height: 100vh;
-  widows: 100%;
+  width: 100%;
 }
 .project-work::-webkit-scrollbar {
   display: none;
