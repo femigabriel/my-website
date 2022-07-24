@@ -71,7 +71,6 @@ export default {
   border-radius: 5px;
   margin-bottom: 10px;
   cursor: pointer;
- 
 }
 .project-box:hover {
   /* width: 790px; */
@@ -85,7 +84,6 @@ export default {
   -moz-transition: all 200ms ease-in;
   -moz-transform: scale(1.1);
   transition: all 200ms ease-in;
-
 }
 .project-box h2 {
   font-size: 28px;
@@ -118,5 +116,29 @@ export default {
   /* margin: 0px 10px; */
   font-size: 24px;
   color: rgb(148, 148, 149);
+}
+@media (max-width: 680px) {
+  .projects {
+    line-height: 0.5;
+  }
+  .content {
+  /* margin: 20px 30px; */
+}
+.project-box{
+
+}
+  .rating a {
+    font-size: 14px;
+  }
+  .project-box h2 {
+    font-size: 24px;
+  }
+  .project-box h3 {
+    font-size: 14px;
+  }
+  .project-box p {
+    font-size: 14px;
+    line-height: 1.1;
+  }
 }
 </style>

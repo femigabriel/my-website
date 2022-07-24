@@ -115,8 +115,8 @@ export default {
   margin: -15px -15px;
 }
 .project-box {
-  width: 380px;
-  height: 50vh;
+  /* width: 380px;
+  height: 50vh; */
   background: rgb(32, 32, 34);
   padding-left: 40px;
   padding-right: 40px;
@@ -164,5 +164,15 @@ export default {
 }
 .main p {
   font-size: 18px;
+}
+@media (max-width: 680px) {
+   .title {
+  width: 13em;
+  font-size: 14px;
+}
+.rating a {
+  font-size: 14px;
+    padding-bottom: 10px;
+}
 }
 </style>

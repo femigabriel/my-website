@@ -8,7 +8,7 @@
     <div class="project-work">
       <div class="project">
         <Projects />
-        <div class="flex">
+        <div class="projects">
           <ProjectFlex />
           <ProjectGrid />
         </div>
@@ -40,21 +40,18 @@ export default {
   margin-top: 60px;
 }
 
-
 *,
 :after,
 :before {
   box-sizing: border-box;
   /* border: 0 solid #e5e7eb; */
 }
-/* Reset margins */
-
-/* set up the body */
 body {
-  line-height: 1.5;
+  line-height: 1;
   color: rgb(255, 255, 255);
   background: rgb(21, 21, 21);
   font-family: "Inter var", sans-serif;
+  width: 100%;
 }
 #app {
   width: 100%;
@@ -64,7 +61,7 @@ body {
   display: flex;
   margin-left: auto;
   margin-right: auto;
-  padding-left: 60px; 
+  padding-left: 60px;
   padding-right: 60px;
   /* position: fixed; */
 }
@@ -79,18 +76,27 @@ body {
 .project-work::-webkit-scrollbar {
   display: none;
 }
+.projects{
+   display: flex;
+}
 .profile {
   overflow: ;
 }
 @media (max-width: 680px) {
+  body {
+    overflow-x: hidden;
+  }
   .app {
     margin-left: auto;
     margin-right: auto;
-    padding-left: 10px;
-    padding-right: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
     overflow-x: hidden;
     display: block;
   }
+.projects{
+   display: block
+}
 }
 .profile {
   padding-right: 100px;

@@ -99,13 +99,23 @@ h2 {
     margin-bottom: 10px;
   }
   h2 {
-    font-size: 1.4em;
+    font-size: 1em;
     margin-bottom: 32px;
+    width: 18em;
   }
  
   .skills {
     display: none;
   }
+  .about p {
+  line-height: 1.5;
+  width: 17em;
+  font-size: 14px;
+  padding-bottom: 20px;
+}
+.profile-pics{
+
+}
 }
 .about span {
   color: rgb(255, 255, 255);
@@ -116,7 +126,6 @@ h2 {
   width: 5em;
   height: 2px;
   margin: 10px 20px;
- 
   cursor: pointer;
   cursor: pointer;
 }
@@ -186,11 +195,22 @@ img {
 }
 @media (max-width: 680px) {
   .lab {
-    font-size: 18px;
-    margin: 10px 10px;
+    font-size: 13px;
+    margin: 6px 5px;
   }
+  .socials {
+  padding: 5px 8px;
+}
   .socials p {
-    font-size: 12px;
+    font-size: 9px;
+   
   }
+  img {
+  width: 35px;
+  height: 35px;
+}
+.profile-pics {
+  padding-bottom: 20px;
+}
 }
 </style>

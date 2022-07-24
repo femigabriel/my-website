@@ -134,7 +134,7 @@ export default {
   color: rgb(148, 148, 149);
 }
 .status h3 {
-   font-size: 1.7em; 
+  font-size: 1.7em;
 }
 .title {
   padding-top: 30px;
@@ -154,5 +154,18 @@ export default {
 .las {
   color: rgb(148, 148, 149);
   font-size: 24px;
+}
+@media (max-width: 680px) {
+  .project-box {
+  }
+  .title {
+    width: 13em;
+    font-size: 14px;
+    line-height: 1;
+  }
+  .rating a {
+    font-size: 14px;
+    padding-bottom: 10px;
+  }
 }
 </style>
