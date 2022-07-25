@@ -62,7 +62,7 @@ body {
   flex-shrink: 0;
   margin-left: auto;
   margin-right: auto;
-  padding-left: 110px;
+  /* padding-left: 110px; */
   /* padding-right: 60px; */
   position: fixed;
 }
