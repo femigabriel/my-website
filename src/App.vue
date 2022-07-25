@@ -62,8 +62,8 @@ body {
   flex-shrink: 0;
   margin-left: auto;
   margin-right: auto;
-  /* padding-left: 110px; */
-  /* padding-right: 60px; */
+  padding-left: 60px;
+  padding-right: 60px;
   position: fixed;
 }
 .profile {
