@@ -100,8 +100,8 @@ export default {
 
 <style scoped>
 .remote-project {
-  display: flex;
-  flex-direction: column;
+  /* display: flex;
+  flex-direction: column; */
   padding-top: 40px;
   margin: 35px -10px;
 }
@@ -109,9 +109,10 @@ export default {
   /* width: 380px; */
   height: 50vh;
   background: rgb(32, 32, 34);
-  padding-left: 40px;
-  padding-right: 40px;
-  padding-top: 40px;
+  padding-left: 20px;
+  padding-right: 0px;
+  padding-top: 30px;
+  padding-bottom: 20px;
   border-radius: 5px;
   margin: 5px 20px;
   cursor: pointer;

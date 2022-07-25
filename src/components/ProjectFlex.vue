@@ -118,10 +118,10 @@ export default {
   /* width: 380px;
   height: 50vh; */
   background: rgb(32, 32, 34);
-  padding-left: 40px;
-  padding-right: 40px;
-  padding-top: 40px;
-  padding-bottom: 40px;
+  padding-left: 20px;
+  /* padding-right: 40px; */
+  padding-top: 30px;
+  padding-bottom: 10px;
   border-radius: 5px;
   margin: 5px 23px;
   cursor: pointer;

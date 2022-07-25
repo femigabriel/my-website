@@ -59,7 +59,7 @@ body {
 }
 .app {
   display: flex;
-  flex-shrink: 0;
+  /* flex-shrink: 0; */
   margin-left: auto;
   margin-right: auto;
   padding-left: 60px;
@@ -83,8 +83,8 @@ body {
 
 .project-flex {
   display: flex;
-  flex-shrink: 0;
-  width: 550px;
+  /* flex-shrink: 0; */
+  width: 600px;
 }
 @media (max-width: 680px) {
   body {
