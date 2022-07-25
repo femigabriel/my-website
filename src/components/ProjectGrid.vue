@@ -140,6 +140,7 @@ export default {
 }
 .title {
   width: 15em;
+  line-height: .8;
 }
 .main {
   padding-top: 30px;
