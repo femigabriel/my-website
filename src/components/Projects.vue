@@ -63,7 +63,6 @@ export default {
 }
 .project-box {
   width: 800px;
-  
   height: 33vh;
   background: rgb(32, 32, 34);
   padding-left: 60px;

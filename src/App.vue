@@ -58,17 +58,16 @@ body {
 #app {
 }
 .app {
-  width: 100%;
   display: flex;
   flex-shrink: 0;
   margin-left: auto;
   margin-right: auto;
-  padding-left: 60px;
-  padding-right: 60px;
+  padding-left: 110px;
+  /* padding-right: 60px; */
   position: fixed;
 }
 .profile {
-  /* width: 650px; */
+  width: 50%;
 }
 .project-work {
   overflow-y: auto;
@@ -81,9 +80,7 @@ body {
 .projects {
   width: 50%;
 }
-.profile {
-  overflow: ;
-}
+
 .project-flex {
   display: flex;
   flex-shrink: 0;
