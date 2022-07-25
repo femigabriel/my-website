@@ -139,7 +139,7 @@ export default {
   font-size: 1.7em;
 }
 .title {
-  width: 12em;
+  width: 15em;
 }
 .main {
   padding-top: 30px;

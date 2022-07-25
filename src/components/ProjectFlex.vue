@@ -145,8 +145,8 @@ export default {
   color: rgb(148, 148, 149);
 }
 .title {
-  padding-top: 30px;
-  font-size: var(--fs-500);
+  /* padding-top: 30px;
+  font-size: var(--fs-500); */
 }
 .main {
   padding-top: 30px;
