@@ -138,8 +138,7 @@ export default {
   font-size: 1.7em;
 }
 .title {
-  padding-top: 30px;
-  font-size: 1.4em;
+  width: 12em;
 }
 .main {
   padding-top: 30px;
@@ -148,7 +147,7 @@ export default {
   margin: 5px 15px;
   text-decoration: none;
   color: rgb(148, 148, 149);
-  font-size: 18px;
+  font-size: 1em;
 }
 .icon {
 }
