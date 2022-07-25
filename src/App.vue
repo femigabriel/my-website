@@ -84,7 +84,7 @@ body {
 .project-flex {
   display: flex;
   flex-shrink: 0;
-  
+  width: 550px;
 }
 @media (max-width: 680px) {
   body {
