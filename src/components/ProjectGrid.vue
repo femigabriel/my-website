@@ -107,7 +107,7 @@ export default {
 }
 .project-box {
   /* width: 380px; */
-  width: 550px;
+  width: 275px;
   /* height: 50vh; */
   background: rgb(32, 32, 34);
   padding-left: 20px;
