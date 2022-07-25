@@ -6,9 +6,9 @@
   <div class="app">
     <Profile class="profile" />
     <div class="project-work">
-      <div class="project">
+      <div class="projects">
         <Projects />
-        <div class="projects">
+        <div class="project-flex">
           <ProjectFlex />
           <ProjectGrid />
         </div>
@@ -38,6 +38,8 @@ export default {
 @import url("https://rsms.me/inter/inter.css");
 #app {
   margin-top: 60px;
+  width: 100%;
+  flex-shrink: 0;
 }
 
 *,
@@ -54,16 +56,16 @@ body {
   width: 100%;
 }
 #app {
-  width: 100%;
 }
 .app {
   width: 100%;
   display: flex;
+  flex-shrink: 0;
   margin-left: auto;
   margin-right: auto;
   padding-left: 60px;
   padding-right: 60px;
-  /* position: fixed; */
+  position: fixed;
 }
 .profile {
   /* width: 650px; */
@@ -76,11 +78,16 @@ body {
 .project-work::-webkit-scrollbar {
   display: none;
 }
-.projects{
-   display: flex;
+.projects {
+  width: 50%;
 }
 .profile {
   overflow: ;
+}
+.project-flex {
+  display: flex;
+  flex-shrink: 0;
+  
 }
 @media (max-width: 680px) {
   body {
@@ -94,9 +101,9 @@ body {
     overflow-x: hidden;
     display: block;
   }
-.projects{
-   display: block
-}
+  .projects {
+    display: block;
+  }
 }
 .profile {
   padding-right: 100px;
