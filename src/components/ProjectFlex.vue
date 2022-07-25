@@ -121,6 +121,7 @@ export default {
   padding-left: 40px;
   padding-right: 40px;
   padding-top: 40px;
+  padding-bottom: 40px;
   border-radius: 5px;
   margin: 5px 23px;
   cursor: pointer;
@@ -154,6 +155,7 @@ export default {
   text-decoration: none;
   color: rgb(148, 148, 149);
   font-size: 18px;
+      padding-bottom: 20px;
 }
 .icon {
 }

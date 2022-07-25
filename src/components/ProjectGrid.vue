@@ -165,7 +165,7 @@ export default {
   }
   .rating a {
     font-size: 14px;
-    padding-bottom: 10px;
+    padding-bottom: 20px;
   }
 }
 </style>
