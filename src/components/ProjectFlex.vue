@@ -122,7 +122,9 @@ export default {
   padding-left: 20px;
   /* padding-right: 40px; */
   padding-top: 30px;
-  padding-bottom: 10px;
+  padding-bottom: 20px;
+  padding-left: 40px;
+  padding-right: 20px;
   border-radius: 5px;
   margin: 5px 23px;
   cursor: pointer;

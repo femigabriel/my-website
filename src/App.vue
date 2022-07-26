@@ -67,7 +67,7 @@ body {
   /* position: fixed; */
 }
 .profile {
-  width: 50%;
+  width: 35%;
 }
 .project-work {
   overflow-y: auto;
@@ -78,7 +78,8 @@ body {
   display: none;
 }
 .projects {
-  width: 50%;
+  width: 60%;
+  padding-right: 20px;
 }
 
 .project-flex {
