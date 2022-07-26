@@ -82,7 +82,7 @@ body {
    /* height: 100vh; */
   width: 100%;
   padding-right: 20px; 
-  margin: 0px -30px;
+  /* margin: 0px -30px; */
    /* padding-left: 60px; */
 }
 
