@@ -62,7 +62,7 @@ export default {
   margin: 10px 10px;
 }
 .project-box {
-  width: 570px;
+  width: 620px;
   height: 33vh;
   background: rgb(32, 32, 34);
   padding-left: 60px;
@@ -74,7 +74,7 @@ export default {
 }
 .project-box:hover {
   /* width: 790px; */
-  height: 30vh;
+  height: 35vh;
   transform: scale(1.3);
   box-shadow: 2px 9px 19px 15px #0000001f;
   -webkit-transition: all 200ms ease-in;

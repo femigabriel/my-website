@@ -70,7 +70,7 @@ body {
   width: 35%;
 }
 .project-work {
-  overflow-y: auto;
+  /* overflow-y: auto; */
   height: 100vh;
   width: 100%;
 }
@@ -104,7 +104,7 @@ body {
   }
 }
 .profile {
-  padding-right: 100px;
+  /* padding-right: 100px; */
 }
 .flex {
   display: flex;
