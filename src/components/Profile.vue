@@ -72,18 +72,20 @@ export default {
   line-height: 1;
 }
 .profile-name h1 {
-  font-size: 6.8em;
+  /* font-size: 6.8em; */
+  font-size: 64px;
   margin-bottom: 10px;
+ 
 }
 h2 {
-  font-size: 2.2em;
+  font-size: 2em;
   margin-bottom: 32px;
 }
 .about p {
   color: rgb(148, 148, 149);
   line-height: 1.9;
   width: 26em;
-  font-size: 1.7em;
+  font-size: 1.3em;
 }
 @media (max-width: 680px) {
   .profile {
