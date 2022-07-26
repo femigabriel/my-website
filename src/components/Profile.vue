@@ -89,7 +89,7 @@ h2 {
 .about p {
   color: rgb(148, 148, 149);
   line-height: 1.9;
-  width: 26em;
+  width: 30em;
   font-size: 14px;
 }
 @media (max-width: 680px) {
