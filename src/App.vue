@@ -79,14 +79,15 @@ body {
 }
 .projects {
   width: 60%;
-  padding-right: 20px;
-  padding-left: 80px;
+  /* padding-right: 20px; */
+  /* padding-left: 60px; */
 }
 
 .project-flex {
   display: flex;
   /* flex-shrink: 0; */
   width: 600px;
+    padding-left: 60px;
 }
 @media (max-width: 680px) {
   body {
