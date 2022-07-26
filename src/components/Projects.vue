@@ -78,7 +78,7 @@ export default {
 }
 .project-box:hover {
   /* width: 790px; */
-  height: 35vh;
+  /* height: 35vh; */
   transform: scale(1.3);
   box-shadow: 2px 9px 19px 15px #0000001f;
   -webkit-transition: all 200ms ease-in;
