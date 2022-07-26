@@ -62,11 +62,12 @@ export default {
   margin: 10px 10px;
 }
 .project-box {
-  width: 620px;
-  height: 33vh;
+  width: 648px;
+  /* height: 33vh; */
   background: rgb(32, 32, 34);
   padding-left: 60px;
   padding-right: 40px;
+  padding-bottom: 20px;
   padding-top: 20px;
   border-radius: 5px;
   margin-bottom: 10px;

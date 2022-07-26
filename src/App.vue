@@ -5,13 +5,11 @@
   />
   <div class="app">
     <Profile class="profile" />
-    <div class="project-work">
       <div class="projects">
         <Projects />
         <div class="project-flex">
           <ProjectFlex />
           <ProjectGrid />
-        </div>
       </div>
     </div>
   </div>
@@ -67,27 +65,30 @@ body {
   /* position: fixed; */
 }
 .profile {
-  width: 35%;
+  /* width: 35%; */
+  padding-right: 40px;
 }
 .project-work {
   /* overflow-y: auto; */
-  height: 100vh;
-  width: 100%;
+ 
 }
 .project-work::-webkit-scrollbar {
   display: none;
 }
 .projects {
-  width: 60%;
-  /* padding-right: 20px; */
-  /* padding-left: 60px; */
+  display: flex;
+  flex-direction: column;
+   /* height: 100vh; */
+  width: 100%;
+  padding-right: 20px; 
+   /* padding-left: 60px; */
 }
 
 .project-flex {
   display: flex;
   /* flex-shrink: 0; */
   width: 600px;
-    padding-left: 60px;
+    /* padding-left: 60px; */
 }
 @media (max-width: 680px) {
   body {
