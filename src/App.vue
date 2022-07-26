@@ -67,7 +67,7 @@ body {
 }
 .profile {
   /* width: 35%; */
-  padding-right: 40px;
+  padding-right: 80px;
 }
 .project-work {
   /* overflow-y: auto; */
@@ -82,6 +82,7 @@ body {
    /* height: 100vh; */
   width: 100%;
   padding-right: 20px; 
+  margin: 0px -30px;
    /* padding-left: 60px; */
 }
 

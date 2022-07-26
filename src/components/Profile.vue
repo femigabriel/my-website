@@ -72,6 +72,7 @@ export default {
 .profile {
   display: flex;
   flex-direction: column;
+ 
 }
 .profile-name {
   line-height: 1;
@@ -185,17 +186,18 @@ li {
   color: rgb(148, 148, 149);
 }
 .socials {
-  padding: 5px 10px;
+  padding: 5px 5px;
 }
 .socials a {
   color: rgb(148, 148, 149);
-  font-size: 1.2em;
+  font-size: 1em;
   margin: 15px 0px;
   text-decoration: none;
+  
 }
 .lab {
   font-size: 28px;
-  margin: 8px 10px;
+  margin: 8px 5px;
 }
 img {
   width: 55px;
