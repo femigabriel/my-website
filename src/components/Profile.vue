@@ -33,7 +33,7 @@
       </ul>
     </div>
     <div class="profile-pics flex">
-      <img src="../images/profile.png" alt="" />
+      <img src="../images/mypics4.png" alt="" />
       <div class="socials flex">
         <i class="lab la-github"></i>
         <a href="https://github.com/femigabriel">github</a>
@@ -191,7 +191,7 @@ li {
   padding: 5px 5px;
 }
 .socials a {
-  color: rgb(148, 148, 149);
+   color: rgb(255, 255, 255);
   font-size: 1em;
   margin: 15px 0px;
   text-decoration: none;
@@ -204,6 +204,7 @@ li {
 img {
   width: 55px;
   height: 55px;
+  border-radius: 50%;
 }
 @media (max-width: 680px) {
   .lab {
@@ -217,8 +218,8 @@ img {
     font-size: 9px;
   }
   img {
-    width: 35px;
-    height: 35px;
+    /* width: 35px;
+    height: 35px; */
   }
   .profile-pics {
     padding-bottom: 20px;
