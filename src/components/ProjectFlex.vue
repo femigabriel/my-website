@@ -34,7 +34,7 @@ export default {
         {
           date: "July 22, 2022",
           status: "Online",
-          framework: "Javascript",
+          framework: "JAVASCRIPT",
           title: "Currency Calculator",
           description: "Calculate world's currentcy ",
           video: "CLick here.....",
@@ -44,7 +44,7 @@ export default {
         {
           date: "July 22, 2022",
           status: "Online",
-          framework: "Javascript",
+          framework: "JAVASCRIPT",
           title: "Random Jokes",
           description: "Random jokes that will crack you up!",
           video: "CLick here.....",
@@ -54,7 +54,7 @@ export default {
         {
           date: "July 22, 2022",
           status: "Online",
-          framework: "Javascript",
+          framework: "JAVASCRIPT",
           title: "Quack Game",
           description: "Funny Quack game!",
           url: "https://compassionate-mestorf-c92499.netlify.app",
@@ -64,7 +64,7 @@ export default {
         {
           date: "Jan 25, 2022",
           status: "Online",
-          framework: "Javascript",
+          framework: "JAVASCRIPT",
           title: "Live Clock",
           description: "Live clock",
           url: "https://friendly-fermat-83201f.netlify.app",
@@ -74,7 +74,7 @@ export default {
         {
           date: "July 22, 2022",
           status: "Online",
-          framework: "Vue.js",
+          framework: "VUE.JS",
           title: "Appruve Questionaire",
           description: "Appruve Questionaire",
           url: "https://nostalgic-lovelace-acc728.netlify.app",
@@ -84,7 +84,7 @@ export default {
         {
           date: "July 22, 2022",
           status: "Paris-France",
-          framework: "Javascript",
+          framework: "JAVASCRIPT",
           title: "Todo List",
           description: "Plan your day ahead today!",
           url: "https://nostalgic-lovelace-acc728.netlify.app",
@@ -94,7 +94,7 @@ export default {
         {
           date: "July 22, 2022",
           status: "Paris-France",
-          framework: "Javascript",
+          framework: "JAVASCRIPT",
           title: "Todo List",
           description: "Plan your day ahead today!",
           url: "https://nostalgic-lovelace-acc728.netlify.app",
@@ -139,10 +139,12 @@ export default {
   -moz-transition: all 200ms ease-in;
   -moz-transform: scale(1.1);
   transition: all 200ms ease-in;
- 
 }
 .status p {
   color: rgb(148, 148, 149);
+}
+.status h3 {
+  letter-spacing: 3px;
 }
 .title {
   /* padding-top: 30px;
@@ -156,7 +158,7 @@ export default {
   text-decoration: none;
   color: rgb(148, 148, 149);
   font-size: 18px;
-      padding-bottom: 20px;
+  padding-bottom: 20px;
 }
 .icon {
 }
@@ -169,13 +171,13 @@ export default {
   font-size: 18px;
 }
 @media (max-width: 680px) {
-   .title {
-  width: 13em;
-  font-size: 14px;
-}
-.rating a {
-  font-size: 14px;
+  .title {
+    width: 13em;
+    font-size: 14px;
+  }
+  .rating a {
+    font-size: 14px;
     padding-bottom: 10px;
-}
+  }
 }
 </style>

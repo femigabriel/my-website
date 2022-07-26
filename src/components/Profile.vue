@@ -36,19 +36,25 @@
       <img src="../images/profile.png" alt="" />
       <div class="socials flex">
         <i class="lab la-github"></i>
-        <p>github</p>
+        <a href="https://github.com/femigabriel">github</a>
+        <p></p>
       </div>
       <div class="socials flex">
         <i class="lab la-facebook"></i>
-        <p>Facebook</p>
+        <a href="facebook.com/femigabriel89">Facebook</a>
+        <p></p>
       </div>
       <div class="socials flex">
         <i class="lab la-twitter"></i>
-        <p>Twitter</p>
+        <a href="https://twitter.com/FemiGab2018">Twitter</a>
+        <p></p>
       </div>
       <div class="socials flex">
-        <i class="lab la-linkedin-in"></i>
-        <p>Linkedin-in</p>
+        <i class="lab la-linkedin"></i>
+        <a href="https://www.linkedin.com/in/ogungbade-oluwafemi-25b28619a/"
+          >Linkedin</a
+        >
+        <p></p>
       </div>
     </div>
   </div>
@@ -66,19 +72,17 @@ export default {
 .profile {
   display: flex;
   flex-direction: column;
- 
 }
 .profile-name {
   line-height: 1;
 }
 .profile-name h1 {
   /* font-size: 6.8em; */
-  font-size: 64px;
+  font-size: 68px;
   margin-bottom: 10px;
- 
 }
 h2 {
-  font-size: 2em;
+  font-size: 1.8rem;
   margin-bottom: 32px;
 }
 .about p {
@@ -105,19 +109,18 @@ h2 {
     margin-bottom: 32px;
     width: 18em;
   }
- 
+
   .skills {
     display: none;
   }
   .about p {
-  line-height: 1.5;
-  width: 17em;
-  font-size: 14px;
-  padding-bottom: 20px;
-}
-.profile-pics{
-
-}
+    line-height: 1.5;
+    width: 17em;
+    font-size: 14px;
+    padding-bottom: 20px;
+  }
+  .profile-pics {
+  }
 }
 .about span {
   color: rgb(255, 255, 255);
@@ -136,12 +139,11 @@ h2 {
   color: rgb(148, 148, 149);
 }
 .list-1 {
-  
 }
 .list-1:hover {
   color: rgb(148, 148, 149);
   cursor: pointer;
-   transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
 }
 .list {
   color: rgb(148, 148, 149);
@@ -149,7 +151,7 @@ h2 {
 }
 .list:hover {
   color: rgb(255, 255, 255);
-   transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
 }
 .list .line {
   cursor: pointer;
@@ -160,7 +162,6 @@ h2 {
 .list .line:hover {
   width: 5em;
   transition: all 0.2s ease-in-out;
- 
 }
 
 .skills {
@@ -186,10 +187,12 @@ li {
 .socials {
   padding: 5px 10px;
 }
- .socials p {
-    font-size: 1.2em;   
-    /* margin: 15px 0px; */
-  }
+.socials a {
+  color: rgb(148, 148, 149);
+  font-size: 1.2em;
+  margin: 15px 0px;
+  text-decoration: none;
+}
 .lab {
   font-size: 28px;
   margin: 8px 10px;
@@ -204,18 +207,17 @@ img {
     margin: 6px 5px;
   }
   .socials {
-  padding: 5px 8px;
-}
+    padding: 5px 8px;
+  }
   .socials p {
     font-size: 9px;
-   
   }
   img {
-  width: 35px;
-  height: 35px;
-}
-.profile-pics {
-  padding-bottom: 20px;
-}
+    width: 35px;
+    height: 35px;
+  }
+  .profile-pics {
+    padding-bottom: 20px;
+  }
 }
 </style>

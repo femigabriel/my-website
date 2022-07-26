@@ -90,8 +90,9 @@ export default {
 }
 .project-box h3 {
   text-transform: capitalize;
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 600;
+  letter-spacing: 3px;
 }
 .project-box p {
   font-size: 18px;

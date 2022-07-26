@@ -35,7 +35,7 @@ export default {
         {
           date: "July 22, 2022",
           status: "Online",
-          framework: "Vue.Js ",
+          framework: "VUE.JS ",
           title: "Cash App ",
           description: "Manage you cash",
           video: "CLick here.....",
@@ -45,7 +45,7 @@ export default {
         {
           date: "July 22, 2022",
           status: "Online",
-          framework: "Javascript",
+          framework: "JAVASCRIPT",
           title: "Todo List",
           description: "Plan your day ahead!",
           url: "https://loving-shaw-867970.netlify.app",
@@ -55,7 +55,7 @@ export default {
         {
           date: "March 17, 2022",
           status: "Online",
-          framework: "Javascript",
+          framework: "JAVASCRIPT",
           title: "Listing Resturant ",
           description: "Book your returant ahead anywhere in the world.",
           url: "https://loving-shaw-867970.netlify.app/",
@@ -65,7 +65,7 @@ export default {
         {
           date: "March 7 2022, ",
           status: "Online",
-          framework: "Javascript",
+          framework: "JAVASCRIPT",
           title: "Infinite Dog App",
           description: "Infinite Dog App with images!",
           url: "https://infinitedogapp.netlify.app",
@@ -75,7 +75,7 @@ export default {
         {
           date: "December 22, 2021",
           status: "Online",
-          framework: "Javascript",
+          framework: "JAVASCRIPT",
           title: "Dad's Joke ",
           description: "Random Daddy's Jokes !",
           url: "https://practical-mclean-b935e5.netlify.app",
@@ -85,7 +85,7 @@ export default {
         {
           date: "July 22, 2022",
           status: "Paris-France",
-          framework: "Javascript",
+          framework: "JAVASCRIPT",
           title: "Adeori Resturant",
           description: "Enjoy a nice meal at Adeori Resturant!",
           url: "https://nostalgic-lovelace-acc728.netlify.app",
@@ -121,7 +121,7 @@ export default {
 }
 .project-box:hover {
   /* width: 390; */
-  height: 55vh;
+  /* height: 55vh; */
   box-shadow: 2px 9px 19px 15px #0000001f;
   transform: scale(1.1);
   -webkit-transition: all 200ms ease-in;
@@ -136,6 +136,7 @@ export default {
   color: rgb(148, 148, 149);
 }
 .status h3 {
+  letter-spacing: 3px;
   font-size: 1.7em;
 }
 .title {
