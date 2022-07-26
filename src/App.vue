@@ -61,7 +61,7 @@ body {
   /* flex-shrink: 0; */
   margin-left: auto;
   margin-right: auto;
-  padding-left: 60px;
+  padding-left: 80px;
   padding-right: 80px;
   /* position: fixed; */
 }
