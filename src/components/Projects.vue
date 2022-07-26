@@ -101,6 +101,7 @@ export default {
 .description p {
   font-size: 14px;
   color: rgb(148, 148, 149);
+  letter-spacing:normal;
 }
 .rating a {
   margin: 5px 10px;
