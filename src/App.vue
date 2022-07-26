@@ -80,6 +80,7 @@ body {
 .projects {
   width: 60%;
   padding-right: 20px;
+  padding-left: 80px;
 }
 
 .project-flex {

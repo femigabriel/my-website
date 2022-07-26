@@ -82,7 +82,7 @@ export default {
   margin-bottom: 10px;
 }
 h2 {
-  font-size: 1.8rem;
+  font-size: 24px;
   margin-bottom: 32px;
 }
 .about p {
