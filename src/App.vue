@@ -5,6 +5,7 @@
   />
   <div class="app">
     <Profile class="profile" />
+
       <div class="projects">
         <Projects />
         <div class="project-flex">
@@ -61,7 +62,7 @@ body {
   margin-left: auto;
   margin-right: auto;
   padding-left: 60px;
-  padding-right: 60px;
+  padding-right: 80px;
   /* position: fixed; */
 }
 .profile {

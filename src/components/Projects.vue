@@ -2,9 +2,12 @@
   <div class="projects">
     <div class="content">
       <div class="project-box" v-for="project in projects" :key="project">
-        <h3>{{ project.framework }}</h3>
+        <p>{{ project.framework }}</p>
         <h2>{{ project.title }}</h2>
-        <p>{{ project.description }}</p>
+        <div class="description">
+          <p>{{ project.description }}</p>
+        </div>
+
         <div class="rating flex">
           <div class="icon"><i class="lar la-star"></i></div>
           <a target="_blank" :href="project.url">{{ project.video }}</a>
@@ -89,21 +92,21 @@ export default {
 .project-box h2 {
   font-size: 28px;
 }
-.project-box h3 {
+.project-box p {
   text-transform: capitalize;
   font-size: 14px;
   font-weight: 600;
   letter-spacing: 3px;
 }
-.project-box p {
-  font-size: 18px;
+.description p {
+  font-size: 14px;
   color: rgb(148, 148, 149);
 }
 .rating a {
   margin: 5px 10px;
   text-decoration: none;
   color: rgb(148, 148, 149);
-  font-size: 18px;
+  font-size: 14px;
 }
 .rating {
   /* margin: 20px 10px; */
@@ -124,11 +127,10 @@ export default {
     line-height: 0.5;
   }
   .content {
-  /* margin: 20px 30px; */
-}
-.project-box{
-
-}
+    /* margin: 20px 30px; */
+  }
+  .project-box {
+  }
   .rating a {
     font-size: 14px;
   }

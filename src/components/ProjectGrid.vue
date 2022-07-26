@@ -134,14 +134,19 @@ export default {
 }
 .status p {
   color: rgb(148, 148, 149);
+  font-size: 14px;
 }
 .status h3 {
   letter-spacing: 3px;
   font-size: 1.7em;
 }
 .title {
-  width: 15em;
+  /* width: 15em; */
   line-height: 1.2;
+}
+.title h2 {
+  line-height: 1.3;
+  font-size: 24px;
 }
 .main {
   padding-top: 30px;
@@ -150,7 +155,7 @@ export default {
   margin: 5px 15px;
   text-decoration: none;
   color: rgb(148, 148, 149);
-  font-size: 1em;
+  font-size: 14px;
 }
 .icon {
 }

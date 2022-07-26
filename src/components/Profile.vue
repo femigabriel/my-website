@@ -89,7 +89,7 @@ h2 {
   color: rgb(148, 148, 149);
   line-height: 1.9;
   width: 26em;
-  font-size: 1.3em;
+  font-size: 14px;
 }
 @media (max-width: 680px) {
   .profile {

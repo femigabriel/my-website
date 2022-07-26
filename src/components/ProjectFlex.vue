@@ -118,7 +118,6 @@ export default {
   /* width: 380px;
   height: 50vh; */
   width: 320px;
-
   background: rgb(32, 32, 34);
   padding-left: 20px;
   /* padding-right: 40px; */
@@ -145,13 +144,15 @@ export default {
 }
 .status p {
   color: rgb(148, 148, 149);
+  font-size: 14px;
 }
 .status h3 {
   letter-spacing: 3px;
 }
-.title {
-  /* padding-top: 30px;
-  font-size: var(--fs-500); */
+.title h2{
+  line-height: 1.3;
+  font-size: 24px;
+  /* color: red; */
 }
 .main {
   padding-top: 30px;
@@ -160,7 +161,7 @@ export default {
   margin: 5px 10px;
   text-decoration: none;
   color: rgb(148, 148, 149);
-  font-size: 18px;
+  font-size: 14px;
   padding-bottom: 20px;
 }
 .icon {
