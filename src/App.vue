@@ -64,7 +64,7 @@ body {
   margin-right: auto;
   padding-left: 60px;
   padding-right: 60px;
-  position: fixed;
+  /* position: fixed; */
 }
 .profile {
   width: 50%;
