@@ -168,6 +168,8 @@ h2 {
 .skills {
   padding-top: 0px;
   letter-spacing: 3px;
+    margin: -30px 0px;
+    /* padding-bottom: 10px; */
 }
 /* .skills h3 {
   margin: 40px 0 0;
