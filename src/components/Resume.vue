@@ -253,7 +253,7 @@ export default {};
   flex-direction: column;
   flex-grow: 1;
   justify-content: space-between;
-  padding: 10% 15% 10% 5%;
+  padding: 5% 25% 5% 5%;
 }
 .resume_container {
   background-color: #1b1b1d;
