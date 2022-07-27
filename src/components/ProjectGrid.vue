@@ -38,7 +38,7 @@ export default {
           framework: "VUE.JS ",
           title: "Cash App ",
           description: "Manage you cash",
-          video: "CLick here.....",
+          video: "Click here.....",
           url: "https://cashapphelp.netlify.app",
           slides: "Slides",
         },
@@ -49,7 +49,7 @@ export default {
           title: "Todo List",
           description: "Plan your day ahead!",
           url: "https://loving-shaw-867970.netlify.app",
-          video: "CLick here.....",
+          video: "Click here.....",
           slides: "Slides",
         },
         {
@@ -59,7 +59,7 @@ export default {
           title: "Listing Resturant ",
           description: "Book your returant ahead anywhere in the world.",
           url: "https://loving-shaw-867970.netlify.app/",
-          video: "CLick here.....",
+          video: "Click here.....",
           slides: "Slides",
         },
         {
@@ -69,7 +69,7 @@ export default {
           title: "Infinite Dog App",
           description: "Infinite Dog App with images!",
           url: "https://infinitedogapp.netlify.app",
-          video: "CLick here.....",
+          video: "Click here.....",
           slides: "Slides",
         },
         {
@@ -79,7 +79,7 @@ export default {
           title: "Dad's Joke ",
           description: "Random Daddy's Jokes !",
           url: "https://practical-mclean-b935e5.netlify.app",
-          video: "CLick here.....",
+          video: "Click here.....",
           slides: "Slides",
         },
         {
@@ -89,7 +89,7 @@ export default {
           title: "Adeori Resturant",
           description: "Enjoy a nice meal at Adeori Resturant!",
           url: "https://nostalgic-lovelace-acc728.netlify.app",
-          video: "CLick here.....",
+          video: "Click here.....",
           slides: "Slides",
         },
       ],

@@ -27,14 +27,14 @@ export default {
           title: "Dad's Joke",
           description: "Every funny daddy's jokes ",
           url: "hhttps://laughing-dubinsky-710f9c.netlify.app",
-          video: "CLick here.....",
+          video: "Click here.....",
         },
         {
           framework: "JAVASCRIPT",
           title: "Todo List",
           description: "Plan your day ahead!",
           url: "hhttps://laughing-dubinsky-710f9c.netlify.app",
-          video: "CLick here.....",
+          video: "Click here.....",
         },
         {
           framework: "VUE.JS",
@@ -42,14 +42,14 @@ export default {
           description:
             "Cake store house where you can can buy all sorts of cakes ",
           url: "hhttps://laughing-dubinsky-710f9c.netlify.app",
-          video: "CLick here.....",
+          video: "Click here.....",
         },
         {
           framework: "VUE.JS",
           title: "Dad's Joke",
           description: "Every funny daddy's jokes ",
           url: "hhttps://laughing-dubinsky-710f9c.netlify.app",
-          video: "CLick here.....",
+          video: "Click here.....",
         },
       ],
     };

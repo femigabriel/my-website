@@ -186,7 +186,7 @@ h2 {
 }
 .skills {
   padding-top: 0px;
-  letter-spacing: 3px;
+
   margin: -30px 0px;
 }
 ul {
@@ -194,7 +194,9 @@ ul {
   padding: 30px 0px;
 }
 li {
+  font-size: 10px;
   margin: 30px 10px;
+  letter-spacing: 5px;
 }
 .profile-pics {
   margin: -20px 0px;
@@ -208,6 +210,7 @@ li {
   font-size: 1em;
   margin: 15px 0px;
   text-decoration: none;
+  letter-spacing: 3px;
 }
 .lab {
   font-size: 24px;

@@ -239,22 +239,12 @@ p {
   justify-content: space-between;
 }
 .top_row h2 {
-  font-size: 14.4px;
+  font-size: 14px;
   line-height: 47px;
   margin: 0;
   letter-spacing: 5px;
 }
-.buttons {
-  align-self: flex-start;
-  display: flex;
-  justify-content: space-between;
-}
-.buttons a {
-  color: inherit;
-  font-size: 9.6px;
-  margin: 5px;
-  text-decoration: none;
-}
+
 small {
   font-size: smaller;
 }
@@ -269,15 +259,16 @@ small {
 }
 .subheading {
   color: #cfcfcf;
-  font-size: 12px;
+  font-size: 14px;
   margin: 6px 0;
+  letter-spacing: 3px;
 }
 .summary {
   display: flex;
   margin-top: 5px;
 }
 .summary p {
-  color: #777778;
+  color: rgb(148, 148, 149);
   font-size: 14px;
   line-height: 1.9;
 }
@@ -292,6 +283,7 @@ small {
   font-size: 14px;
   font-weight: 600;
   margin: 0 10px 0 0;
+  letter-spacing: 5px;
 }
 .divider span {
   background-color: #77777859;
@@ -323,12 +315,13 @@ section {
   font-size: 14px;
   line-height: 2;
   margin: 0;
+  letter-spacing: 3px;
 }
 .experience .description {
   color: #777778;
   display: block;
   font-size: 14px;
- line-height: 1.9;
+  line-height: 1.9;
   margin: 10px 0;
   padding: 0;
 }
