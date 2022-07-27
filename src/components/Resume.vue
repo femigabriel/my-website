@@ -248,12 +248,15 @@ export default {};
 </script>
 
 <style scoped>
+p {
+  font-size: 12px;
+}
 .pages_container {
   display: flex;
   flex-direction: column;
   flex-grow: 1;
   justify-content: space-between;
-  padding: 2% 2% 10% 5%;
+  padding: 2% 5% 10% 5%;
 }
 .resume_container {
   background-color: #1b1b1d;
@@ -305,7 +308,7 @@ small {
 }
 .summary p {
   color: #777778;
-  font-size: 9.6px;
+  font-size: 14px;
   line-height: 1.5;
 }
 .divider {
@@ -316,7 +319,7 @@ small {
 }
 .divider p {
   color: #e2e2e2;
-  font-size: 9.6px;
+  font-size: 14px;
   font-weight: 600;
   margin: 0 10px 0 0;
 }
@@ -329,7 +332,7 @@ small {
   color: #777778;
   display: flex;
   font-family: air-light;
-  font-size: 9.6px;
+  font-size: 14px;
   line-height: 2;
   margin: 0;
 }
@@ -348,14 +351,14 @@ section {
   display: block;
 }
 .experience .title {
-  font-size: 9.6px;
+ font-size: 14px;
   line-height: 2;
   margin: 0;
 }
 .experience .description {
   color: #777778;
   display: block;
-  font-size: 9.6px;
+  font-size: 14px;
   line-height: 1.5;
   margin: 10px 0;
   padding: 0;
@@ -365,11 +368,13 @@ section {
   display: flex;
   margin: 2px 0;
   width: 100%;
+  font-size: 14px;
 }
 
 .description p span {
   margin-right: 5px;
   color: #777778;
+  font-size: 14px;
 }
 .resume_container .divider {
   align-items: center;
@@ -384,5 +389,6 @@ section {
 }
 .description p.nospan {
   display: block;
+  font-size: 14px;
 }
 </style>

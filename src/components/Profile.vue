@@ -66,7 +66,7 @@ export default {
       lists: [
         { id: 0, numb: "01", status: "PROJECT" },
         { id: 1, numb: "02", status: "RESUME" },
-        { id: 2, numb: "03", status: "WORK" },
+        // { id: 2, numb: "03", status: "WORK" },
       ],
     };
   },
@@ -130,7 +130,7 @@ h2 {
   .about p {
     line-height: 1.5;
     width: 17em;
-    font-size: 14px;
+    font-size: 13px;
     padding-bottom: 20px;
   }
   .profile-pics {
