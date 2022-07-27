@@ -4,7 +4,7 @@
     <div class="resume">
       <div class="resume_container">
         <div class="top_row">
-          <h2>Gabriel Femi</h2>
+          <h2>GABRIEL FEMI</h2>
         </div>
         <p class="subheading">Frontend Developer</p>
         <div class="summary">
@@ -20,10 +20,7 @@
           <span></span>
         </div>
         <div class="skills">
-          <p>
-            HTML/CSS/SASS, Javascript [ES6+], React JS, Gatsby JS, Next JS, Vue
-            JS, CSS-in-JS, Typescript, GraphQL, Redux, Firebase.
-          </p>
+          <p>HTML/CSS/SASS, Javascript [ES6+], Vue.JS, .</p>
         </div>
         <div class="divider">
           <p>Familiar With</p>
@@ -242,9 +239,10 @@ p {
   justify-content: space-between;
 }
 .top_row h2 {
-  font-size: 35.4px;
+  font-size: 14.4px;
   line-height: 47px;
   margin: 0;
+  letter-spacing: 5px;
 }
 .buttons {
   align-self: flex-start;
@@ -281,7 +279,7 @@ small {
 .summary p {
   color: #777778;
   font-size: 14px;
-  line-height: 1.5;
+  line-height: 1.9;
 }
 .divider {
   align-items: center;
@@ -303,9 +301,8 @@ small {
 .skills p {
   color: #777778;
   display: flex;
-  font-family: air-light;
   font-size: 14px;
-  line-height: 2;
+  line-height: 1.9;
   margin: 0;
 }
 .divider {
@@ -331,7 +328,7 @@ section {
   color: #777778;
   display: block;
   font-size: 14px;
-  line-height: 1.5;
+ line-height: 1.9;
   margin: 10px 0;
   padding: 0;
 }

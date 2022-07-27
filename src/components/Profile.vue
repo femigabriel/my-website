@@ -152,10 +152,6 @@ h2 {
   width: 6em;
   color: rgb(148, 148, 149);
 }
-.line .active {
-  /* color: red;
-  width: 6em; */
-}
 .active {
   color: rgb(255, 255, 255);
 }
