@@ -5,23 +5,6 @@
       <div class="resume_container">
         <div class="top_row">
           <h2>Gabriel Femi</h2>
-          <!-- <div class="buttons">
-            <a
-              href="https://www.linkedin.com/in/collins-enebeli-online/"
-              target="_blank"
-              rel="noopener noreferrer"
-              ><small
-                ><i class="fab fa-linkedin"></i> <span>Linked In</span></small
-              ></a
-            ><a
-              href="/collins-enebeli-resume.pdf"
-              target="_blank"
-              rel="noopener noreferrer"
-              ><small
-                ><i class="fas fa-download"></i> <span>Download </span></small
-              ></a
-            >
-          </div> -->
         </div>
         <p class="subheading">Frontend Developer</p>
         <div class="summary">
@@ -270,7 +253,7 @@ p {
   justify-content: space-between;
 }
 .top_row h2 {
-  font-size: 26.4px;
+  font-size: 35.4px;
   line-height: 47px;
   margin: 0;
 }
@@ -351,7 +334,7 @@ section {
   display: block;
 }
 .experience .title {
- font-size: 14px;
+  font-size: 14px;
   line-height: 2;
   margin: 0;
 }
