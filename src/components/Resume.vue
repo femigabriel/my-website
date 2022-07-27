@@ -210,17 +210,6 @@
           <p>Projects</p>
           <span></span>
         </div>
-        <div class="exp_container">
-          <section class="experience">
-            <article class="description">
-              <p class="nospan">
-                Links to my works can be found on<!-- -->
-                <a href="/work">kadet.dev/work</a> and more details can be
-                provided upon request.
-              </p>
-            </article>
-          </section>
-        </div>
       </div>
     </div>
   </div>
