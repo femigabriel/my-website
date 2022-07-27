@@ -4,18 +4,25 @@
     href="https://cdnjs.cloudflare.com/ajax/libs/line-awesome/1.3.0/line-awesome/css/line-awesome.min.css"
   />
   <div class="app">
-    <Profile class="profile" />
-    <div class="project-work">
-      <div class="projects">
-        <Projects />
-        <div class="project-flex">
-          <ProjectFlex />
-          <ProjectGrid />
+    <Profile :activeId="current" @setActivePage="setActivePage" class="profile" />
+    <div class="current">
+      <div class="project-work">
+        <div
+          class="projects"
+          v-show="current == 0"
+        >
+          <Projects />
+          <div class="project-flex">
+            <ProjectFlex />
+            <ProjectGrid />
+          </div>
+        </div>
+        <div v-show="current == 1">
+          <Resume class="resume" />
         </div>
       </div>
     </div>
   </div>
-  <div class="grid"></div>
 </template>
 
 <script>
@@ -23,6 +30,7 @@ import Profile from "./components/Profile.vue";
 import Projects from "./components/Projects.vue";
 import ProjectFlex from "./components/ProjectFlex.vue";
 import ProjectGrid from "./components/ProjectGrid.vue";
+import Resume from "./components/Resume.vue";
 export default {
   name: "App",
   components: {
@@ -30,7 +38,18 @@ export default {
     Projects,
     ProjectFlex,
     ProjectGrid,
+    Resume,
   },
+  data() {
+    return {
+      current: 1,
+    };
+  },
+  methods:{
+    setActivePage(value){
+      this.current=value
+    }
+  }
 };
 </script>
 
@@ -39,14 +58,14 @@ export default {
 #app {
   margin-top: 60px;
   width: 100%;
-  flex-shrink: 0;
+  /* flex-shrink: 0; */
 }
 
 *,
 :after,
 :before {
   box-sizing: border-box;
-  /* border: 0 solid #e5e7eb; */
+   
 }
 body {
   line-height: 1;
@@ -55,43 +74,46 @@ body {
   font-family: "Inter var", sans-serif;
   width: 100%;
 }
-#app {
-}
+
 .app {
   display: flex;
-  /* flex-shrink: 0; */
   margin-left: auto;
   margin-right: auto;
   padding-left: 80px;
   padding-right: 80px;
   position: fixed;
 }
+.current {
+  display: block;
+}
 .profile {
-  /* width: 35%; */
   padding-right: 80px;
 }
 .project-work {
+  /* display: none; */
   overflow-y: auto;
+  max-height: 100vh;
+}
+.resume {
+  /* display: ; */
 }
 .project-work::-webkit-scrollbar {
-  display: none;
+  /* display: none; */
 }
+
 .projects {
   display: flex;
   flex-direction: column;
-  /* height: 100vh; */
   width: 100%;
   padding-right: 20px;
-  /* margin: 0px -30px; */
-  /* padding-left: 60px; */
 }
 
 .project-flex {
+  /* display: none; */
   display: flex;
-  /* flex-shrink: 0; */
   width: 600px;
-  /* padding-left: 60px; */
 }
+
 @media (max-width: 680px) {
   body {
     overflow-x: hidden;
@@ -109,7 +131,6 @@ body {
   }
 }
 .profile {
-  /* padding-right: 100px; */
 }
 .flex {
   display: flex;
@@ -120,7 +141,6 @@ span {
 
 .grid {
   display: flex;
-  /* justify-content: space-between; */
   margin: 10px 15px;
 }
 @media (min-width: 45rem) {
