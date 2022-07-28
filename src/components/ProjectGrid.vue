@@ -59,7 +59,7 @@ export default {
           status: "Online",
           framework: "JAVASCRIPT",
           title: "Listing Resturant ",
-          description: "Book your returant ahead anywhere in the world.",
+          description: "Resturants around the world",
           url: "https://loving-shaw-867970.netlify.app/",
           video: "Click here.....",
           slides: "Slides",
@@ -169,18 +169,40 @@ export default {
   color: rgb(148, 148, 149);
   font-size: 24px;
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 320px) {
   .projects {
     line-height: 1;
   }
-  .content {
-    /* margin: 20px 30px; */
-  }
-  /* .project-box {
-    width: 10px;
-  } */
+
   .project-box {
     width: 220px;
+  }
+  .rating a {
+    font-size: 12px;
+  }
+  .project-box h2 {
+    font-size: 16px;
+  }
+  .project-box h3 {
+    font-size: 12px;
+  }
+  .project-box p {
+    line-height: 1.5;
+    font-size: 12px;
+    width: 10em;
+  }
+  .lar {
+    font-size: 16px;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .projects {
+    line-height: 1;
+  }
+
+  .project-box {
+    width: 330px;
+    height: 28vh;
   }
   .rating a {
     font-size: 12px;

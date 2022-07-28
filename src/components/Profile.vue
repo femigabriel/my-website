@@ -108,15 +108,19 @@ h2 {
   width: 30em;
   font-size: 14px;
 }
-@media (max-width: 920px){
+@media (max-width: 480px) {
   .profile-name h1 {
     font-size: 45px;
     margin-bottom: 10px;
-    color: red;
-
+  }
+}
+@media (max-width: 480px) {
+  .profile-name h1 {
+    font-size: 45px;
+    margin-bottom: 10px;
   }
   .profile-name h2 {
-    font-size: 1.3em;
+    font-size: 1.4em;
     margin-bottom: 32px;
     width: 18em;
   }
@@ -126,14 +130,14 @@ h2 {
   }
   .about p {
     line-height: 1.5;
-    width: 32em;
+    width: 28em;
     font-size: 12px;
     padding-bottom: 20px;
   }
   .profile-pics {
   }
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 320px) {
   .profile {
     display: flex;
     flex-direction: column;
@@ -163,6 +167,8 @@ h2 {
   }
   .profile-pics {
   }
+}
+@media only screen and (max-width: 320px) {
 }
 .about span {
   color: rgb(255, 255, 255);
@@ -231,7 +237,6 @@ li {
   font-size: 14px;
   margin: 15px 0px;
   text-decoration: none;
-
 }
 .lab {
   font-size: 24px;
@@ -242,26 +247,48 @@ img {
   height: 55px;
   border-radius: 50%;
 }
-@media (max-width: 680px) {
+@media (max-width: 320px) {
   .lab {
     font-size: 12px;
-     margin-bottom: 5px;
+    margin-bottom: 5px;
   }
   .socials {
     padding: 2px 0px;
   }
   .socials a {
     font-size: 7px;
-     margin-top: 12px;
+    margin-top: 12px;
   }
 
   .profile-pics {
     padding-bottom: 20px;
   }
   img {
-  width: 35px;
-  height: 35px;
-  border-radius: 50%;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+  }
 }
+@media (max-width: 480px) {
+  .lab {
+    font-size: 16px;
+    margin-bottom: 5px;
+  }
+  .socials {
+    padding: 5px 2px;
+  }
+  .socials a {
+    font-size: 12px;
+    margin-top: 12px;
+  }
+
+  .profile-pics {
+    padding-bottom: 20px;
+  }
+  img {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+  }
 }
 </style>

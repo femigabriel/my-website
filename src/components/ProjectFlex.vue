@@ -178,7 +178,7 @@ export default {
 .main p {
   font-size: 18px;
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 320px) {
   .projects {
     line-height: 1;
   }
@@ -190,6 +190,33 @@ export default {
   } */
   .project-box {
     width: 220px;
+  }
+  .rating a {
+    font-size: 12px;
+  }
+  .project-box h2 {
+    font-size: 16px;
+  }
+  .project-box h3 {
+    font-size: 12px;
+  }
+  .project-box p {
+    line-height: 1.5;
+    font-size: 12px;
+    width: 10em;
+  }
+  .lar {
+    font-size: 16px;
+  }
+}
+@media (max-width: 480px) {
+  .projects {
+    line-height: 1;
+  }
+
+  .project-box {
+       width: 330px;
+       height: 28vh;
   }
   .rating a {
     font-size: 12px;

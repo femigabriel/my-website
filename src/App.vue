@@ -59,7 +59,6 @@ export default {
 #app {
   margin-top: 60px;
   width: 100%;
-  /* flex-shrink: 0; */
 }
 
 *,
@@ -90,15 +89,8 @@ body {
   padding-right: 80px;
 }
 .project-work {
-  /* display: none; */
   overflow-y: auto;
   max-height: 100vh;
-}
-.resume {
-  /* display: ; */
-}
-.project-work::-webkit-scrollbar {
-  /* display: none; */
 }
 
 .projects {
@@ -109,12 +101,11 @@ body {
 }
 
 .project-flex {
-  /* display: none; */
   display: flex;
   width: 600px;
 }
 
-@media only screen and (max-width: 768px) {
+@media (max-width: 320px) {
   body {
     overflow-x: hidden;
   }
@@ -135,7 +126,10 @@ body {
     display: block;
   }
 }
-@media (max-width: 480px) {
+@media (max-width: 380px) {
+  body {
+    overflow-x: hidden;
+  }
   .app {
     margin-left: auto;
     margin-right: auto;
@@ -143,6 +137,54 @@ body {
     padding-right: 15px;
     overflow-x: hidden;
     display: block;
+    overflow-y: auto;
+    max-height: 100vh;
+  }
+  .projects {
+    display: block;
+  }
+  .project-flex {
+    display: block;
+  }
+}
+
+@media (max-width: 480px) {
+  body {
+    overflow-x: hidden;
+  }
+  .app {
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 25px;
+    padding-right: 25px;
+    overflow-x: hidden;
+    display: block;
+    overflow-y: auto;
+    max-height: 100vh;
+  }
+  .projects {
+    display: block;
+  }
+  .project-flex {
+    display: block;
+  }
+}
+@media (max-width: 820px) {
+  .app {
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 40px;
+    padding-right: 40px;
+    overflow-x: hidden;
+    display: block;
+    overflow-y: auto;
+    max-height: 100vh;
+  }
+  .projects {
+    display: flex;
+  }
+  .project-flex {
+    display: flex;
   }
 }
 .profile {
@@ -157,7 +199,5 @@ span {
 .grid {
   display: flex;
   margin: 10px 15px;
-}
-@media (min-width: 45rem) {
 }
 </style>
