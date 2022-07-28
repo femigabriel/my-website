@@ -4,13 +4,14 @@
     href="https://cdnjs.cloudflare.com/ajax/libs/line-awesome/1.3.0/line-awesome/css/line-awesome.min.css"
   />
   <div class="app">
-    <Profile :activeId="current" @setActivePage="setActivePage" class="profile" />
+    <Profile
+      :activeId="current"
+      @setActivePage="setActivePage"
+      class="profile"
+    />
     <div class="current">
       <div class="project-work">
-        <div
-          class="projects"
-          v-show="current == 0"
-        >
+        <div class="projects" v-show="current == 0">
           <Projects />
           <div class="project-flex">
             <ProjectFlex />
@@ -45,11 +46,11 @@ export default {
       current: 0,
     };
   },
-  methods:{
-    setActivePage(value){
-      this.current=value
-    }
-  }
+  methods: {
+    setActivePage(value) {
+      this.current = value;
+    },
+  },
 };
 </script>
 
@@ -65,7 +66,6 @@ export default {
 :after,
 :before {
   box-sizing: border-box;
-   
 }
 body {
   line-height: 1;
@@ -114,7 +114,7 @@ body {
   width: 600px;
 }
 
-@media (max-width: 680px) {
+@media only screen and (max-width: 768px) {
   body {
     overflow-x: hidden;
   }
@@ -125,8 +125,23 @@ body {
     padding-right: 15px;
     overflow-x: hidden;
     display: block;
+    overflow-y: auto;
+    max-height: 100vh;
   }
   .projects {
+    display: block;
+  }
+  .project-flex {
+    display: block;
+  }
+}
+@media (max-width: 480px) {
+  .app {
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    overflow-x: hidden;
     display: block;
   }
 }

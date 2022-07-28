@@ -24,10 +24,7 @@
             <a target="_blank" :href="project.url">{{ project.video }}</a>
           </div>
 
-          <div class="rating flex">
-            <!-- <div class="icon"><i class="las la-external-link-alt"></i></div>
-            <p>{{ project.slides }}</p> -->
-          </div>
+          <div class="rating flex"></div>
         </div>
       </div>
     </div>
@@ -85,7 +82,17 @@ export default {
           framework: "VUE.JS",
           title: "Appruve Questionaire",
           description: "Appruve Questionaire",
-          url: "https://nostalgic-lovelace-acc728.netlify.app",
+          url: "https://musing-bell-11b20c.netlify.app",
+          video: "Click here.....",
+          slides: "Slides",
+        },
+        {
+          date: "July 22, 2022",
+          status: "Online",
+          framework: "VUE.JS",
+          title: "List Page",
+          description: "Listing of world resturant",
+          url: "https://loving-shaw-867970.netlify.app",
           video: "Click here.....",
           slides: "Slides",
         },
@@ -93,19 +100,9 @@ export default {
           date: "July 22, 2022",
           status: "Online",
           framework: "JAVASCRIPT",
-          title: "Todo List",
+          title: "Calendar",
           description: "Plan your day ahead today!",
-          url: "https://nostalgic-lovelace-acc728.netlify.app",
-          video: "Click here.....",
-          slides: "Slides",
-        },
-        {
-          date: "July 22, 2022",
-          status: "Online",
-          framework: "JAVASCRIPT",
-          title: "Todo List",
-          description: "Plan your day ahead today!",
-          url: "https://nostalgic-lovelace-acc728.netlify.app",
+          url: "https://confident-swirles-c9499b.netlify.app",
           video: "Click here.....",
           slides: "Slides",
         },
@@ -181,14 +178,35 @@ export default {
 .main p {
   font-size: 18px;
 }
-@media (max-width: 680px) {
-  .title {
-    width: 13em;
-    font-size: 14px;
+@media only screen and (max-width: 768px) {
+  .projects {
+    line-height: 1;
+  }
+  .content {
+    /* margin: 20px 30px; */
+  }
+  /* .project-box {
+    width: 10px;
+  } */
+  .project-box {
+    width: 220px;
   }
   .rating a {
-    font-size: 14px;
-    padding-bottom: 10px;
+    font-size: 12px;
+  }
+  .project-box h2 {
+    font-size: 16px;
+  }
+  .project-box h3 {
+    font-size: 12px;
+  }
+  .project-box p {
+    line-height: 1.5;
+    font-size: 12px;
+    width: 10em;
+  }
+  .lar {
+    font-size: 16px;
   }
 }
 </style>

@@ -39,8 +39,7 @@ export default {
         {
           framework: "VUE.JS",
           title: "Mum's Cake",
-          description:
-            "Cake store house where you can can buy all sorts of cakes ",
+          description: "Cake store for all sorts of cakes",
           url: "hhttps://laughing-dubinsky-710f9c.netlify.app",
           video: "Click here.....",
         },
@@ -77,8 +76,6 @@ export default {
   cursor: pointer;
 }
 .project-box:hover {
-  /* width: 790px; */
-  /* height: 35vh; */
   transform: scale(1.3);
   box-shadow: 2px 9px 19px 15px #0000001f;
   -webkit-transition: all 200ms ease-in;
@@ -92,6 +89,22 @@ export default {
 .project-box h2 {
   font-size: 28px;
 }
+@media (max-width: 920px) {
+  .project-box {
+    /* width: 150px; */
+  }
+  .project-box p {
+    line-height: 1.5;
+    font-size: 12px;
+  }
+  .description p {
+    line-height: 1.5;
+    font-size: 12px;
+  }
+  .rating a {
+    font-size: 12px;
+  }
+}
 .project-box p {
   text-transform: capitalize;
   font-size: 14px;
@@ -101,7 +114,7 @@ export default {
 .description p {
   font-size: 14px;
   color: rgb(148, 148, 149);
-  letter-spacing:normal;
+  letter-spacing: normal;
 }
 .rating a {
   margin: 5px 10px;
@@ -119,31 +132,38 @@ export default {
 .icon {
 }
 .lar {
-  /* margin: 0px 10px; */
-  font-size: 24px;
+  font-size: 20px;
   color: rgb(148, 148, 149);
 }
-@media (max-width: 680px) {
+@media only screen and (max-width: 768px) {
   .projects {
-    line-height: 0.5;
+    line-height: 1;
   }
   .content {
     /* margin: 20px 30px; */
   }
+  /* .project-box {
+    width: 10px;
+  } */
   .project-box {
+    width: 220px;
   }
   .rating a {
-    font-size: 14px;
+    font-size: 12px;
   }
   .project-box h2 {
-    font-size: 24px;
+    font-size: 16px;
   }
   .project-box h3 {
-    font-size: 14px;
+    font-size: 12px;
   }
   .project-box p {
-    font-size: 14px;
-    line-height: 1.1;
+    line-height: 1.5;
+    font-size: 12px;
+    width: 10em;
+  }
+  .lar {
+    font-size: 16px;
   }
 }
 </style>

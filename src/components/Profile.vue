@@ -6,9 +6,9 @@
     </div>
     <div class="about">
       <p>
-        i'm a passionate junior front-end developer with a desire to learn and grow in
-        a collaborative team environment. I'm Skilled in HTML, CSS, and JavaScript.
-       
+        i'm a passionate junior front-end developer with a desire to learn and
+        grow in a collaborative team environment. I'm Skilled in HTML, CSS, and
+        JavaScript.
       </p>
     </div>
     <div class="skills">
@@ -21,9 +21,14 @@
           :key="li"
         >
           <div></div>
-          <span>{{ li.numb }}</span>
+          <span v-bind:class="{ active: li.id === activeId }">{{
+            li.numb
+          }}</span>
           <div class="flex" v-bind:class="{ active: li.id === activeId }">
-            <div class="line"></div>
+            <div v-bind:class="{ lineActive: li.id === activeId }">
+              <div class="line"></div>
+            </div>
+
             {{ li.status }}
           </div>
         </li>
@@ -81,11 +86,17 @@ export default {
 .profile-name {
   line-height: 1;
 }
+@media (max-width: 680px) {
+  .profile-name h1 {
+    font-size: 38px;
+  }
+}
 .profile-name h1 {
   /* font-size: 6.8em; */
   font-size: 68px;
   margin-bottom: 10px;
 }
+
 h2 {
   font-size: 24px;
   margin-bottom: 32px;
@@ -97,7 +108,32 @@ h2 {
   width: 30em;
   font-size: 14px;
 }
-@media (max-width: 680px) {
+@media (max-width: 920px){
+  .profile-name h1 {
+    font-size: 45px;
+    margin-bottom: 10px;
+    color: red;
+
+  }
+  .profile-name h2 {
+    font-size: 1.3em;
+    margin-bottom: 32px;
+    width: 18em;
+  }
+
+  .skills {
+    display: none;
+  }
+  .about p {
+    line-height: 1.5;
+    width: 32em;
+    font-size: 12px;
+    padding-bottom: 20px;
+  }
+  .profile-pics {
+  }
+}
+@media only screen and (max-width: 768px) {
   .profile {
     display: flex;
     flex-direction: column;
@@ -105,12 +141,12 @@ h2 {
   .profile-name {
     line-height: 1;
   }
-  h1 {
-    font-size: 3em;
+  .profile-name h1 {
+    font-size: 32px;
     width: 12em;
     margin-bottom: 10px;
   }
-  h2 {
+  .profile-name h2 {
     font-size: 1em;
     margin-bottom: 32px;
     width: 18em;
@@ -121,8 +157,8 @@ h2 {
   }
   .about p {
     line-height: 1.5;
-    width: 17em;
-    font-size: 13px;
+    width: 20em;
+    font-size: 12px;
     padding-bottom: 20px;
   }
   .profile-pics {
@@ -139,20 +175,16 @@ h2 {
   margin: 5px 20px;
   cursor: pointer;
 }
-/* .line:hover {
-  transition: all 0.2s ease-in-out;
-  width: 6em;
-  color: rgb(148, 148, 149);
-} */
+
 .active {
   color: rgb(255, 255, 255);
 }
+.lineActive {
+  background: rgb(255, 255, 255);
+  height: 2px;
+  margin: 5px 10px;
+}
 
-/* .list-1:hover {
-  color: rgb(148, 148, 149);
-  cursor: pointer;
-  transition: all 0.2s ease-in-out;
-} */
 .list {
   color: rgb(148, 148, 149);
   cursor: pointer;
@@ -167,13 +199,13 @@ h2 {
   background: rgb(148, 148, 149);
   width: 3em;
   cursor: pointer;
+  margin: 0px 15px;
 }
 .list .line:hover {
   width: 5em;
   transition: all 0.2s ease-in-out;
   background: rgb(255, 255, 255);
 }
-
 .skills {
   padding-top: 10px;
   margin: -10px 0px;
@@ -199,7 +231,7 @@ li {
   font-size: 14px;
   margin: 15px 0px;
   text-decoration: none;
-  /* letter-spacing: 3px; */
+
 }
 .lab {
   font-size: 24px;
@@ -212,18 +244,24 @@ img {
 }
 @media (max-width: 680px) {
   .lab {
-    font-size: 10px;
-    margin: 6px 5px;
+    font-size: 12px;
+     margin-bottom: 5px;
   }
   .socials {
-    padding: 5px 8px;
+    padding: 2px 0px;
   }
-  .socials p {
-    font-size: 14px;
+  .socials a {
+    font-size: 7px;
+     margin-top: 12px;
   }
 
   .profile-pics {
     padding-bottom: 20px;
   }
+  img {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+}
 }
 </style>

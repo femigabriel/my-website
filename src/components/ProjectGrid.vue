@@ -47,8 +47,8 @@ export default {
         {
           date: "July 22, 2022",
           status: "Online",
-          framework: "JAVASCRIPT",
-          title: "Todo List",
+          framework: "VUE.JS",
+          title: "Adeori Resturant",
           description: "Plan your day ahead!",
           url: "https://loving-shaw-867970.netlify.app",
           video: "Click here.....",
@@ -169,17 +169,35 @@ export default {
   color: rgb(148, 148, 149);
   font-size: 24px;
 }
-@media (max-width: 680px) {
-  .project-box {
-  }
-  .title {
-    width: 13em;
-    font-size: 14px;
+@media only screen and (max-width: 768px) {
+  .projects {
     line-height: 1;
   }
+  .content {
+    /* margin: 20px 30px; */
+  }
+  /* .project-box {
+    width: 10px;
+  } */
+  .project-box {
+    width: 220px;
+  }
   .rating a {
-    font-size: 14px;
-    padding-bottom: 20px;
+    font-size: 12px;
+  }
+  .project-box h2 {
+    font-size: 16px;
+  }
+  .project-box h3 {
+    font-size: 12px;
+  }
+  .project-box p {
+    line-height: 1.5;
+    font-size: 12px;
+    width: 10em;
+  }
+  .lar {
+    font-size: 16px;
   }
 }
 </style>
