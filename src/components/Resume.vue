@@ -225,7 +225,7 @@ p {
   flex-direction: column;
   flex-grow: 1;
   justify-content: space-between;
-  padding: 2% 5% 10% 5%;
+  padding: 2% 15% 10% 5%;
 }
 .resume_container {
   background-color: #1b1b1d;
