@@ -3,9 +3,17 @@
     <div class="remote-project">
       <div class="project-box" v-for="project in projects" :key="project">
         <div class="status">
-          <h3>{{ project.framework }}</h3>
-          <p>{{ project.status }}</p>
-          <p>{{ project.date }}</p>
+          <div class="framework">
+            <p>{{ project.framework }}</p>
+          </div>
+
+          <div class="status">
+            <p>{{ project.status }}</p>
+          </div>
+
+          <div class="date">
+            <p>{{ project.date }}</p>
+          </div>
         </div>
         <div class="title">
           <h2>{{ project.description }}</h2>
@@ -146,10 +154,12 @@ export default {
   color: rgb(148, 148, 149);
   font-size: 14px;
 }
-.status h3 {
-  letter-spacing: 3px;
+.framework p {
+  letter-spacing: 5px;
+  font-size: 14px;
+  color: rgb(255, 255, 255);
 }
-.title h2{
+.title h2 {
   line-height: 1.3;
   font-size: 24px;
   /* color: red; */

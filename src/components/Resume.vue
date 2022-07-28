@@ -283,7 +283,7 @@ small {
   font-size: 14px;
   font-weight: 600;
   margin: 0 10px 0 0;
-  letter-spacing: 5px;
+  /* letter-spacing: 5px; */
 }
 .divider span {
   background-color: #77777859;
@@ -316,6 +316,7 @@ section {
   line-height: 2;
   margin: 0;
   letter-spacing: 3px;
+  text-transform: uppercase;
 }
 .experience .description {
   color: #777778;

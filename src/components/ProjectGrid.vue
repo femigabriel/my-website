@@ -3,9 +3,15 @@
     <div class="remote-project">
       <div class="project-box" v-for="project in projects" :key="project">
         <div class="status">
-          <h3>{{ project.framework }}</h3>
-          <p>{{ project.status }}</p>
-          <p>{{ project.date }}</p>
+          <div class="framework">
+            <p>{{ project.framework }}</p>
+          </div>
+          <div class="status">
+            <p>{{ project.status }}</p>
+          </div>
+          <div class="date">
+            <p>{{ project.date }}</p>
+          </div>
         </div>
         <div class="title">
           <h2>{{ project.description }}</h2>
@@ -16,11 +22,7 @@
 
             <a target="_blank" :href="project.url">{{ project.video }}</a>
           </div>
-
-          <div class="rating flex">
-            <!-- <div class="icon"><i class="las la-external-link-alt"></i></div>
-            <p>{{ project.slides }}</p> -->
-          </div>
+          <div class="rating flex"></div>
         </div>
       </div>
     </div>
@@ -136,12 +138,16 @@ export default {
   color: rgb(148, 148, 149);
   font-size: 14px;
 }
-.status h3 {
+/* .status h3 {
   letter-spacing: 3px;
   font-size: 1.7em;
+} */
+.framework p {
+  letter-spacing: 5px;
+  font-size: 14px;
+  color: rgb(255, 255, 255);
 }
 .title {
-  /* width: 15em; */
   line-height: 1.2;
 }
 .title h2 {

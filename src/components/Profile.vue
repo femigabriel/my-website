@@ -2,7 +2,7 @@
   <div class="profile">
     <div class="profile-name">
       <h1>Gabriel Femi</h1>
-      <h2>Staff Software Engineer at Google</h2>
+      <h2>Staff Software Engineer</h2>
     </div>
     <div class="about">
       <p>
@@ -34,7 +34,7 @@
       <img src="../images/mypics4.png" alt="" />
       <div class="socials flex">
         <i class="lab la-github"></i>
-        <a href="https://github.com/femigabriel">github</a>
+        <a href="https://github.com/femigabriel">Github</a>
         <p></p>
       </div>
       <div class="socials flex">
@@ -144,17 +144,23 @@ h2 {
   background: rgb(255, 255, 255);
   width: 5em;
   height: 2px;
-  margin: 10px 20px;
+  margin: 5px 20px;
   cursor: pointer;
 }
-.line:hover {
+/* .line:hover {
   transition: all 0.2s ease-in-out;
   width: 6em;
   color: rgb(148, 148, 149);
-}
+} */
 .active {
   color: rgb(255, 255, 255);
 }
+/* .active .line{
+  background: rgb(255, 255, 255);
+}
+.active .line  {
+    background: red;
+} */
 .list-1:hover {
   color: rgb(148, 148, 149);
   cursor: pointer;
@@ -178,6 +184,11 @@ h2 {
 .list .line:hover {
   width: 5em;
   transition: all 0.2s ease-in-out;
+   background: rgb(255, 255, 255);
+}
+.list .line .active {
+  width: 5em;
+  transition: all 0.2s ease-in-out;
 }
 .list .line:active {
   width: 6em;
@@ -185,9 +196,8 @@ h2 {
   color: rgb(255, 255, 255);
 }
 .skills {
-  padding-top: 0px;
-
-  margin: -30px 0px;
+  padding-top: 10px;
+  margin: -10px 0px;
 }
 ul {
   list-style-type: none;
@@ -195,11 +205,11 @@ ul {
 }
 li {
   font-size: 10px;
-  margin: 30px 10px;
+  margin: 45px 10px;
   letter-spacing: 5px;
 }
 .profile-pics {
-  margin: -20px 0px;
+  margin: 10px 0px;
   color: rgb(148, 148, 149);
 }
 .socials {
@@ -210,7 +220,7 @@ li {
   font-size: 1em;
   margin: 15px 0px;
   text-decoration: none;
-  letter-spacing: 3px;
+  /* letter-spacing: 3px; */
 }
 .lab {
   font-size: 24px;
