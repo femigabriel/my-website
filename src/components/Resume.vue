@@ -9,10 +9,10 @@
         <p class="subheading">Frontend Developer</p>
         <div class="summary">
           <p>
-            I’m a frontend software developer, passionate about solving problems
-            with code and transforming ideas from pixels to scalable products. I
-            create usable applications with user experience as a top priority
-            using various web tools, languages and technology.
+            Passionate junior front-end developer with a desire to learn and
+            grow in a collaborative team environment. Skilled in HTML, CSS, and
+            JavaScript. Excels at creating pixel-perfect designs and working
+            with cross-browser compatibility issues.
           </p>
         </div>
         <div class="divider">

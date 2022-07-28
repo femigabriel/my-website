@@ -86,8 +86,8 @@ export default {
         },
         {
           date: "July 22, 2022",
-          status: "Paris-France",
-          framework: "JAVASCRIPT",
+          status: "Online",
+          framework: "HTML & CSS",
           title: "Adeori Resturant",
           description: "Enjoy a nice meal at Adeori Resturant!",
           url: "https://nostalgic-lovelace-acc728.netlify.app",

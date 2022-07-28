@@ -6,11 +6,9 @@
     </div>
     <div class="about">
       <p>
-        I build open-source front-end libraries at <span>Algolia</span> and host
-        two tech podcasts: <span>Developer Experience</span> and
-        <span>Entre Devs</span>. On my spare time, I share what I learn on my
-        <span>blog</span> and speak at <span>tech conferences</span> around the
-        world.
+        i'm a passionate junior front-end developer with a desire to learn and grow in
+        a collaborative team environment. I'm Skilled in HTML, CSS, and JavaScript.
+       
       </p>
     </div>
     <div class="skills">
@@ -22,6 +20,7 @@
           v-for="li in lists"
           :key="li"
         >
+          <div></div>
           <span>{{ li.numb }}</span>
           <div class="flex" v-bind:class="{ active: li.id === activeId }">
             <div class="line"></div>
@@ -35,24 +34,20 @@
       <div class="socials flex">
         <i class="lab la-github"></i>
         <a href="https://github.com/femigabriel">Github</a>
-        <p></p>
       </div>
       <div class="socials flex">
         <i class="lab la-facebook"></i>
         <a href="facebook.com/femigabriel89">Facebook</a>
-        <p></p>
       </div>
       <div class="socials flex">
         <i class="lab la-twitter"></i>
         <a href="https://twitter.com/FemiGab2018">Twitter</a>
-        <p></p>
       </div>
       <div class="socials flex">
         <i class="lab la-linkedin"></i>
         <a href="https://www.linkedin.com/in/ogungbade-oluwafemi-25b28619a/"
           >Linkedin</a
         >
-        <p></p>
       </div>
     </div>
   </div>
@@ -75,9 +70,6 @@ export default {
     setActivePage(value) {
       this.$emit("setActivePage", value);
     },
-    // selectedList(id) {
-    //   this.activeId = id;
-    // },
   },
 };
 </script>
@@ -155,17 +147,12 @@ h2 {
 .active {
   color: rgb(255, 255, 255);
 }
-/* .active .line{
-  background: rgb(255, 255, 255);
-}
-.active .line  {
-    background: red;
-} */
-.list-1:hover {
+
+/* .list-1:hover {
   color: rgb(148, 148, 149);
   cursor: pointer;
   transition: all 0.2s ease-in-out;
-}
+} */
 .list {
   color: rgb(148, 148, 149);
   cursor: pointer;
@@ -184,17 +171,9 @@ h2 {
 .list .line:hover {
   width: 5em;
   transition: all 0.2s ease-in-out;
-   background: rgb(255, 255, 255);
+  background: rgb(255, 255, 255);
 }
-.list .line .active {
-  width: 5em;
-  transition: all 0.2s ease-in-out;
-}
-.list .line:active {
-  width: 6em;
-  transition: all 0.2s ease-in-out;
-  color: rgb(255, 255, 255);
-}
+
 .skills {
   padding-top: 10px;
   margin: -10px 0px;
@@ -217,7 +196,7 @@ li {
 }
 .socials a {
   color: rgb(255, 255, 255);
-  font-size: 1em;
+  font-size: 14px;
   margin: 15px 0px;
   text-decoration: none;
   /* letter-spacing: 3px; */
@@ -240,7 +219,7 @@ img {
     padding: 5px 8px;
   }
   .socials p {
-    font-size: 8px;
+    font-size: 14px;
   }
 
   .profile-pics {

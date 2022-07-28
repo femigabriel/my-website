@@ -91,7 +91,7 @@ export default {
         },
         {
           date: "July 22, 2022",
-          status: "Paris-France",
+          status: "Online",
           framework: "JAVASCRIPT",
           title: "Todo List",
           description: "Plan your day ahead today!",
@@ -101,7 +101,7 @@ export default {
         },
         {
           date: "July 22, 2022",
-          status: "Paris-France",
+          status: "Online",
           framework: "JAVASCRIPT",
           title: "Todo List",
           description: "Plan your day ahead today!",
@@ -123,12 +123,9 @@ export default {
   margin: -15px -15px;
 }
 .project-box {
-  /* width: 380px;
-  height: 50vh; */
   width: 320px;
   background: rgb(32, 32, 34);
   padding-left: 20px;
-  /* padding-right: 40px; */
   padding-top: 40px;
   padding-bottom: 40px;
   padding-left: 40px;
