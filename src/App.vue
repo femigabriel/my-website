@@ -21,9 +21,9 @@
         <div v-show="current == 1">
           <Resume class="resume" />
         </div>
+        <SocialFooter class="socials-footer" />
       </div>
     </div>
-    <SocialFooter class="socials-footer" />
   </div>
 </template>
 
@@ -123,7 +123,7 @@ span {
   margin: 10px 15px;
 }
 .socials-footer {
-  display: none;
+  display: block;
 }
 @media (max-width: 820px) {
   .app {

@@ -29,6 +29,7 @@ export default {};
 </script>
 
 <style scoped>
+
 ul {
   list-style-type: none;
   padding: 30px 0px;
@@ -38,6 +39,24 @@ li {
   margin: 45px 10px;
   letter-spacing: 5px;
 }
+.profile-pics {
+  margin: 10px 10px;
+  color: rgb(148, 148, 149);
+}
+.socials {
+  padding: 5px 5px;
+}
+.socials a {
+  color: rgb(255, 255, 255);
+  font-size: 14px;
+  margin: 0px 5px;
+  text-decoration: none;
+}
+ img {
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+  }
 @media (max-width: 480px) {
   .lab {
     font-size: 16px;
