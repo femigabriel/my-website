@@ -59,14 +59,13 @@ export default {
 
 <style>
 @import url("https://rsms.me/inter/inter.css");
-#app {
-  margin-top: 60px;
-  width: 100%;
-}
 
 *,
 :after,
 :before {
+  box-sizing: border-box;
+  /* margin: 0;
+  padding: 0; */
   box-sizing: border-box;
 }
 body {
@@ -84,23 +83,24 @@ body {
   padding-left: 80px;
   padding-right: 80px;
   position: fixed;
-  /* overflow-y: auto; */
-  overflow-y: auto;
-  max-height: 100vh;
-  /* height: auto;
-  max-height: initial; */
+  height: auto;
+  overflow: initial;
+  top: 0;
+  bottom: 0;
+  position: fixed;
+  overflow: auto;
+  overflow-x: hidden;
 }
 .current {
   display: block;
+  overflow: auto;
 }
 .profile {
   padding-right: 80px;
 }
 .project-work {
-  /* height: auto;
-  max-height: initial; */
   overflow-y: auto;
-  max-height: 100vh;
+  max-height: initial;
 }
 
 .projects {
@@ -131,7 +131,7 @@ span {
   margin: 10px 15px;
 }
 .socials-footer {
-  display: none;
+  display: block;
 }
 @media (max-width: 820px) {
   .app {
@@ -141,9 +141,8 @@ span {
     padding-right: 40px;
     overflow-x: hidden;
     display: block;
+    position: relative;
     /* max-height: 100vh; */
-    height: auto;
-    max-height: initial;
   }
   .projects {
     display: flex;
@@ -170,7 +169,7 @@ span {
     display: block;
     /* max-height: 100vh; */
     height: auto;
-    max-height: initial;
+    overflow: initial;
   }
   .projects {
     display: block;
@@ -192,16 +191,11 @@ span {
     width: 100%;
   }
   .app {
+    display: flex;
     margin-left: auto;
     margin-right: auto;
-    padding-left: 15px;
-    padding-right: 15px;
-    overflow-x: hidden;
-    display: block;
-    /* overflow-y: auto; */
-    /* max-height: 100vh; */
-    height: auto;
-    max-height: initial;
+    padding-left: 80px;
+    padding-right: 80px;
   }
   .projects {
     display: block;
@@ -211,7 +205,8 @@ span {
   }
   .project-work {
     overflow-y: auto;
-    max-height: 100vh;
+    max-height: inherit;
+    height: auto;
   }
   .socials-footer {
     display: block;
@@ -235,7 +230,7 @@ span {
     display: block;
     /* max-height: 100vh; */
     height: auto;
-    max-height: initial;
+    overflow: initial;
   }
   .projects {
     display: block;
@@ -262,12 +257,12 @@ span {
     margin-right: auto;
     padding-left: 20px;
     padding-right: 10px;
-    overflow-x: hidden;
+    /* overflow-x: hidden; */
     display: block;
     overflow-y: auto;
     /* max-height: 100vh; */
     height: auto;
-    max-height: initial;
+    overflow: initial;
   }
   .projects {
     display: block;
