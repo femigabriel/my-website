@@ -109,6 +109,9 @@ body {
   display: flex;
   /* width: 600px; */
 }
+.resume {
+  /* position: fixed; */
+}
 .profile {
 }
 .flex {
@@ -204,6 +207,7 @@ span {
   }
   .socials-footer {
     display: block;
+    position: fixed;
   }
 }
 @media (max-width: 320px) {

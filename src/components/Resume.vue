@@ -365,20 +365,20 @@ section {
 @media (max-width: 720px) {
   .pages_container {
     padding: 10px 10px;
-    width: 700px;
+    width: 100%;
   }
 }
 @media (max-width: 480px) {
   .pages_container {
     padding: 10px 10px;
-    width: 450px;
+    width: 100%;
   }
 }
 
 @media (max-width: 320px) {
   .pages_container {
     padding: 10px 5px;
-    width: 250px;
+    width: 100%;
   }
   /* .top_row h2 {
     font-size: 14px;

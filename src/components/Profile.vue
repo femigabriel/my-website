@@ -199,10 +199,10 @@ img {
     width: 18em;
   }
 
- .skills {
-  padding-bottom: 10px;
-  margin: -70px 0px;
-}
+  .skills {
+    padding-bottom: 10px;
+    margin: -70px 0px;
+  }
   .about p {
     line-height: 1.5;
     width: 28em;
@@ -251,26 +251,71 @@ img {
     line-height: 1;
   }
   .profile-name h1 {
-    font-size: 32px;
+    font-size: 28px;
     width: 12em;
-    margin-bottom: 10px;
+    /* margin-bottom: 10px; */
   }
   .profile-name h2 {
-    font-size: 1em;
+    font-size: 0.9em;
     margin-bottom: 32px;
-    width: 18em;
-  }
-
-  .skills {
-    display: block;
-    /* font-size: 14px; */
   }
   .about p {
     line-height: 1.5;
-    width: 20em;
-    font-size: 12px;
-    padding-bottom: 20px;
+    width: 26em;
+    font-size: 9px;
+    margin: -20px 0px;
+    /* padding-bottom: 20px; */
   }
+  .skills {
+    display: block;
+    font-size: 10px;
+  }
+  ul {
+    list-style-type: none;
+    padding: 30px 0px;
+  }
+  li {
+    font-size: 10px;
+    margin: 25px 10px;
+    letter-spacing: 5px;
+  }
+  .active {
+    color: rgb(255, 255, 255);
+  }
+  .lineActive {
+    background: rgb(255, 255, 255);
+    height: 2px;
+    margin: 5px 10px;
+  }
+
+  .list {
+    color: rgb(148, 148, 149);
+    cursor: pointer;
+    font-size: 10px;
+  }
+  .list:hover {
+    color: rgb(255, 255, 255);
+    transition: all 0.2s ease-in-out;
+  }
+
+  .list .line {
+    cursor: pointer;
+    background: rgb(148, 148, 149);
+    width: 3em;
+    cursor: pointer;
+    margin: 0px 15px;
+  }
+  .list .line:hover {
+    width: 5em;
+    transition: all 0.2s ease-in-out;
+    background: rgb(255, 255, 255);
+  }
+  .skills {
+    padding-top: 20px;
+     padding-bottom: 20px;
+    /* margin: -10px 0px; */
+  }
+
   .profile-pics {
   }
 }
