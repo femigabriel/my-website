@@ -23,6 +23,7 @@
         </div>
       </div>
     </div>
+    <SocialFooter class="socials-footer" />
   </div>
 </template>
 
@@ -32,6 +33,7 @@ import Projects from "./components/Projects.vue";
 import ProjectFlex from "./components/ProjectFlex.vue";
 import ProjectGrid from "./components/ProjectGrid.vue";
 import Resume from "./components/Resume.vue";
+import SocialFooter from "./components/SocialFooter.vue";
 export default {
   name: "App",
   components: {
@@ -40,6 +42,7 @@ export default {
     ProjectFlex,
     ProjectGrid,
     Resume,
+    SocialFooter,
   },
   data() {
     return {
@@ -119,6 +122,9 @@ span {
   display: flex;
   margin: 10px 15px;
 }
+.socials-footer {
+  display: none;
+}
 @media (max-width: 820px) {
   .app {
     margin-left: auto;
@@ -128,6 +134,7 @@ span {
     overflow-x: hidden;
     display: block;
     max-height: 100vh;
+    position: relative;
   }
   .projects {
     display: flex;
@@ -141,6 +148,10 @@ span {
   body {
     overflow-x: hidden;
   }
+  #app {
+    margin-top: 40px;
+    width: 100%;
+  }
   .app {
     margin-left: auto;
     margin-right: auto;
@@ -149,6 +160,7 @@ span {
     overflow-x: hidden;
     display: block;
     max-height: 100vh;
+    position: relative;
   }
   .projects {
     display: block;
@@ -165,6 +177,10 @@ span {
   body {
     overflow-x: hidden;
   }
+  #app {
+    margin-top: 20px;
+    width: 100%;
+  }
   .app {
     margin-left: auto;
     margin-right: auto;
@@ -174,6 +190,7 @@ span {
     display: block;
     /* overflow-y: auto; */
     max-height: 100vh;
+    position: relative;
   }
   .projects {
     display: block;
@@ -185,10 +202,17 @@ span {
     overflow-y: auto;
     max-height: 100vh;
   }
+  .socials-footer {
+    display: block;
+  }
 }
 @media (max-width: 320px) {
   body {
     overflow-x: hidden;
+  }
+  #app {
+    margin-top: 20px;
+    width: 100%;
   }
   .app {
     margin-left: auto;
@@ -198,6 +222,8 @@ span {
     overflow-x: hidden;
     display: block;
     max-height: 100vh;
+    position: none;
+    position: relative;
   }
   .projects {
     display: block;
@@ -209,24 +235,18 @@ span {
   .project-flex {
     display: block;
   }
-}
-
-/* @media (max-width: 820px) {
-  .app {
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: 60px;
-    padding-right: 40px;
-    overflow-x: hidden;
+  .socials-footer {
     display: block;
-    overflow-y: auto;
-    max-height: 100vh;
   }
-} */
+}
 
 @media (max-width: 280px) {
   body {
     overflow-x: hidden;
+  }
+  #app {
+    margin-top: 20px;
+    width: 100%;
   }
   .app {
     margin-left: auto;
@@ -236,7 +256,8 @@ span {
     overflow-x: hidden;
     display: block;
     overflow-y: auto;
-    max-height: 100vh;
+    /* max-height: 100vh; */
+    position: relative;
   }
   .projects {
     display: block;
@@ -250,6 +271,9 @@ span {
     max-height: 100vh;
   }
   .project-flex {
+    display: block;
+  }
+  .socials-footer {
     display: block;
   }
 }

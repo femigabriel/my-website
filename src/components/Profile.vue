@@ -86,11 +86,7 @@ export default {
 .profile-name {
   line-height: 1;
 }
-@media (max-width: 680px) {
-  .profile-name h1 {
-    font-size: 38px;
-  }
-}
+
 .profile-name h1 {
   font-size: 68px;
   margin-bottom: 10px;
@@ -187,6 +183,11 @@ img {
   height: 55px;
   border-radius: 50%;
 }
+@media (max-width: 680px) {
+  .profile-name h1 {
+    font-size: 38px;
+  }
+}
 @media (max-width: 480px) {
   .profile-name h1 {
     font-size: 45px;
@@ -198,9 +199,10 @@ img {
     width: 18em;
   }
 
-  .skills {
-    display: block;
-  }
+ .skills {
+  padding-bottom: 10px;
+  margin: -70px 0px;
+}
   .about p {
     line-height: 1.5;
     width: 28em;
@@ -273,8 +275,6 @@ img {
   }
 }
 
-
-
 @media (max-width: 480px) {
   .lab {
     font-size: 16px;
@@ -290,6 +290,7 @@ img {
 
   .profile-pics {
     padding-bottom: 20px;
+    display: none;
   }
   img {
     width: 45px;
@@ -312,6 +313,7 @@ img {
 
   .profile-pics {
     padding-bottom: 20px;
+    display: none;
   }
   img {
     width: 35px;

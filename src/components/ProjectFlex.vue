@@ -185,7 +185,7 @@ export default {
 
   .project-box {
     width: 330px;
-    padding-top: 40px;
+    padding-top: 20px;
     padding-bottom: 40px;
   }
   .rating a {
