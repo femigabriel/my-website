@@ -131,7 +131,7 @@ span {
   margin: 10px 15px;
 }
 .socials-footer {
-  display: block;
+  display: none;
 }
 @media (max-width: 820px) {
   .app {
