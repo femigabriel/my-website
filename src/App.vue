@@ -81,6 +81,8 @@ body {
   padding-left: 80px;
   padding-right: 80px;
   position: fixed;
+  overflow-y: auto;
+  max-height: 100vh;
 }
 .current {
   display: block;
@@ -104,7 +106,20 @@ body {
   display: flex;
   width: 600px;
 }
-@media (min-width: 820px) {
+.profile {
+}
+.flex {
+  display: flex;
+}
+span {
+  color: rgb(148, 148, 149);
+}
+
+.grid {
+  display: flex;
+  margin: 10px 15px;
+}
+@media (max-width: 820px) {
   .app {
     margin-left: auto;
     margin-right: auto;
@@ -237,18 +252,5 @@ body {
   .project-flex {
     display: block;
   }
-}
-.profile {
-}
-.flex {
-  display: flex;
-}
-span {
-  color: rgb(148, 148, 149);
-}
-
-.grid {
-  display: flex;
-  margin: 10px 15px;
 }
 </style>

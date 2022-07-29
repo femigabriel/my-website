@@ -227,20 +227,7 @@ p {
   justify-content: space-between;
   padding: 2% 15% 10% 5%;
 }
-@media (max-width: 320px) {
-  .pages_container {
-    padding: 10px 10px;
-    width: 350px;
-  }
-  .top_row h2 {
-  font-size: 14px;
-  color: red;
-}
-  summary p {
-    font-size: 9px;
-    line-height: 1.9;
-  }
-}
+
 .resume_container {
   background-color: #1b1b1d;
   display: flex;
@@ -367,6 +354,19 @@ section {
 .description p.nospan {
   display: block;
   font-size: 14px;
+}
+@media (max-width: 320px) {
+  .pages_container {
+    padding: 10px 10px;
+    width: 350px;
+  }
+  .top_row h2 {
+    font-size: 14px;
+  }
+  summary p {
+    font-size: 9px;
+    line-height: 1.9;
+  }
 }
 @media (max-width: 320px) {
 }

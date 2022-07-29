@@ -114,8 +114,7 @@ export default {
 .rating p {
   margin: 0px 15px;
 }
-.icon {
-}
+
 .lar {
   font-size: 20px;
   color: rgb(148, 148, 149);
