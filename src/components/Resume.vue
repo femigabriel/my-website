@@ -355,12 +355,25 @@ section {
   display: block;
   font-size: 14px;
 }
-@media (max-width: 320px) {
+@media (max-width: 720px) {
   .pages_container {
     padding: 10px 10px;
+    width: 700px;
+  }
+}
+@media (max-width: 480px) {
+  .pages_container {
+    padding: 10px 10px;
+    width: 450px;
+  }
+}
+
+@media (max-width: 320px) {
+  .pages_container {
+    padding: 10px 5px;
     width: 250px;
   }
-  .top_row h2 {
+  /* .top_row h2 {
     font-size: 14px;
   }
   summary p {
@@ -371,19 +384,6 @@ section {
   margin-right: 5px;
   color: #777778;
   font-size: 9px;
-}
-}
-@media (max-width: 480px) {
-  .pages_container {
-    padding: 10px 10px;
-    width: 450px;
-  }
-}
-@media (max-width: 720px){
-
-  .pages_container {
-    padding: 10px 10px;
-    width: 700px;
-  }
+} */
 }
 </style>
