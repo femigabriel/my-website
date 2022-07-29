@@ -92,7 +92,6 @@ export default {
   }
 }
 .profile-name h1 {
-  /* font-size: 6.8em; */
   font-size: 68px;
   margin-bottom: 10px;
 }
@@ -113,12 +112,6 @@ h2 {
     font-size: 45px;
     margin-bottom: 10px;
   }
-}
-@media (max-width: 480px) {
-  .profile-name h1 {
-    font-size: 45px;
-    margin-bottom: 10px;
-  }
   .profile-name h2 {
     font-size: 1.4em;
     margin-bottom: 32px;
@@ -126,7 +119,7 @@ h2 {
   }
 
   .skills {
-    display: none;
+    display: block;
   }
   .about p {
     line-height: 1.5;
@@ -137,7 +130,7 @@ h2 {
   .profile-pics {
   }
 }
-@media only screen and (max-width: 320px) {
+@media (max-width: 320px) {
   .profile {
     display: flex;
     flex-direction: column;
@@ -155,9 +148,8 @@ h2 {
     margin-bottom: 32px;
     width: 18em;
   }
-
   .skills {
-    display: none;
+    display: block;
   }
   .about p {
     line-height: 1.5;
@@ -168,8 +160,41 @@ h2 {
   .profile-pics {
   }
 }
-@media only screen and (max-width: 320px) {
+@media (max-width: 280px) {
+  .profile {
+    display: flex;
+    flex-direction: column;
+  }
+  .profile-name {
+    line-height: 1;
+  }
+  .profile-name h1 {
+    font-size: 32px;
+    color: red;
+    width: 12em;
+    margin-bottom: 10px;
+  }
+  .profile-name h2 {
+    font-size: 1em;
+    margin-bottom: 32px;
+    width: 18em;
+  }
+
+  .skills {
+    display: block;
+    /* font-size: 14px; */
+  }
+  .about p {
+    line-height: 1.5;
+    width: 20em;
+    font-size: 12px;
+    padding-bottom: 20px;
+  }
+  .profile-pics {
+  }
 }
+/* @media (max-width: 320px) {
+} */
 .about span {
   color: rgb(255, 255, 255);
   text-decoration: underline;
@@ -247,28 +272,7 @@ img {
   height: 55px;
   border-radius: 50%;
 }
-@media (max-width: 320px) {
-  .lab {
-    font-size: 12px;
-    margin-bottom: 5px;
-  }
-  .socials {
-    padding: 2px 0px;
-  }
-  .socials a {
-    font-size: 7px;
-    margin-top: 12px;
-  }
 
-  .profile-pics {
-    padding-bottom: 20px;
-  }
-  img {
-    width: 35px;
-    height: 35px;
-    border-radius: 50%;
-  }
-}
 @media (max-width: 480px) {
   .lab {
     font-size: 16px;
@@ -288,6 +292,28 @@ img {
   img {
     width: 45px;
     height: 45px;
+    border-radius: 50%;
+  }
+}
+@media (max-width: 320px) {
+  .lab {
+    font-size: 12px;
+    margin-bottom: 5px;
+  }
+  .socials {
+    padding: 2px 0px;
+  }
+  .socials a {
+    font-size: 7px;
+    margin-top: 12px;
+  }
+
+  .profile-pics {
+    padding-bottom: 20px;
+  }
+  img {
+    width: 35px;
+    height: 35px;
     border-radius: 50%;
   }
 }

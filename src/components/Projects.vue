@@ -89,22 +89,7 @@ export default {
 .project-box h2 {
   font-size: 28px;
 }
-@media (max-width: 920px) {
-  .project-box {
-    /* width: 150px; */
-  }
-  .project-box p {
-    line-height: 1.5;
-    font-size: 12px;
-  }
-  .description p {
-    line-height: 1.5;
-    font-size: 12px;
-  }
-  .rating a {
-    font-size: 12px;
-  }
-}
+
 .project-box p {
   text-transform: capitalize;
   font-size: 14px;
@@ -135,18 +120,29 @@ export default {
   font-size: 20px;
   color: rgb(148, 148, 149);
 }
-@media only screen and (max-width: 320px) {
+@media (max-width: 920px) {
+  .project-box {
+    /* width: 150px; */
+  }
+  .project-box p {
+    line-height: 1.5;
+    font-size: 12px;
+  }
+  .description p {
+    line-height: 1.5;
+    font-size: 12px;
+  }
+  .rating a {
+    font-size: 12px;
+  }
+}
+@media (max-width: 480px) {
   .projects {
     line-height: 1;
   }
-  .content {
-    /* margin: 20px 30px; */
-  }
-  /* .project-box {
-    width: 10px;
-  } */
+
   .project-box {
-    width: 220px;
+    width: 330px;
   }
   .rating a {
     font-size: 12px;
@@ -166,13 +162,13 @@ export default {
     font-size: 16px;
   }
 }
-@media only screen and (max-width: 480px) {
+@media (max-width: 320px) {
   .projects {
     line-height: 1;
   }
- 
+
   .project-box {
-    width: 330px;
+    width: 220px;
   }
   .rating a {
     font-size: 12px;

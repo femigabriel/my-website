@@ -138,10 +138,7 @@ export default {
   color: rgb(148, 148, 149);
   font-size: 14px;
 }
-/* .status h3 {
-  letter-spacing: 3px;
-  font-size: 1.7em;
-} */
+
 .framework p {
   letter-spacing: 5px;
   font-size: 14px;
@@ -169,13 +166,14 @@ export default {
   color: rgb(148, 148, 149);
   font-size: 24px;
 }
-@media only screen and (max-width: 320px) {
+@media (max-width: 480px) {
   .projects {
     line-height: 1;
   }
 
   .project-box {
-    width: 220px;
+    width: 330px;
+    height: 28vh;
   }
   .rating a {
     font-size: 12px;
@@ -195,14 +193,13 @@ export default {
     font-size: 16px;
   }
 }
-@media only screen and (max-width: 480px) {
+@media (max-width: 320px) {
   .projects {
     line-height: 1;
   }
 
   .project-box {
-    width: 330px;
-    height: 28vh;
+    width: 220px;
   }
   .rating a {
     font-size: 12px;

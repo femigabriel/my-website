@@ -104,47 +104,21 @@ body {
   display: flex;
   width: 600px;
 }
-
-@media (max-width: 320px) {
-  body {
-    overflow-x: hidden;
-  }
+@media (min-width: 820px) {
   .app {
     margin-left: auto;
     margin-right: auto;
-    padding-left: 15px;
-    padding-right: 15px;
+    padding-left: 60px;
+    padding-right: 40px;
     overflow-x: hidden;
     display: block;
-    overflow-y: auto;
     max-height: 100vh;
   }
   .projects {
-    display: block;
+    display: flex;
   }
   .project-flex {
-    display: block;
-  }
-}
-@media (max-width: 380px) {
-  body {
-    overflow-x: hidden;
-  }
-  .app {
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: 15px;
-    padding-right: 15px;
-    overflow-x: hidden;
-    display: block;
-    overflow-y: auto;
-    max-height: 100vh;
-  }
-  .projects {
-    display: block;
-  }
-  .project-flex {
-    display: block;
+    display: flex;
   }
 }
 
@@ -159,7 +133,6 @@ body {
     padding-right: 25px;
     overflow-x: hidden;
     display: block;
-    overflow-y: auto;
     max-height: 100vh;
   }
   .projects {
@@ -168,23 +141,101 @@ body {
   .project-flex {
     display: block;
   }
+  .project-work {
+    overflow-y: auto;
+    max-height: 100vh;
+  }
 }
-@media (max-width: 820px) {
+@media (max-width: 380px) {
+  body {
+    overflow-x: hidden;
+  }
   .app {
     margin-left: auto;
     margin-right: auto;
-    padding-left: 40px;
+    padding-left: 15px;
+    padding-right: 15px;
+    overflow-x: hidden;
+    display: block;
+    /* overflow-y: auto; */
+    max-height: 100vh;
+  }
+  .projects {
+    display: block;
+  }
+  .project-flex {
+    display: block;
+  }
+  .project-work {
+    overflow-y: auto;
+    max-height: 100vh;
+  }
+}
+@media (max-width: 320px) {
+  body {
+    overflow-x: hidden;
+  }
+  .app {
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    overflow-x: hidden;
+    display: block;
+    max-height: 100vh;
+  }
+  .projects {
+    display: block;
+  }
+  .project-work {
+    overflow-y: auto;
+    max-height: 100vh;
+  }
+  .project-flex {
+    display: block;
+  }
+}
+
+/* @media (max-width: 820px) {
+  .app {
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 60px;
     padding-right: 40px;
     overflow-x: hidden;
     display: block;
     overflow-y: auto;
     max-height: 100vh;
   }
+} */
+
+@media (max-width: 280px) {
+  body {
+    overflow-x: hidden;
+  }
+  .app {
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 10px;
+    padding-right: 10px;
+    overflow-x: hidden;
+    display: block;
+    overflow-y: auto;
+    max-height: 100vh;
+  }
   .projects {
-    display: flex;
+    display: block;
+  }
+  /* .project-work {
+    overflow: hidden;
+    max-height: 100vh;
+  } */
+  .project-work {
+    overflow-y: auto;
+    max-height: 100vh;
   }
   .project-flex {
-    display: flex;
+    display: block;
   }
 }
 .profile {

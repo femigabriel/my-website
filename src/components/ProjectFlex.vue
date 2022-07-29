@@ -178,18 +178,14 @@ export default {
 .main p {
   font-size: 18px;
 }
-@media only screen and (max-width: 320px) {
+@media (max-width: 480px) {
   .projects {
     line-height: 1;
   }
-  .content {
-    /* margin: 20px 30px; */
-  }
-  /* .project-box {
-    width: 10px;
-  } */
+
   .project-box {
-    width: 220px;
+    width: 330px;
+    height: 28vh;
   }
   .rating a {
     font-size: 12px;
@@ -209,20 +205,17 @@ export default {
     font-size: 16px;
   }
 }
-@media (max-width: 480px) {
+@media (max-width: 320px) {
   .projects {
     line-height: 1;
   }
-
   .project-box {
-       width: 330px;
-       height: 28vh;
+    width: 220px;
+    height: 35vh;
   }
-  .rating a {
-    font-size: 12px;
-  }
+ 
   .project-box h2 {
-    font-size: 16px;
+    font-size: 12px;
   }
   .project-box h3 {
     font-size: 12px;
@@ -233,7 +226,15 @@ export default {
     width: 10em;
   }
   .lar {
-    font-size: 16px;
+    font-size: 12px;
+  
+  }
+   .rating{
+ margin: -15px 0px;
+   }
+   .rating a {
+    font-size: 12px;
+   
   }
 }
 </style>
