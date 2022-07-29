@@ -29,6 +29,15 @@ export default {};
 </script>
 
 <style scoped>
+ul {
+  list-style-type: none;
+  padding: 30px 0px;
+}
+li {
+  font-size: 10px;
+  margin: 45px 10px;
+  letter-spacing: 5px;
+}
 @media (max-width: 480px) {
   .lab {
     font-size: 16px;

@@ -107,7 +107,7 @@ body {
 
 .project-flex {
   display: flex;
-  width: 600px;
+  /* width: 600px; */
 }
 .profile {
 }
@@ -133,7 +133,7 @@ span {
     padding-right: 40px;
     overflow-x: hidden;
     display: block;
-    max-height: 100vh;
+    /* max-height: 100vh; */
     position: relative;
   }
   .projects {
@@ -159,7 +159,7 @@ span {
     padding-right: 25px;
     overflow-x: hidden;
     display: block;
-    max-height: 100vh;
+    /* max-height: 100vh; */
     position: relative;
   }
   .projects {
@@ -189,7 +189,7 @@ span {
     overflow-x: hidden;
     display: block;
     /* overflow-y: auto; */
-    max-height: 100vh;
+    /* max-height: 100vh; */
     position: relative;
   }
   .projects {
@@ -212,7 +212,7 @@ span {
   }
   #app {
     margin-top: 20px;
-    width: 100%;
+    /* width: 100%; */
   }
   .app {
     margin-left: auto;
@@ -221,7 +221,7 @@ span {
     padding-right: 15px;
     overflow-x: hidden;
     display: block;
-    max-height: 100vh;
+    /* max-height: 100vh; */
     position: none;
     position: relative;
   }
@@ -229,8 +229,8 @@ span {
     display: block;
   }
   .project-work {
-    overflow-y: auto;
-    max-height: 100vh;
+    /* overflow-y: auto; 
+     max-height: 100vh; */
   }
   .project-flex {
     display: block;
@@ -267,8 +267,8 @@ span {
     max-height: 100vh;
   } */
   .project-work {
-    overflow-y: auto;
-    max-height: 100vh;
+    /* overflow-y: auto;
+    max-height: 100vh; */
   }
   .project-flex {
     display: block;
