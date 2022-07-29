@@ -185,7 +185,8 @@ export default {
 
   .project-box {
     width: 330px;
-    height: 28vh;
+    padding-top: 40px;
+    padding-bottom: 40px;
   }
   .rating a {
     font-size: 12px;
@@ -213,7 +214,7 @@ export default {
     width: 220px;
     height: 35vh;
   }
- 
+
   .project-box h2 {
     font-size: 12px;
   }
@@ -227,14 +228,12 @@ export default {
   }
   .lar {
     font-size: 12px;
-  
   }
-   .rating{
- margin: -15px 0px;
-   }
-   .rating a {
+  .rating {
+    margin: -15px 0px;
+  }
+  .rating a {
     font-size: 12px;
-   
   }
 }
 </style>

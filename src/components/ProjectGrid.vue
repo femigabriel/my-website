@@ -173,7 +173,8 @@ export default {
 
   .project-box {
     width: 330px;
-    height: 28vh;
+    padding-top: 40px;
+    padding-bottom: 40px;
   }
   .rating a {
     font-size: 12px;
