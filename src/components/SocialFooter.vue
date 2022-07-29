@@ -39,11 +39,11 @@ li {
   letter-spacing: 5px;
 }
 .profile-pics {
-  margin: 10px 0px;
+  margin: 20px 0px;
   color: rgb(148, 148, 149);
 }
 .socials {
-  padding: 5px 5px;
+  padding: 15px 5px;
 }
 .socials a {
   color: rgb(255, 255, 255);
@@ -56,6 +56,7 @@ li {
   margin-bottom: 5px;
 }
 img {
+    
   width: 55px;
   height: 55px;
   border-radius: 50%;

@@ -84,8 +84,8 @@ body {
   padding-left: 80px;
   padding-right: 80px;
   position: fixed;
-  overflow-y: auto;
-  max-height: 100vh;
+  /* overflow-y: auto; */
+  /* max-height: 100vh; */
 }
 .current {
   display: block;
@@ -95,7 +95,7 @@ body {
 }
 .project-work {
   overflow-y: auto;
-  max-height: 100vh;
+  /* max-height: 100vh; */
 }
 
 .projects {
