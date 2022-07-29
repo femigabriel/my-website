@@ -226,7 +226,6 @@ span {
     overflow-x: hidden;
     display: block;
     /* max-height: 100vh; */
-    position: none;
     position: relative;
   }
   .projects {
@@ -255,7 +254,7 @@ span {
   .app {
     margin-left: auto;
     margin-right: auto;
-    padding-left: 10px;
+    padding-left: 20px;
     padding-right: 10px;
     overflow-x: hidden;
     display: block;

@@ -93,7 +93,7 @@ img {
   }
   .socials a {
     font-size: 7px;
-    margin-top: 12px;
+   margin: 2px 5px;
   }
 
   .profile-pics {
