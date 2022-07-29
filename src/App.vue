@@ -85,7 +85,10 @@ body {
   padding-right: 80px;
   position: fixed;
   /* overflow-y: auto; */
-  /* max-height: 100vh; */
+  overflow-y: auto;
+  max-height: 100vh;
+  /* height: auto;
+  max-height: initial; */
 }
 .current {
   display: block;
@@ -94,8 +97,10 @@ body {
   padding-right: 80px;
 }
 .project-work {
+  /* height: auto;
+  max-height: initial; */
   overflow-y: auto;
-  /* max-height: 100vh; */
+  max-height: 100vh;
 }
 
 .projects {
@@ -126,7 +131,7 @@ span {
   margin: 10px 15px;
 }
 .socials-footer {
-  display: block;
+  display: none;
 }
 @media (max-width: 820px) {
   .app {
@@ -137,7 +142,8 @@ span {
     overflow-x: hidden;
     display: block;
     /* max-height: 100vh; */
-    position: static;
+    height: auto;
+    max-height: initial;
   }
   .projects {
     display: flex;
@@ -163,7 +169,8 @@ span {
     overflow-x: hidden;
     display: block;
     /* max-height: 100vh; */
-    position: static;
+    height: auto;
+    max-height: initial;
   }
   .projects {
     display: block;
@@ -193,7 +200,8 @@ span {
     display: block;
     /* overflow-y: auto; */
     /* max-height: 100vh; */
-    position: static;
+    height: auto;
+    max-height: initial;
   }
   .projects {
     display: block;
@@ -226,15 +234,13 @@ span {
     overflow-x: hidden;
     display: block;
     /* max-height: 100vh; */
-    position: static;
+    height: auto;
+    max-height: initial;
   }
   .projects {
     display: block;
   }
-  .project-work {
-    /* overflow-y: auto; 
-     max-height: 100vh; */
-  }
+
   .project-flex {
     display: block;
   }
@@ -260,19 +266,13 @@ span {
     display: block;
     overflow-y: auto;
     /* max-height: 100vh; */
-    position: static;
+    height: auto;
+    max-height: initial;
   }
   .projects {
     display: block;
   }
-  /* .project-work {
-    overflow: hidden;
-    max-height: 100vh;
-  } */
-  .project-work {
-    /* overflow-y: auto;
-    max-height: 100vh; */
-  }
+
   .project-flex {
     display: block;
   }

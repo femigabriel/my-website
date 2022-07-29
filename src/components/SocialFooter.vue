@@ -53,10 +53,9 @@ li {
 }
 .lab {
   font-size: 16px;
-  margin-bottom: 5px;
+  margin: 2px 5px;
 }
 img {
-    
   width: 55px;
   height: 55px;
   border-radius: 50%;
@@ -93,7 +92,7 @@ img {
   }
   .socials a {
     font-size: 7px;
-   margin: 2px 5px;
+    margin: 2px 5px;
   }
 
   .profile-pics {
