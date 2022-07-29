@@ -355,6 +355,13 @@ section {
   display: block;
   font-size: 14px;
 }
+@media (max-width: 820px) {
+  .pages_container {
+    padding: 10px 10px;
+    width: 700px;
+    margin-left: -10px;
+  }
+}
 @media (max-width: 720px) {
   .pages_container {
     padding: 10px 10px;
