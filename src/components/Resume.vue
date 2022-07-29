@@ -358,7 +358,7 @@ section {
 @media (max-width: 320px) {
   .pages_container {
     padding: 10px 10px;
-    width: 350px;
+    width: 250px;
   }
   .top_row h2 {
     font-size: 14px;
@@ -367,7 +367,23 @@ section {
     font-size: 9px;
     line-height: 1.9;
   }
+  .description p span {
+  margin-right: 5px;
+  color: #777778;
+  font-size: 9px;
 }
-@media (max-width: 320px) {
+}
+@media (max-width: 480px) {
+  .pages_container {
+    padding: 10px 10px;
+    width: 450px;
+  }
+}
+@media (max-width: 720px){
+
+  .pages_container {
+    padding: 10px 10px;
+    width: 700px;
+  }
 }
 </style>
