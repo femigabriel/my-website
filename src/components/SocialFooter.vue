@@ -3,22 +3,24 @@
     <div class="profile-pics flex">
       <img src="../images/mypics4.png" alt="" />
       <div class="socials flex">
-        <i class="lab la-github"></i>
-        <a href="https://github.com/femigabriel">Github</a>
+        <a href="https://github.com/femigabriel">
+          <i class="lab la-github"></i
+        ></a>
       </div>
       <div class="socials flex">
-        <i class="lab la-facebook"></i>
-        <a href="facebook.com/femigabriel89">Facebook</a>
+        <a href="facebook.com/femigabriel89">
+          <i class="lab la-facebook"></i
+        ></a>
       </div>
       <div class="socials flex">
-        <i class="lab la-twitter"></i>
-        <a href="https://twitter.com/FemiGab2018">Twitter</a>
+        <a href="https://twitter.com/FemiGab2018">
+          <i class="lab la-twitter"></i
+        ></a>
       </div>
       <div class="socials flex">
-        <i class="lab la-linkedin"></i>
-        <a href="https://www.linkedin.com/in/ogungbade-oluwafemi-25b28619a/"
-          >Linkedin</a
-        >
+        <a href="https://www.linkedin.com/in/ogungbade-oluwafemi-25b28619a/">
+          <i class="lab la-linkedin"></i
+        ></a>
       </div>
     </div>
   </footer>
@@ -52,7 +54,7 @@ li {
   text-decoration: none;
 }
 .lab {
-  font-size: 16px;
+  font-size: 24px;
   margin: 2px 5px;
 }
 img {
@@ -82,7 +84,7 @@ img {
     border-radius: 50%;
   }
 }
-@media (max-width: 320px) {
+@media (max-width: 380px) {
   .lab {
     font-size: 12px;
     margin-bottom: 5px;
@@ -93,6 +95,7 @@ img {
   .socials a {
     font-size: 7px;
     margin: 2px 5px;
+    /* display: none; */
   }
 
   .profile-pics {
