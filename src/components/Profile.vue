@@ -313,7 +313,6 @@ img {
   .skills {
     padding-top: 20px;
      padding-bottom: 20px;
-    /* margin: -10px 0px; */
   }
 
   .profile-pics {
