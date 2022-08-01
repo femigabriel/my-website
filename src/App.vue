@@ -255,8 +255,8 @@ span {
   .app {
     margin-left: auto;
     margin-right: auto;
-    padding-left: 30px;
-    padding-right: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
     /* overflow-x: hidden; */
     display: block;
     overflow-y: auto;
