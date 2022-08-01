@@ -118,6 +118,8 @@ export default {
   flex-direction: column;
   padding-top: 40px;
   margin: -15px -15px;
+  width: 100%;
+  overflow-x: hidden;
 }
 .project-box {
   width: 320px;
@@ -181,6 +183,8 @@ export default {
 @media (max-width: 480px) {
   .projects {
     line-height: 1;
+    width: 100%;
+    overflow-x: hidden;
   }
 
   .project-box {
@@ -206,13 +210,17 @@ export default {
     font-size: 16px;
   }
 }
-@media (max-width: 320px) {
-  .projects {
+@media (max-width: 380px) {
+
+.projects {
     line-height: 1;
+    width: 100%;
+    overflow-x: hidden;
   }
   .project-box {
-    width: 220px;
-    height: 35vh;
+    width: 315px;
+     line-height: 3.3;
+    /* height: 35vh; */
   }
 
   .project-box h2 {
@@ -226,11 +234,17 @@ export default {
     font-size: 12px;
     width: 10em;
   }
+  .title h2 {
+    line-height: 1.3;
+    font-size: 18px;
+    width: 10em;
+    padding-top: 20px;
+  }
   .lar {
     font-size: 12px;
   }
   .rating {
-    margin: -15px 0px;
+    /* margin: 15px 0px; */
   }
   .rating a {
     font-size: 12px;

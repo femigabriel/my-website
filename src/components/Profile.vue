@@ -212,7 +212,7 @@ img {
   .profile-pics {
   }
 }
-@media (max-width: 320px) {
+@media (max-width: 380px) {
   .profile {
     display: flex;
     flex-direction: column;
@@ -222,11 +222,11 @@ img {
   }
   .profile-name h1 {
     font-size: 32px;
-    width: 12em;
+    /* width: 12em; */
     margin-bottom: 10px;
   }
   .profile-name h2 {
-    font-size: 1em;
+    font-size: 1.1em;
     margin-bottom: 32px;
     width: 18em;
   }
@@ -312,7 +312,7 @@ img {
   }
   .skills {
     padding-top: 20px;
-     padding-bottom: 20px;
+    padding-bottom: 20px;
   }
 
   .profile-pics {
@@ -322,10 +322,10 @@ img {
 @media (max-width: 480px) {
   .lab {
     font-size: 16px;
-    margin-bottom: 5px;
+    margin-bottom: px;
   }
   .socials {
-    padding: 5px 2px;
+    padding: 5px 5px;
   }
   .socials a {
     font-size: 12px;
@@ -342,13 +342,13 @@ img {
     border-radius: 50%;
   }
 }
-@media (max-width: 320px) {
+@media (max-width: 360px) {
   .lab {
     font-size: 12px;
     margin-bottom: 5px;
   }
   .socials {
-    padding: 2px 0px;
+    padding: px 0px;
   }
   .socials a {
     font-size: 7px;

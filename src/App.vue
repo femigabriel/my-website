@@ -64,8 +64,8 @@ export default {
 :after,
 :before {
   box-sizing: border-box;
-  /* margin: 0;
-  padding: 0; */
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
 }
 body {
@@ -153,21 +153,16 @@ span {
 }
 
 @media (max-width: 480px) {
-  body {
-    overflow-x: hidden;
-  }
+ 
   #app {
     margin-top: 40px;
     width: 100%;
   }
   .app {
-    margin-left: auto;
-    margin-right: auto;
     padding-left: 25px;
     padding-right: 25px;
     overflow-x: hidden;
     display: block;
-    /* max-height: 100vh; */
     height: auto;
     overflow: initial;
   }
@@ -183,19 +178,15 @@ span {
   }
 }
 @media (max-width: 380px) {
-  body {
-    overflow-x: hidden;
-  }
+  
   #app {
     margin-top: 20px;
     width: 100%;
   }
   .app {
-    display: flex;
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: 80px;
-    padding-right: 80px;
+    padding-left: 10px;
+    padding-right: 10px;
+  
   }
   .projects {
     display: block;
@@ -213,24 +204,21 @@ span {
     /* position: fixed; */
   }
 }
-@media (max-width: 320px) {
-  body {
-    overflow-x: hidden;
-  }
+@media (max-width: 360px) {
+  
   #app {
     margin-top: 20px;
-    /* width: 100%; */
+    width: 100%;
   }
   .app {
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: 15px;
-    padding-right: 15px;
+    padding-left: 30px;
+    padding-right: 25px;
     overflow-x: hidden;
     display: block;
-    /* max-height: 100vh; */
     height: auto;
     overflow: initial;
+    width: 100%;
+
   }
   .projects {
     display: block;
@@ -245,9 +233,37 @@ span {
 }
 
 @media (max-width: 280px) {
-  body {
-    overflow-x: hidden;
+  
+  #app {
+    margin-top: 20px;
+    width: 100%;
   }
+  .app {
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 10px;
+    padding-right: 10px;
+    /* overflow-x: hidden; */
+    display: block;
+    overflow-y: auto;
+    /* max-height: 100vh; */
+    height: auto;
+    overflow: initial;
+    width: 100%;
+  }
+  .projects {
+    display: block;
+  }
+
+  .project-flex {
+    display: block;
+  }
+  .socials-footer {
+    display: block;
+  }
+}
+@media (max-width: 30px) {
+  
   #app {
     margin-top: 20px;
     width: 100%;

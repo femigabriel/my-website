@@ -375,7 +375,7 @@ section {
   }
 }
 
-@media (max-width: 320px) {
+@media (max-width: 360px) {
   .pages_container {
     padding: 10px 5px;
     width: 100%;

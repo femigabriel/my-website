@@ -59,6 +59,8 @@ export default {
 <style scoped>
 .projects {
   line-height: 1;
+  width: 100%;
+  overflow-x: hidden;
 }
 .content {
   margin: 10px 10px;
@@ -122,6 +124,8 @@ export default {
 @media (max-width: 920px) {
   .project-box {
     /* width: 150px; */
+    width: 100%;
+    overflow-x: hidden;
   }
   .project-box p {
     line-height: 1.5;
@@ -138,6 +142,8 @@ export default {
 @media (max-width: 480px) {
   .projects {
     line-height: 1;
+    width: 100%;
+    overflow-x: hidden;
   }
 
   .project-box {
@@ -161,13 +167,15 @@ export default {
     font-size: 16px;
   }
 }
-@media (max-width: 320px) {
+@media (max-width: 360px) {
   .projects {
     line-height: 1;
+    width: 100%;
+    overflow-x: hidden;
   }
 
   .project-box {
-    width: 220px;
+    width: 315px;
   }
   .rating a {
     font-size: 12px;
