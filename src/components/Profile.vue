@@ -175,7 +175,7 @@ li {
 }
 .socials a {
   color: rgb(255, 255, 255);
-  font-size: 18px;
+  font-size: 14px;
   margin: 15px 0px;
   text-decoration: none;
 }
