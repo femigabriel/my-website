@@ -81,18 +81,18 @@ export default {
 }
 .framework p {
   letter-spacing: 5px;
-  font-size: 14px;
+  font-size: 12px;
   color: rgb(255, 255, 255);
 }
 .title h2 {
   line-height: 1.3;
-  font-size: 28px;
+  font-size: 24px;
   
   /* color: red; */
 }
 .title p {
   color: rgb(148, 148, 149);
-  font-size: 18px;
+  font-size: 14px;
 }
 /* .title  {
    margin: 40px 0px;
@@ -104,7 +104,7 @@ export default {
   margin: 5px 10px;
   text-decoration: none;
   color: rgb(148, 148, 149);
-  font-size: 18px;
+  font-size: 14px;
   padding-bottom: 20px;
 }
 .icon {
@@ -112,7 +112,7 @@ export default {
 .las {
   /* margin: 0px 10px; */
   color: rgb(148, 148, 149);
-  font-size: 24px;
+  font-size: 20px;
   margin: 8px 2px;
 }
 .main p {

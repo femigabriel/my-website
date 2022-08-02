@@ -92,7 +92,7 @@ export default {
 }
 
 .profile-name h1 {
-  font-size: 72px;
+  font-size: 65px;
   letter-spacing: 5px;
   margin-bottom: 10px;
 }
@@ -106,7 +106,7 @@ h2 {
   color: rgb(148, 148, 149);
   line-height: 1.9;
   width: 26em;
-  font-size: 18px;
+  font-size: 14px;
   padding-top: 40px;
 }
 
@@ -163,7 +163,7 @@ ul {
   padding: 30px 0px;
 }
 li {
-  font-size: 14px;
+  font-size: 12px;
   margin: 45px 10px;
   letter-spacing: 5px;
 }
