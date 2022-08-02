@@ -83,7 +83,7 @@ export default {
   display: flex;
   flex-direction: column;
   height: 100vh;
-  padding-right: 20px;
+  padding-right: 60px;
   padding-top: 20px;
 }
 .profile-name {
