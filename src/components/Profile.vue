@@ -2,7 +2,7 @@
   <div class="profile">
     <div class="profile-name">
       <h1>Gabriel Femi</h1>
-      <h2>Staff Software Engineer</h2>
+      <h2>Front-End Developer</h2>
     </div>
     <div class="about">
       <p>
@@ -82,26 +82,32 @@ export default {
 .profile {
   display: flex;
   flex-direction: column;
+
+  height: 100vh;
+  padding-right: 120px;
+  padding-top: 40px;
 }
 .profile-name {
   line-height: 1;
 }
 
 .profile-name h1 {
-  font-size: 68px;
+  font-size: 72px;
+  letter-spacing: 5px;
   margin-bottom: 10px;
 }
 
 h2 {
-  font-size: 24px;
+  font-size: 28px;
   margin-bottom: 32px;
 }
 
 .about p {
   color: rgb(148, 148, 149);
   line-height: 1.9;
-  width: 30em;
-  font-size: 14px;
+  width: 26em;
+  font-size: 18px;
+  padding-top: 40px;
 }
 
 /* @media (max-width: 320px) {
@@ -157,7 +163,7 @@ ul {
   padding: 30px 0px;
 }
 li {
-  font-size: 10px;
+  font-size: 14px;
   margin: 45px 10px;
   letter-spacing: 5px;
 }
@@ -166,11 +172,11 @@ li {
   color: rgb(148, 148, 149);
 }
 .socials {
-  padding: 5px 5px;
+  padding: 15px 5px;
 }
 .socials a {
   color: rgb(255, 255, 255);
-  font-size: 14px;
+  font-size: 18px;
   margin: 15px 0px;
   text-decoration: none;
 }
@@ -179,8 +185,8 @@ li {
   margin: 10px 5px;
 }
 img {
-  width: 55px;
-  height: 55px;
+  width: 75px;
+  height: 75px;
   border-radius: 50%;
 }
 @media (max-width: 680px) {

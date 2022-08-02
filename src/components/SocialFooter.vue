@@ -86,7 +86,7 @@ img {
 }
 @media (max-width: 380px) {
   .lab {
-    font-size: 12px;
+    font-size: 24px;
     margin-bottom: 5px;
   }
   .socials {
@@ -94,7 +94,7 @@ img {
   }
   .socials a {
     font-size: 7px;
-    margin: 2px 5px;
+    margin: 5px 5px;
     /* display: none; */
   }
 
@@ -102,8 +102,8 @@ img {
     padding-bottom: 20px;
   }
   img {
-    width: 35px;
-    height: 35px;
+    width: 45px;
+    height: 45px;
     border-radius: 50%;
   }
 }

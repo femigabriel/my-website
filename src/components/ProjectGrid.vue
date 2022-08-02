@@ -1,36 +1,26 @@
 <template>
-  <div class="project-flex">
-    <div class="remote-project">
-      <div class="project-box" v-for="project in projects" :key="project">
-        <div class="status">
-          <div class="framework">
-            <p>{{ project.framework }}</p>
-          </div>
-          <div class="status">
-            <p>{{ project.status }}</p>
-          </div>
-          <div class="date">
-            <p>{{ project.date }}</p>
-          </div>
-        </div>
-        <div class="title">
-          <h2>{{ project.description }}</h2>
-        </div>
-        <div class="main flex">
-          <div class="rating flex">
-            <div class="icon"><i class="las la-external-link-alt"></i></div>
-
-            <a target="_blank" :href="project.url">{{ project.video }}</a>
-          </div>
-          <div class="rating flex"></div>
-        </div>
-      </div>
-    </div>
+  <div class="do-grid">
+    <ProjectSingle
+      v-for="project in projects"
+      :key="project"
+      :date="project.date"
+      :status="project.status"
+      :description="project.description"
+      :video="project.video"
+      :url="project.url"
+      :framework="project.framework"
+      :title="project.title"
+    />
   </div>
 </template>
 
 <script>
+import ProjectSingle from "./ProjectSingle.vue";
 export default {
+  components: {
+    ProjectSingle,
+  },
+
   data() {
     return {
       projects: [
@@ -101,135 +91,40 @@ export default {
 </script>
 
 <style scoped>
-.remote-project {
-  display: flex;
-  flex-direction: column;
-  padding-top: 40px;
-  margin: 15px -18px;
-  width: 100%;
-  overflow-x: hidden;
-}
-.project-box {
-  /* width: 380px; */
-  width: 320px;
-  /* height: 50vh; */
-  background: rgb(32, 32, 34);
-  padding-left: 40px;
-  padding-right: 40px;
-  padding-top: 40px;
-  padding-bottom: 40px;
-  border-radius: 5px;
-  margin: 5px 20px;
-  cursor: pointer;
-  line-height: 0.8;
-}
-.project-box:hover {
-  /* width: 390; */
-  /* height: 55vh; */
-  box-shadow: 2px 9px 19px 15px #0000001f;
-  transform: scale(1.1);
-  -webkit-transition: all 200ms ease-in;
-  -webkit-transform: scale(1.1);
-  -ms-transition: all 200ms ease-in;
-  -ms-transform: scale(1.1);
-  -moz-transition: all 200ms ease-in;
-  -moz-transform: scale(1.1);
-  transition: all 200ms ease-in;
-}
-.status p {
-  color: rgb(148, 148, 149);
-  font-size: 14px;
-}
-
-.framework p {
-  letter-spacing: 5px;
-  font-size: 14px;
-  color: rgb(255, 255, 255);
-}
-.title {
-  line-height: 1.2;
+.do-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 10px;
 }
 .title h2 {
   line-height: 1.3;
-  font-size: 24px;
+  font-size: 28px;
+  margin: 40px 0px;
+  color: red;
+}
+.title p {
+  color: rgb(148, 148, 149);
+  font-size: 18px;
 }
 .main {
   padding-top: 30px;
 }
 .rating a {
-  margin: 5px 15px;
+  margin: 5px 10px;
   text-decoration: none;
   color: rgb(148, 148, 149);
-  font-size: 14px;
+  font-size: 18px;
+  padding-bottom: 20px;
 }
 .icon {
 }
 .las {
+  /* margin: 0px 10px; */
   color: rgb(148, 148, 149);
   font-size: 24px;
+  margin: 8px 2px;
 }
-@media (max-width: 480px) {
-  .projects {
-    line-height: 1;
-    width: 100%;
-    overflow-x: hidden;
-  }
-
-  .project-box {
-    width: 330px;
-    padding-top: 20px;
-    padding-bottom: 40px;
-  }
-  .rating a {
-    font-size: 12px;
-  }
-  .project-box h2 {
-    font-size: 16px;
-  }
-  .project-box h3 {
-    font-size: 12px;
-  }
-  .project-box p {
-    line-height: 1.5;
-    font-size: 12px;
-    width: 10em;
-  }
-  .lar {
-    font-size: 16px;
-  }
-}
-@media (max-width: 360px) {
-  .projects {
-    line-height: 1;
-    width: 100%;
-    overflow-x: hidden;
-  }
-
-  .project-box {
-    width: 315px;
-  }
-  .rating a {
-    font-size: 12px;
-  }
-  .project-box h2 {
-    font-size: 16px;
-  }
-  .project-box h3 {
-    font-size: 12px;
-  }
-  .title h2 {
-    line-height: 1.3;
-    font-size: 18px;
-    width: 10em;
-    padding-top: 20px;
-  }
-  .project-box p {
-    line-height: 1.5;
-    font-size: 12px;
-    width: 10em;
-  }
-  .lar {
-    font-size: 16px;
-  }
+.main p {
+  font-size: 18px;
 }
 </style>
