@@ -82,10 +82,9 @@ export default {
 .profile {
   display: flex;
   flex-direction: column;
-
   height: 100vh;
-  padding-right: 80px;
-  padding-top: 40px;
+  padding-right: 20px;
+  padding-top: 20px;
 }
 .profile-name {
   line-height: 1;

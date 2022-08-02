@@ -83,7 +83,7 @@ body {
   display: flex;
   margin-left: auto;
   margin-right: auto;
-  padding-top: 120px;
+  padding-top: 80px;
   padding-left: 80px;
   padding-right: 80px;
   height: auto;

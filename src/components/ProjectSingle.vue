@@ -184,7 +184,7 @@ export default {
     /* margin: 15px 0px; */
   }
   .rating a {
-    font-size: 12px;
+    font-size: 9px;
   }
 }
 </style>
