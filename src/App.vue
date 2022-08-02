@@ -87,10 +87,10 @@ body {
   padding-left: 80px;
   padding-right: 80px;
   height: auto;
-  /* overflow: initial; */
+  overflow: initial;
   top: 0;
   bottom: 0;
-  /* position: fixed; */
+  position: fixed;
   /* overflow-x: hidden; */
 }
 .current {
