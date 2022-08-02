@@ -97,7 +97,7 @@ export default {
 }
 
 h2 {
-  font-size: 28px;
+  font-size: 24px;
   margin-bottom: 32px;
 }
 
@@ -105,7 +105,7 @@ h2 {
   color: rgb(148, 148, 149);
   line-height: 1.9;
   width: 32em;
-  font-size: 14px;
+  font-size: 16px;
   padding-top: 40px;
 }
 
