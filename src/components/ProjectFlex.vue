@@ -51,7 +51,7 @@ export default {
           date: "July 22, 2022",
           status: "Online",
           framework: "VUE.JS",
-          title: "APPRUVE",
+          title: "Arruve New Account",
           description: "Create a new account",
           video: "Click here",
           url: "aprruve.netlify.app",
