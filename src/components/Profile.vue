@@ -104,7 +104,7 @@ h2 {
 .about p {
   color: rgb(148, 148, 149);
   line-height: 1.9;
-  width: 26em;
+  width: 32em;
   font-size: 14px;
   padding-top: 40px;
 }
