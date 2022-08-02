@@ -18,13 +18,13 @@ export default {
     return {
       projects: [
         {
-          framework: "JAVASCRIPT",
+          framework: "VUE.JS",
           date: "July 22, 2022",
           status: "Online",
-          title: "Currency Calculator",
-          description: "Calculate world's currency ",
+          title: "API Dog App",
+          description: "Random Dog App with images",
           video: "Click here",
-          url: "hhttps://laughing-dubinsky-710f9c.netlify.app",
+          url: "https://infinitedogapp.netlify.app",
           slides: "Slides",
         },
         {
