@@ -86,7 +86,7 @@ export default {
 }
 .title h2 {
   line-height: 1.3;
-  font-size: 24px;
+  font-size: 22px;
   
   /* color: red; */
 }
