@@ -84,7 +84,7 @@ body {
   margin-left: auto;
   margin-right: auto;
   padding-top: 120px;
-  padding-left: 100px;
+  padding-left: 80px;
   padding-right: 80px;
   height: auto;
   /* overflow: initial; */

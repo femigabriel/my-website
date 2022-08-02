@@ -84,7 +84,7 @@ export default {
   flex-direction: column;
 
   height: 100vh;
-  padding-right: 120px;
+  padding-right: 80px;
   padding-top: 40px;
 }
 .profile-name {
