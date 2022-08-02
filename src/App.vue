@@ -12,9 +12,13 @@
     <div class="current">
       <div class="project-work">
         <div class="projects" v-show="current == 0">
-          <!-- <Projects /> -->
           <div class="project-flex">
-            <div class="project-flex-class"><ProjectFlex /></div>
+            <div class="project-flex-class">
+              <div class="header">
+                <h3>Projects</h3>
+              </div>
+              <ProjectFlex />
+            </div>
             <ProjectGrid />
           </div>
         </div>
@@ -23,7 +27,6 @@
         </div>
         <SocialFooter class="socials-footer" />
       </div>
-      <!-- <MainProject /> -->
     </div>
   </div>
 </template>
@@ -86,7 +89,7 @@ body {
   padding-top: 80px;
   padding-left: 80px;
   padding-right: 80px;
-  height: auto;
+  /* height: auto; */
   /* overflow: initial; */
   top: 0;
   bottom: 0;
@@ -96,18 +99,18 @@ body {
 .current {
   display: block;
   flex-grow: 1;
-  
 }
 .profile {
   padding-right: 150px;
-  /* max-width: 516px; */
-  height: 100vh;
 }
 .flex {
   display: flex;
 }
 span {
   color: rgb(148, 148, 149);
+}
+.header {
+  display: none;
 }
 
 .socials-footer {
@@ -141,17 +144,17 @@ span {
   }
 }
 @media (max-width: 380px) {
-  #app {
-    margin-top: 20px;
-    width: 100%;
-  }
   .app {
     padding-left: 10px;
     padding-right: 10px;
+    overflow-x: hidden;
   }
   .socials-footer {
     display: block;
     /* position: fixed; */
+  }
+  .project-flex-class {
+    /* margin: -323px 0px; */
   }
 }
 @media (max-width: 360px) {
@@ -165,11 +168,22 @@ span {
     overflow-x: hidden;
     display: block;
     height: auto;
-    overflow: initial;
+    /* overflow: initial; */
     width: 100%;
   }
   .socials-footer {
     display: block;
+  }
+  .header  {
+    color: rgb(255, 255, 255);
+    padding: 10px 0px;
+    display: block;
+    font-weight: 700;
+    font-size: 12px;
+    padding-top: 30px;
+    position: sticky;
+    letter-spacing: 3px;
+    text-transform: uppercase;
   }
 }
 
@@ -193,6 +207,17 @@ span {
   }
   .socials-footer {
     display: block;
+  }
+  .header {
+    color: rgb(255, 255, 255);
+    padding: 10px 0px;
+    display: block;
+    font-weight: 700;
+    font-size: 12px;
+    padding-top: 30px;
+    position: sticky;
+    letter-spacing: 3px;
+    text-transform: uppercase;
   }
 }
 @media (max-width: 30px) {

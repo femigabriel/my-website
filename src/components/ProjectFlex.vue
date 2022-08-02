@@ -51,7 +51,7 @@ export default {
           date: "July 22, 2022",
           status: "Online",
           framework: "VUE.JS",
-          title: "Arruve New Account",
+          title: "Aprruve New Account",
           description: "Create a new account",
           video: "Click here",
           url: "aprruve.netlify.app",
@@ -67,5 +67,10 @@ export default {
 <style scoped>
 .single-item {
   margin-bottom: 10px;
+}
+@media (max-width: 380px) {
+  .single-item {
+  margin-top: 10px;
+}
 }
 </style>

@@ -96,35 +96,12 @@ export default {
   grid-template-columns: 1fr 1fr;
   grid-gap: 10px;
 }
-.title h2 {
-  line-height: 1.3;
-  font-size: 28px;
-  margin: 40px 0px;
-  color: red;
+
+@media (max-width: 380px) {
+.do-grid{
+   display: grid;
+  grid-template-columns:  1fr;
+  grid-gap: 10px
 }
-.title p {
-  color: rgb(148, 148, 149);
-  font-size: 18px;
-}
-.main {
-  padding-top: 30px;
-}
-.rating a {
-  margin: 5px 10px;
-  text-decoration: none;
-  color: rgb(148, 148, 149);
-  font-size: 18px;
-  padding-bottom: 20px;
-}
-.icon {
-}
-.las {
-  /* margin: 0px 10px; */
-  color: rgb(148, 148, 149);
-  font-size: 24px;
-  margin: 8px 2px;
-}
-.main p {
-  font-size: 18px;
 }
 </style>

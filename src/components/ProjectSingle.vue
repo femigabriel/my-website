@@ -1,4 +1,5 @@
 <template>
+ 
   <div :style="{ height: isRectangle ? 'auto' : '400px' }" class="project-box">
     <div class="status">
       <div class="framework">
@@ -9,7 +10,7 @@
       </div>
 
       <div class="date">
-        <p>{{ date }}</p>  
+        <p>{{ date }}</p>
       </div>
     </div>
     <div class="title">
@@ -75,28 +76,24 @@ export default {
   color: rgb(148, 148, 149);
   font-size: 14px;
 }
-.framework{
- 
-
+.framework {
 }
+
 .framework p {
   letter-spacing: 5px;
   font-size: 12px;
   color: rgb(255, 255, 255);
 }
-.title h2 {
+.title .title h2 {
   line-height: 1.3;
   font-size: 22px;
-  
-  /* color: red; */
 }
+
 .title p {
   color: rgb(148, 148, 149);
   font-size: 14px;
 }
-/* .title  {
-   margin: 40px 0px;
-} */
+
 .main {
   padding-top: 30px;
 }
@@ -110,7 +107,6 @@ export default {
 .icon {
 }
 .las {
-  /* margin: 0px 10px; */
   color: rgb(148, 148, 149);
   font-size: 20px;
   margin: 8px 2px;
@@ -126,7 +122,7 @@ export default {
   }
 
   .project-box {
-    width: 330px;
+    /* width: 330px; */
     padding-top: 20px;
     padding-bottom: 40px;
   }
@@ -155,10 +151,10 @@ export default {
     overflow-x: hidden;
   }
   .project-box {
-    width: 315px;
+    width: 100%;
     line-height: 3.3;
-    /* height: 35vh; */
   }
+  
 
   .project-box h2 {
     font-size: 12px;
@@ -169,8 +165,11 @@ export default {
   .project-box p {
     line-height: 1.5;
     font-size: 12px;
-    width: 10em;
+    width: 14em;
   }
+  .title {
+  margin-top: 160px;
+}
   .title h2 {
     line-height: 1.3;
     font-size: 18px;

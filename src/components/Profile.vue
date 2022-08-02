@@ -1,5 +1,5 @@
 <template>
-  <div class="profile">
+  <div class="profile-page">
     <div class="profile-name">
       <h1>Gabriel Femi</h1>
       <h2>Front-End Developer</h2>
@@ -79,10 +79,9 @@ export default {
 };
 </script>
 <style scoped>
-.profile {
+.profile-page {
   display: flex;
   flex-direction: column;
-  height: 100vh;
   padding-right: 60px;
   padding-top: 20px;
 }
@@ -227,11 +226,11 @@ img {
   }
   .profile-name h1 {
     font-size: 32px;
-    /* width: 12em; */
+    width: 12em;
     margin-bottom: 10px;
   }
   .profile-name h2 {
-    font-size: 1.1em;
+    font-size: 1.4em;
     margin-bottom: 32px;
     width: 18em;
   }
@@ -244,6 +243,11 @@ img {
     font-size: 12px;
     padding-bottom: 20px;
   }
+  li {
+  font-size: 12px;
+  /* margin: 35px 10px; */
+  letter-spacing: 5px;
+}
   .profile-pics {
   }
 }
