@@ -7,9 +7,9 @@
       </div>
       <div class="about">
         <p>
-          i'm a passionate front-end developer with a desire to learn and
-          grow in a collaborative team environment. I'm Skilled in HTML, CSS,
-          and JavaScript.
+          i'm a passionate front-end developer with a desire to learn and grow
+          in a collaborative team environment. I'm Skilled in HTML, CSS, and
+          JavaScript.
         </p>
       </div>
       <div class="skills">
@@ -88,6 +88,7 @@ export default {
   flex-direction: column;
   padding: 60px;
   flex-basis: 40%;
+  justify-content: space-around;
 }
 .profile-name {
   line-height: 1;
@@ -101,7 +102,7 @@ export default {
 
 h2 {
   font-size: 24px;
-  margin-bottom: 32px;
+  margin-bottom: px;
 }
 
 .about p {
@@ -111,11 +112,11 @@ h2 {
   font-size: 16px;
   padding-top: 40px;
 }
-.upper-content{
-
+.upper-content {
+  display: flex;
+  flex-direction: column;
 }
 .lower-content {
-
 }
 
 .about span {

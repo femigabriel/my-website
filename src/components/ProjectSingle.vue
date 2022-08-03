@@ -126,11 +126,6 @@ export default {
     overflow-x: hidden;
   }
 
-  .project-box {
-    /* width: 330px; */
-    /* padding-top: 20px;
-    padding-bottom: 40px; */
-  }
   .rating a {
     font-size: 12px;
   }
@@ -157,8 +152,6 @@ export default {
   }
   .project-box {
     width: 100%;
-    /* height: 100%; */
-    /* min-height: 30vh; */
     line-height: 3.3;
   }
 
@@ -189,9 +182,7 @@ export default {
     font-size: 22px;
     margin: 22px 0px;
   }
-  .rating {
-    /* margin: 15px 0px; */
-  }
+
   .rating a {
     font-size: 17px;
   }

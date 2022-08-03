@@ -34,7 +34,17 @@ export default {
           title: "Adeori Resturant",
           description: "Resturant design with sticky header",
           video: "Click here",
-          url: "adeori-resturant.netlify.app",
+          url: "https://adeori-resturant.netlify.app/",
+          slides: "Slides",
+        },
+        {
+          date: "July 22, 2022",
+          status: "Online",
+          framework: "VUE.JS",
+          title: "LocaHost Chat rooms",
+          description: "Local Host Chat Rooms",
+          video: "Click here",
+          url: "https://localhostchatrooms.netlify.app/",
           slides: "Slides",
         },
         {
@@ -42,19 +52,10 @@ export default {
           status: "Online",
           framework: "VUE.JS",
           title: "JUNGIAN ARCHETYPE QUIZ",
-          description: "JUNGIAN ARCHETYPE QUIZ",
+          description:
+            "Free Archetype Quiz Reveals Your Personality Quirks, Innate Talents, and Hidden Weaknesses!",
           video: "Click here",
-          url: "archytype-quiz.netlify.app",
-          slides: "Slides",
-        },
-        {
-          date: "July 22, 2022",
-          status: "Online",
-          framework: "VUE.JS",
-          title: "Aprruve New Account",
-          description: "Create a new account",
-          video: "Click here",
-          url: "aprruve.netlify.app",
+          url: "https://archytype-quiz.netlify.app/",
           slides: "Slides",
         },
       ],
@@ -70,7 +71,7 @@ export default {
 }
 @media (max-width: 380px) {
   .single-item {
-  margin-top: 10px;
-}
+    margin-top: 10px;
+  }
 }
 </style>
