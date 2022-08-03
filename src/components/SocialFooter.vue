@@ -63,7 +63,7 @@ li {
 .lab {
   font-size: 24px;
   
-  /* margin: 3px 10px; */
+  margin: 3px 10px;
 }
 img {
   width: 55px;
