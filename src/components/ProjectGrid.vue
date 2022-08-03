@@ -118,13 +118,13 @@ export default {
   display: grid;
   grid-template-columns: 1fr;
   grid-gap: 10px;
-  margin-top: 40px;
+  
 }
 .grid-2{
   display: grid;
   grid-template-columns: 1fr;
   grid-gap: 10px;
-  
+  margin-top: 40px;
 }
 
 
