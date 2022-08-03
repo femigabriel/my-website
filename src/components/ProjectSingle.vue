@@ -144,7 +144,7 @@ export default {
     font-size: 16px;
   }
 }
-@media (max-width: 380px) {
+@media (max-width: 420px) {
   .projects {
     line-height: 1;
     width: 100%;
@@ -152,6 +152,8 @@ export default {
   }
   .project-box {
     width: 100%;
+    max-width: 315px;
+    max-height: 33vh;
     line-height: 3.3;
   }
   
@@ -168,7 +170,7 @@ export default {
     width: 14em;
   }
   .title {
-  margin-top: 160px;
+  margin-top: 60px;
 }
   .title h2 {
     line-height: 1.3;

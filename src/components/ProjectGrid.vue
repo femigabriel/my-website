@@ -97,7 +97,7 @@ export default {
   grid-gap: 10px;
 }
 
-@media (max-width: 380px) {
+@media (max-width: 420px) {
 .do-grid{
    display: grid;
   grid-template-columns:  1fr;

@@ -129,7 +129,7 @@ span {
   }
 }
 
-@media (max-width: 480px) {
+/* @media (max-width: 480px) {
   #app {
     margin-top: 40px;
     width: 100%;
@@ -151,19 +151,17 @@ span {
   }
   .socials-footer {
     display: block;
-    /* position: fixed; */
+    
   }
-  .project-flex-class {
-    /* margin: -323px 0px; */
-  }
-}
-@media (max-width: 360px) {
+ 
+} */
+@media (max-width: 420px) {
   #app {
     margin-top: 20px;
     width: 100%;
   }
   .app {
-    padding-left: 30px;
+    padding-left: 50px;
     padding-right: 25px;
     overflow-x: hidden;
     display: block;
@@ -181,8 +179,9 @@ span {
     font-weight: 700;
     font-size: 12px;
     padding-top: 30px;
+    padding-bottom: 20px;
     position: sticky;
-    letter-spacing: 3px;
+    letter-spacing: 5px;
     text-transform: uppercase;
   }
 }

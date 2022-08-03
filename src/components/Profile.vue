@@ -216,7 +216,7 @@ img {
   .profile-pics {
   }
 }
-@media (max-width: 380px) {
+@media (max-width: 420px) {
   .profile {
     display: flex;
     flex-direction: column;
