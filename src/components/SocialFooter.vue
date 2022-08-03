@@ -82,6 +82,7 @@ img {
     width: 45px;
     height: 45px;
     border-radius: 50%;
+    margin: 15px 0px;
   }
 }
 @media (max-width: 380px) {
