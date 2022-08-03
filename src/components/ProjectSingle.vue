@@ -1,5 +1,4 @@
 <template>
- 
   <div :style="{ height: isRectangle ? 'auto' : '400px' }" class="project-box">
     <div class="status">
       <div class="framework">
@@ -130,7 +129,7 @@ export default {
     font-size: 12px;
   }
   .project-box h2 {
-    font-size: 16px;
+    font-size: 18px;
   }
   .project-box h3 {
     font-size: 12px;
@@ -152,14 +151,13 @@ export default {
   }
   .project-box {
     width: 100%;
-    /* max-width: 315px; */
-    min-height: 33vh;
+    /* height: 100%; */
+    /* min-height: 30vh; */
     line-height: 3.3;
   }
-  
 
   .project-box h2 {
-    font-size: 12px;
+    font-size: 14px;
   }
   .project-box h3 {
     font-size: 12px;
@@ -170,22 +168,26 @@ export default {
     width: 14em;
   }
   .title {
-  margin-top: 60px;
-}
+    margin-top: 0px;
+  }
   .title h2 {
     line-height: 1.3;
-    font-size: 18px;
+    font-size: 20px;
     width: 10em;
     padding-top: 20px;
   }
-  .lar {
-    font-size: 12px;
+    .title p{
+       font-size: 14px;
+    }
+  .las {
+    font-size: 22px;
+    margin: 22px 0px;
   }
   .rating {
     /* margin: 15px 0px; */
   }
   .rating a {
-    font-size: 9px;
+    font-size: 17px;
   }
 }
 </style>
