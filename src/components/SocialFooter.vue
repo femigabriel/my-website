@@ -4,7 +4,7 @@
       <img src="../images/mypics4.png" alt="" />
       <div class="socials flex">
         <a href="https://github.com/femigabriel">
-          <i class="lab la-github">Github</i></a
+          <i class="lab la-github"></i>Github</a
         >
       </div>
       <div class="socials flex">
@@ -50,12 +50,12 @@ li {
 .socials a {
   color: rgb(255, 255, 255);
   font-size: 14px;
-  margin: 2px 5px;
+  margin: 2px 7px;
   text-decoration: none;
 }
 .lab {
   font-size: 24px;
-  margin: 2px 5px;
+  margin: 3px 0px;
 }
 img {
   width: 55px;

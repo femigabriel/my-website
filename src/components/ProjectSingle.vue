@@ -113,7 +113,7 @@ export default {
 }
 .las {
   color: rgb(148, 148, 149);
-  font-size: 26px;
+  font-size: 22px;
   margin: 8px 2px;
 }
 .main p {
@@ -179,8 +179,8 @@ export default {
     font-size: 14px;
   }
   .las {
-    font-size: 22px;
-    margin: 22px 0px;
+    font-size: 20px;
+    margin: 15px 0px;
   }
 
   .rating a {

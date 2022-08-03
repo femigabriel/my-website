@@ -1,16 +1,33 @@
 <template>
   <div class="do-grid">
-    <ProjectSingle
-      v-for="project in projects"
-      :key="project"
-      :date="project.date"
-      :status="project.status"
-      :description="project.description"
-      :video="project.video"
-      :url="project.url"
-      :framework="project.framework"
-      :title="project.title"
-    />
+    <div class="grid-1">
+      <ProjectSingle
+        v-for="project in projects"
+        :key="project"
+        :date="project.date"
+        :status="project.status"
+        :description="project.description"
+        :video="project.video"
+        :url="project.url"
+        :framework="project.framework"
+        :title="project.title"
+      />
+    </div>
+    <div>
+      <div class="grid-2">
+        <ProjectSingle
+          v-for="project in projects"
+          :key="project"
+          :date="project.date"
+          :status="project.status"
+          :description="project.description"
+          :video="project.video"
+          :url="project.url"
+          :framework="project.framework"
+          :title="project.title"
+        />
+      </div>
+    </div>
   </div>
 </template>
 
@@ -37,7 +54,7 @@ export default {
         {
           date: "July 22, 2022",
           status: "Online",
-        framework: "VUE.JS ",
+          framework: "VUE.JS ",
           title: "Listing Resturant",
           description: "Listing Resturant",
           url: "https://listingapp.netlify.app/",
@@ -47,7 +64,7 @@ export default {
         {
           date: "March 17, 2022",
           status: "Online",
-         framework: "VUE.JS ",
+          framework: "VUE.JS ",
           title: "Listing Resturant ",
           description: "Resturants around the world",
           url: "https://loving-shaw-867970.netlify.app/",
@@ -95,13 +112,27 @@ export default {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-gap: 10px;
+  padding-top: 60px;
+}
+.grid-1{
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 10px;
+  margin-top: 40px;
+}
+.grid-2{
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 10px;
+  
 }
 
+
 @media (max-width: 420px) {
-.do-grid{
-   display: grid;
-  grid-template-columns:  1fr;
-  grid-gap: 10px
-}
+  .do-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 10px;
+  }
 }
 </style>
