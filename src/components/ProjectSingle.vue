@@ -1,5 +1,5 @@
 <template>
-  <div :style="{ height: isRectangle ? 'auto' : '400px' }" class="project-box">
+  <div class="project-box" :class="!isRectangle ? 'isRectangle' : ''">
     <div class="status">
       <div class="framework">
         <p>{{ framework }}</p>
@@ -12,18 +12,20 @@
         <p>{{ date }}</p>
       </div>
     </div>
-    <div class="title">
-      <h2>{{ title }}</h2>
-      <p>{{ description }}</p>
-    </div>
-
-    <div class="main flex">
-      <div class="rating flex">
-        <div class="icon"><i class="las la-external-link-alt"></i></div>
-        <a target="_blank" :href="url">{{ video }}</a>
+    <div class="space">
+      <div class="title">
+        <h2>{{ title }}</h2>
+        <p>{{ description }}</p>
       </div>
 
-      <div class="rating flex"></div>
+      <div class="main flex">
+        <div class="rating flex">
+          <div class="icon"><i class="las la-external-link-alt"></i></div>
+          <a target="_blank" :href="url">{{ video }}</a>
+        </div>
+
+        <div class="rating flex"></div>
+      </div>
     </div>
   </div>
 </template>
@@ -56,6 +58,9 @@ export default {
   cursor: pointer;
   line-height: 1.8;
   transition: all 0.2s ease-in-out;
+  display: flex;
+    flex-direction: column;
+    justify-content: space-around;
 }
 .project-box:hover {
   width: 100%;
@@ -75,7 +80,8 @@ export default {
   color: rgb(148, 148, 149);
   font-size: 14px;
 }
-.framework {
+.isRectangle {
+  height: 400px;
 }
 
 .framework p {
@@ -83,7 +89,7 @@ export default {
   font-size: 12px;
   color: rgb(255, 255, 255);
 }
-.title .title h2 {
+ .title h2 {
   line-height: 1.3;
   font-size: 22px;
 }
@@ -100,14 +106,14 @@ export default {
   margin: 5px 10px;
   text-decoration: none;
   color: rgb(148, 148, 149);
-  font-size: 14px;
+  font-size: 18px;
   padding-bottom: 20px;
 }
 .icon {
 }
 .las {
   color: rgb(148, 148, 149);
-  font-size: 20px;
+  font-size: 26px;
   margin: 8px 2px;
 }
 .main p {
@@ -122,8 +128,8 @@ export default {
 
   .project-box {
     /* width: 330px; */
-    padding-top: 20px;
-    padding-bottom: 40px;
+    /* padding-top: 20px;
+    padding-bottom: 40px; */
   }
   .rating a {
     font-size: 12px;
@@ -176,9 +182,9 @@ export default {
     width: 10em;
     padding-top: 20px;
   }
-    .title p{
-       font-size: 14px;
-    }
+  .title p {
+    font-size: 14px;
+  }
   .las {
     font-size: 22px;
     margin: 22px 0px;

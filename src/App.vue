@@ -10,8 +10,8 @@
       class="profile"
     />
     <div class="current">
-      <div class="project-work">
-        <div class="projects" v-show="current == 0">
+    
+        <div  v-show="current == 0">
           <div class="project-flex">
             <div class="project-flex-class">
               <div class="header">
@@ -20,7 +20,6 @@
               <ProjectFlex />
             </div>
             <ProjectGrid />
-          </div>
         </div>
         <div v-show="current == 1">
           <Resume class="resume" />
@@ -76,6 +75,8 @@ body {
   background: rgb(21, 21, 21);
   font-family: "Inter var", sans-serif;
   width: 100%;
+  height: auto;
+  position: fixed;
 }
 
 .project-flex-class {
@@ -86,20 +87,16 @@ body {
   display: flex;
   margin-left: auto;
   margin-right: auto;
-  padding: 20px;
-  /* height: auto; */
-  /* overflow: initial; */
-  top: 0;
-  bottom: 0;
-  position: fixed;
-  overflow-x: hidden;
+  padding: 80px;
 }
 .current {
   display: block;
   flex-grow: 1;
+  max-height: 100vh;
+  overflow-y: auto;
 }
 .profile {
-  padding-right: 150px;
+  /* padding-right: 150px; */
 }
 .flex {
   display: flex;
@@ -170,7 +167,7 @@ span {
   .socials-footer {
     display: block;
   }
-  .header  {
+  .header {
     color: rgb(255, 255, 255);
     padding: 10px 0px;
     display: block;
