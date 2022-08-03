@@ -90,7 +90,7 @@ export default {
 
 .title p {
   color: rgb(148, 148, 149);
-  font-size: 14px;
+  font-size: 17px;
 }
 
 .main {
