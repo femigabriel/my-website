@@ -106,7 +106,7 @@ export default {
   margin: 5px 10px;
   text-decoration: none;
   color: rgb(148, 148, 149);
-  font-size: 18px;
+  font-size: 14px;
   padding-bottom: 20px;
 }
 .icon {
@@ -184,7 +184,7 @@ export default {
   }
 
   .rating a {
-    font-size: 17px;
+    font-size: 12px;
   }
 }
 </style>
