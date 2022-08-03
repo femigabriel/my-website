@@ -10,22 +10,20 @@
       class="profile"
     />
     <div class="current">
-    
-        <div  v-show="current == 0">
-          <div class="project-flex">
-            <div class="project-flex-class">
-              <div class="header">
-                <h3>Projects</h3>
-              </div>
-              <ProjectFlex />
+      
+        <div v-show="current == 0" class="project-flex">
+          <div class="project-flex-class">
+            <div class="header">
+              <h3>Projects</h3>
             </div>
-            <ProjectGrid />
+            <ProjectFlex />
+          </div>
+          <ProjectGrid />
         </div>
         <div v-show="current == 1">
-          <Resume class="resume" />
+          <Resume />
         </div>
         <SocialFooter class="socials-footer" />
-      </div>
     </div>
   </div>
 </template>
@@ -87,17 +85,15 @@ body {
   display: flex;
   margin-left: auto;
   margin-right: auto;
-  padding: 80px;
 }
 .current {
   display: block;
   flex-grow: 1;
   max-height: 100vh;
   overflow-y: auto;
+  padding: 60px;
 }
-.profile {
-  /* padding-right: 150px; */
-}
+
 .flex {
   display: flex;
 }
@@ -111,61 +107,30 @@ span {
 .socials-footer {
   display: none;
 }
+.resume {
+  display: block;
+}
 @media (max-width: 820px) {
   .app {
     margin-left: auto;
     margin-right: auto;
-    /* padding-left: 60px;
-    padding-right: 40px; */
     overflow-x: hidden;
     display: block;
     position: relative;
-    /* max-height: 100vh; */
   }
 }
 
-/* @media (max-width: 480px) {
-  #app {
-    margin-top: 40px;
-    width: 100%;
-  }
-  .app {
-    padding-left: 25px;
-    padding-right: 25px;
-    overflow-x: hidden;
-    display: block;
-    height: auto;
-    overflow: initial;
-  }
-}
-@media (max-width: 380px) {
-  .app {
-    padding-left: 10px;
-    padding-right: 10px;
-    overflow-x: hidden;
-  }
-  .socials-footer {
-    display: block;
-    
-  }
- 
-} */
 @media (max-width: 420px) {
-  #app {
-    margin-top: 20px;
-    width: 100%;
+  body {
+    position: relative;
   }
-  .app {
-    /* padding-left: 50px;
-    padding-right: 25px; */
-    overflow-x: hidden;
-    display: block;
-    height: auto;
-    /* overflow: initial; */
-    width: 100%;
-  }
+
   .socials-footer {
     display: block;
+  }
+  .current {
+    max-height: initial;
+    padding: 20px;
   }
   .header {
     color: rgb(255, 255, 255);

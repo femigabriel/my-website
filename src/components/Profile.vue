@@ -1,58 +1,62 @@
 <template>
   <div class="profile-page">
-    <div class="profile-name">
-      <h1>Gabriel Femi</h1>
-      <h2>Front-End Developer</h2>
-    </div>
-    <div class="about">
-      <p>
-        i'm a passionate junior front-end developer with a desire to learn and
-        grow in a collaborative team environment. I'm Skilled in HTML, CSS, and
-        JavaScript.
-      </p>
-    </div>
-    <div class="skills">
-      <ul class="">
-        <li
-          v-bind:class="{ active: li.id === activeId }"
-          v-on:click="setActivePage(li.id)"
-          class="list flex"
-          v-for="li in lists"
-          :key="li"
-        >
-          <div></div>
-          <span v-bind:class="{ active: li.id === activeId }">{{
-            li.numb
-          }}</span>
-          <div class="flex" v-bind:class="{ active: li.id === activeId }">
-            <div v-bind:class="{ lineActive: li.id === activeId }">
-              <div class="line"></div>
-            </div>
+    <div class="upper-content">
+      <div class="profile-name">
+        <h1>Gabriel Femi</h1>
+        <h2>Front-End Developer</h2>
+      </div>
+      <div class="about">
+        <p>
+          i'm a passionate front-end developer with a desire to learn and
+          grow in a collaborative team environment. I'm Skilled in HTML, CSS,
+          and JavaScript.
+        </p>
+      </div>
+      <div class="skills">
+        <ul class="">
+          <li
+            v-bind:class="{ active: li.id === activeId }"
+            v-on:click="setActivePage(li.id)"
+            class="list flex"
+            v-for="li in lists"
+            :key="li"
+          >
+            <div></div>
+            <span v-bind:class="{ active: li.id === activeId }">{{
+              li.numb
+            }}</span>
+            <div class="flex" v-bind:class="{ active: li.id === activeId }">
+              <div v-bind:class="{ lineActive: li.id === activeId }">
+                <div class="line"></div>
+              </div>
 
-            {{ li.status }}
-          </div>
-        </li>
-      </ul>
+              {{ li.status }}
+            </div>
+          </li>
+        </ul>
+      </div>
     </div>
-    <div class="profile-pics flex">
-      <img src="../images/mypics4.png" alt="" />
-      <div class="socials flex">
-        <i class="lab la-github"></i>
-        <a href="https://github.com/femigabriel">Github</a>
-      </div>
-      <div class="socials flex">
-        <i class="lab la-facebook"></i>
-        <a href="facebook.com/femigabriel89">Facebook</a>
-      </div>
-      <div class="socials flex">
-        <i class="lab la-twitter"></i>
-        <a href="https://twitter.com/FemiGab2018">Twitter</a>
-      </div>
-      <div class="socials flex">
-        <i class="lab la-linkedin"></i>
-        <a href="https://www.linkedin.com/in/ogungbade-oluwafemi-25b28619a/"
-          >Linkedin</a
-        >
+    <div class="lower-content">
+      <div class="profile-pics flex">
+        <img src="../images/mypics4.png" alt="" />
+        <div class="socials flex">
+          <i class="lab la-github"></i>
+          <a href="https://github.com/femigabriel">Github</a>
+        </div>
+        <div class="socials flex">
+          <i class="lab la-facebook"></i>
+          <a href="facebook.com/femigabriel89">Facebook</a>
+        </div>
+        <div class="socials flex">
+          <i class="lab la-twitter"></i>
+          <a href="https://twitter.com/FemiGab2018">Twitter</a>
+        </div>
+        <div class="socials flex">
+          <i class="lab la-linkedin"></i>
+          <a href="https://www.linkedin.com/in/ogungbade-oluwafemi-25b28619a/"
+            >Linkedin</a
+          >
+        </div>
       </div>
     </div>
   </div>
@@ -82,15 +86,15 @@ export default {
 .profile-page {
   display: flex;
   flex-direction: column;
-  padding-right: 60px;
-  padding-top: 20px;
+  padding: 60px;
+  flex-basis: 40%;
 }
 .profile-name {
   line-height: 1;
 }
 
 .profile-name h1 {
-  font-size: 65px;
+  font-size: 62px;
   letter-spacing: 5px;
   margin-bottom: 10px;
 }
@@ -107,9 +111,13 @@ h2 {
   font-size: 16px;
   padding-top: 40px;
 }
+.upper-content{
 
-/* @media (max-width: 320px) {
-} */
+}
+.lower-content {
+
+}
+
 .about span {
   color: rgb(255, 255, 255);
   text-decoration: underline;
@@ -220,6 +228,7 @@ img {
   .profile {
     display: flex;
     flex-direction: column;
+    padding: 20px;
   }
   .profile-name {
     line-height: 1;
@@ -234,20 +243,19 @@ img {
     margin-bottom: 32px;
     width: 18em;
   }
+
   .skills {
     display: block;
   }
   .about p {
     line-height: 1.5;
-    width: 20em;
     font-size: 12px;
     padding-bottom: 20px;
   }
   li {
-  font-size: 12px;
-  /* margin: 35px 10px; */
-  letter-spacing: 5px;
-}
+    font-size: 12px;
+    letter-spacing: 5px;
+  }
   .profile-pics {
   }
 }

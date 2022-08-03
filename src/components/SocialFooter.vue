@@ -4,23 +4,23 @@
       <img src="../images/mypics4.png" alt="" />
       <div class="socials flex">
         <a href="https://github.com/femigabriel">
-          <i class="lab la-github"></i
-        ></a>
+          <i class="lab la-github">Github</i></a
+        >
       </div>
       <div class="socials flex">
         <a href="facebook.com/femigabriel89">
-          <i class="lab la-facebook"></i
-        ></a>
+          <i class="lab la-facebook"></i>Facebook</a
+        >
       </div>
       <div class="socials flex">
         <a href="https://twitter.com/FemiGab2018">
-          <i class="lab la-twitter"></i
-        ></a>
+          <i class="lab la-twitter"></i>Twitter</a
+        >
       </div>
       <div class="socials flex">
         <a href="https://www.linkedin.com/in/ogungbade-oluwafemi-25b28619a/">
-          <i class="lab la-linkedin"></i
-        ></a>
+          <i class="lab la-linkedin"></i>Linkedin</a
+        >
       </div>
     </div>
   </footer>

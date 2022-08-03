@@ -9,7 +9,7 @@
         <p class="subheading">Frontend Developer</p>
         <div class="summary">
           <p>
-            Passionate junior front-end developer with a desire to learn and
+            Passionate front-end developer with a desire to learn and
             grow in a collaborative team environment. Skilled in HTML, CSS, and
             JavaScript. Excels at creating pixel-perfect designs and working
             with cross-browser compatibility issues.
@@ -225,7 +225,7 @@ p {
   flex-direction: column;
   flex-grow: 1;
   justify-content: space-between;
-  padding: 2% 15% 10% 5%;
+  /* padding: 2% 15% 10% 5%; */
 }
 
 .resume_container {
