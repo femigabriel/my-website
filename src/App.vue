@@ -86,9 +86,7 @@ body {
   display: flex;
   margin-left: auto;
   margin-right: auto;
-  padding-top: 80px;
-  padding-left: 80px;
-  padding-right: 80px;
+  padding: 20px;
   /* height: auto; */
   /* overflow: initial; */
   top: 0;
@@ -120,8 +118,8 @@ span {
   .app {
     margin-left: auto;
     margin-right: auto;
-    padding-left: 60px;
-    padding-right: 40px;
+    /* padding-left: 60px;
+    padding-right: 40px; */
     overflow-x: hidden;
     display: block;
     position: relative;
@@ -161,8 +159,8 @@ span {
     width: 100%;
   }
   .app {
-    padding-left: 50px;
-    padding-right: 25px;
+    /* padding-left: 50px;
+    padding-right: 25px; */
     overflow-x: hidden;
     display: block;
     height: auto;

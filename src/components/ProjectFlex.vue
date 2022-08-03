@@ -40,7 +40,7 @@ export default {
         {
           date: "July 22, 2022",
           status: "Online",
-          framework: "Vue.JS",
+          framework: "VUE.JS",
           title: "JUNGIAN ARCHETYPE QUIZ",
           description: "JUNGIAN ARCHETYPE QUIZ",
           video: "Click here",

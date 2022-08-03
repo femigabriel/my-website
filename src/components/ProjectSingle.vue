@@ -152,8 +152,8 @@ export default {
   }
   .project-box {
     width: 100%;
-    max-width: 315px;
-    max-height: 33vh;
+    /* max-width: 315px; */
+    min-height: 33vh;
     line-height: 3.3;
   }
   
