@@ -31,6 +31,8 @@ export default {};
 </script>
 
 <style scoped>
+footer {
+}
 ul {
   list-style-type: none;
   padding: 30px 0px;
@@ -45,14 +47,14 @@ li {
   color: rgb(148, 148, 149);
 }
 .socials {
-  /* padding: 15px 5px; */
-
-}
-.socials a {
   display: flex;
   flex-direction: column;
   text-align: center;
-  /* justify-content: center; */
+  justify-content: center;
+  padding: ;
+}
+.socials a {
+  /*  */
   color: rgb(255, 255, 255);
   font-size: 14px;
   margin: 2px 7px;
@@ -60,6 +62,7 @@ li {
 }
 .lab {
   font-size: 24px;
+  
   /* margin: 3px 10px; */
 }
 img {
