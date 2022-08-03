@@ -45,9 +45,14 @@ li {
   color: rgb(148, 148, 149);
 }
 .socials {
-  padding: 15px 5px;
+  /* padding: 15px 5px; */
+
 }
 .socials a {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  /* justify-content: center; */
   color: rgb(255, 255, 255);
   font-size: 14px;
   margin: 2px 7px;
@@ -55,7 +60,7 @@ li {
 }
 .lab {
   font-size: 24px;
-  margin: 3px 10px;
+  /* margin: 3px 10px; */
 }
 img {
   width: 55px;
@@ -82,7 +87,7 @@ img {
     width: 45px;
     height: 45px;
     border-radius: 50%;
-    margin: 15px 0px;
+    margin: 1px 0px;
   }
 }
 @media (max-width: 380px) {
