@@ -51,7 +51,7 @@ li {
   flex-direction: column;
   text-align: center;
   justify-content: center;
-  padding: ;
+
 }
 .socials a {
   /*  */
