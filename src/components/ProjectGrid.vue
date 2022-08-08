@@ -45,15 +45,16 @@ export default {
     return {
       projects: [
         {
-          date: "July 22, 2022",
+          date: " ",
           status: "Online",
-          framework: "VUE.JS ",
-          title: "Cash App ",
-          description: "Manage you cash",
-          video: "Click here.....",
-          url: "https://cashapphelp.netlify.app",
+          framework: "JS, HTML & CSS",
+          title: "Image Galary ",
+          description: "Flex Panel",
+          url: "https://amazing-murdock-3e0b46.netlify.app/",
+          video: "Click here",
           slides: "Slides",
         },
+
         {
           date: "July 22, 2022",
           status: "Online",
@@ -61,16 +62,6 @@ export default {
           title: "Listing Resturant",
           description: "Listing Resturant",
           url: "https://listingapp.netlify.app/",
-          video: "Click here",
-          slides: "Slides",
-        },
-        {
-          date: " ",
-          status: "Online",
-          framework: "JS, HTML & CSS",
-          title: "Image Galary ",
-          description: "Flex Panel",
-          url: "https://amazing-murdock-3e0b46.netlify.app/",
           video: "Click here",
           slides: "Slides",
         },
@@ -103,6 +94,16 @@ export default {
           description: "Enjoy a nice meal at Adeori Resturant!",
           url: "https://nostalgic-lovelace-acc728.netlify.app",
           video: "Click here",
+          slides: "Slides",
+        },
+        {
+          date: "July 22, 2022",
+          status: "Online",
+          framework: "VUE.JS ",
+          title: "Cash App ",
+          description: "Manage you cash",
+          video: "Click here.....",
+          url: "https://cashapphelp.netlify.app",
           slides: "Slides",
         },
       ],
@@ -157,7 +158,7 @@ export default {
           video: "Click here",
           slides: "Slides",
         },
-         {
+        {
           date: "",
           status: "Online",
           framework: "JAVASCRIPT ",
