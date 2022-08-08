@@ -111,7 +111,7 @@ export default {
           date: "July 22, 2022",
           status: "Online",
           framework: "JS, HTML & CSS",
-          title: "",
+          title: "Friends Zone",
           description: "Search for all my friends",
           url: "https://myfriendszone.netlify.app/",
           video: "Click here",
