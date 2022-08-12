@@ -9,8 +9,8 @@
         <p class="subheading">Frontend Developer</p>
         <div class="summary">
           <p>
-            Passionate front-end developer with a desire to learn and grow in a
-            collaborative team environment. Skilled in HTML, CSS, and
+            Passionate front-end developer with a desire to learn and
+            grow in a collaborative team environment. Skilled in HTML, CSS, and
             JavaScript. Excels at creating pixel-perfect designs and working
             with cross-browser compatibility issues.
           </p>
@@ -20,7 +20,7 @@
           <span></span>
         </div>
         <div class="skills">
-          <p>HTML/CSS/SASS, Javascript [ES6+], Vue.JS.</p>
+          <p>HTML/CSS/SASS, Javascript, Vue JS, React JS</p>
         </div>
         <!-- <div class="divider">
           <p>Familiar With</p>
@@ -39,11 +39,13 @@
         <!-- <div class="skills">
           <p>Agile/Scrum, Version Control, Best Practices, CI/CD</p>
         </div> -->
-        <!-- <div class="divider">
+        <div class="divider">
           <p>Work Experience</p>
           <span></span>
-        </div> -->
-        <div class="exp_container"></div>
+        </div>
+        <div class="exp_container">
+        
+        </div>
         <div class="divider">
           <p>Projects</p>
           <span></span>
