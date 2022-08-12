@@ -4,7 +4,7 @@
     <div class="resume">
       <div class="resume_container">
         <div class="top_row">
-          <h2>GABRIEL FEMI</h2>
+          <h2>GABRIEL FEMI(TIMFEMI@GMAIL.COM)</h2>
         </div>
         <p class="subheading">Frontend Developer</p>
         <div class="summary">
