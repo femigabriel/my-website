@@ -5,7 +5,7 @@
   />
   <div class="app">
     <Profile
-      :activeId="current"
+       :activeId="current"
       @setActivePage="setActivePage"
       class="profile"
     />

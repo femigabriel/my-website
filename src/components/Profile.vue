@@ -2,7 +2,7 @@
   <div class="profile-page">
     <div class="upper-content">
       <div class="profile-name">
-        <h1>Gabriel Femi</h1>
+        <h1>Ogungbade OluwaFemi</h1>
         <h2>Front-End Developer</h2>
       </div>
       <div class="about">
@@ -95,7 +95,7 @@ export default {
 }
 
 .profile-name h1 {
-  font-size: 62px;
+  font-size: 56px;
   letter-spacing: 5px;
   margin-bottom: 10px;
 }
