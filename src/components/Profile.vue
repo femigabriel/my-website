@@ -38,7 +38,7 @@
     </div>
     <div class="lower-content">
       <div class="profile-pics flex">
-        <img src="../images/mypics4.png" alt="" />
+        <img src="../images/LIN.jpg" alt="" />
         <div class="socials flex">
           <i class="lab la-github"></i>
           <a href="https://github.com/femigabriel">Github</a>
