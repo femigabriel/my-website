@@ -27,6 +27,16 @@ export default {
           url: "https://infinitedogapp.netlify.app",
           slides: "Slides",
         },
+         {
+          framework: "REACT RS",
+          date: "August 12, 2022",
+          status: "Online",
+          title: "Simple Maths Game",
+          description: "Simple Maths Game",
+          video: "Click here",
+          url: "https://easymathgame.netlify.app/",
+          slides: "Slides",
+        },
         {
           date: "July 22, 2022",
           status: "Online",
