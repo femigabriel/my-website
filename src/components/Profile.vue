@@ -9,7 +9,7 @@
         <p>
           i'm a passionate front-end developer with a desire to learn and grow
           in a collaborative team environment. I'm Skilled in HTML, CSS, and
-          JavaScript.
+          JavaScript, Vue,Js.
         </p>
       </div>
       <div class="skills">

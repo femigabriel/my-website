@@ -28,7 +28,7 @@ export default {
           slides: "Slides",
         },
          {
-          framework: "REACT RS",
+          framework: "REACT JS",
           date: "August 12, 2022",
           status: "Online",
           title: "Simple Maths Game",
