@@ -24,7 +24,7 @@ export default {
           title: "Crappo App",
           description: "Free Cryptocurrency App",
           video: "Click here",
-          url: "https://easymathgame.netlify.app/",
+          url: "https://crappocoin-app.netlify.app/",
           slides: "Slides",
         },
         {
