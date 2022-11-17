@@ -30,7 +30,11 @@ export default {
            {
           framework: "NEXT.JS",
           date: "September 4, 2022",
-          status: "Online",
+           status: "Online",
+            title: "Deallus App",
+          description: "Church development App ",
+          video: "Click here",
+          url: "https://deallus-app.netlify.app/"
           slides: "Slides",
         },
         {
