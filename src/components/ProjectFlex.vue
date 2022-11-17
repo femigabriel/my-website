@@ -27,16 +27,7 @@ export default {
           url: "https://crappocoin-app.netlify.app/",
           slides: "Slides",
         },
-           {
-          framework: "REACT.JS",
-          date: "September 4, 2022",
-           status: "Online",
-            title: "Deallus App",
-          description: "Church development App ",
-          video: "Click here",
-          url: "https://deallus-app.netlify.app/"
-          slides: "Slides",
-        },
+
         {
           framework: "REACT JS",
           date: "August 12, 2022",
@@ -45,6 +36,16 @@ export default {
           description: "Simple Maths Game",
           video: "Click here",
           url: "https://easymathgame.netlify.app/",
+          slides: "Slides",
+        },
+              {
+          framework: "REACT.JS",
+          date: "September 4, 2022",
+           status: "Online",
+            title: "Deallus App",
+          description: "Church development App ",
+          video: "Click here",
+          url: "https://deallus-app.netlify.app/"
           slides: "Slides",
         },
         {
