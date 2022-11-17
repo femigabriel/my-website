@@ -31,10 +31,6 @@ export default {
           framework: "NEXT.JS",
           date: "September 4, 2022",
           status: "Online",
-          title: "Deallus",
-          description: "Free Cryptocurrency App",
-          video: "Click here",
-          url: "https://deallus-app.netlify.app/",
           slides: "Slides",
         },
         {
