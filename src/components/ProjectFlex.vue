@@ -37,6 +37,16 @@ export default {
           url: "https://easymathgame.netlify.app/",
           slides: "Slides",
         },
+            {
+          framework: "REACT JS",
+          date: "August 12, 2022",
+          status: "Online",
+          title: "Simple Maths Game",
+          description: "Simple Maths Game",
+          video: "Click here",
+          url: "https://easymathgame.netlify.app/",
+          slides: "Slides",
+        },
         {
           framework: "VUE.JS",
           date: "July 22, 2022",
