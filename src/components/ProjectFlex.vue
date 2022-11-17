@@ -28,7 +28,7 @@ export default {
           slides: "Slides",
         },
            {
-          framework: "NEXT.JS",
+          framework: "REACT.JS",
           date: "September 4, 2022",
            status: "Online",
             title: "Deallus App",
