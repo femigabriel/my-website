@@ -29,15 +29,15 @@ export default {
         },
         {
           framework: "REACT JS",
-          date: "August 12, 2022",
+          date: "September 12, 2022",
           status: "Online",
-          title: "Simple Maths Game",
-          description: "Simple Maths Game",
+          title: "Deallus App",
+          description: "Church Development app",
           video: "Click here",
-          url: "https://easymathgame.netlify.app/",
+          url: "https://deallus-app.netlify.app/",
           slides: "Slides",
         },
-            {
+        {
           framework: "REACT JS",
           date: "August 12, 2022",
           status: "Online",
@@ -47,6 +47,7 @@ export default {
           url: "https://easymathgame.netlify.app/",
           slides: "Slides",
         },
+
         {
           framework: "VUE.JS",
           date: "July 22, 2022",
