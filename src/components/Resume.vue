@@ -51,10 +51,10 @@
           <section class="experience">
             <p class="title">
               Charisol<!-- -->
-              - <i>Juniour Frontend Engineer</i
+              - <i>Frontend Engineer</i
               ><span
                 ><br />
-                <!-- -->MAY 2022<!-- -->
+                <!-- -->MAY 2021<!-- -->
                 -<!-- -->
                 <!-- -->PRESENT</span
               >
