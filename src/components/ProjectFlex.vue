@@ -19,12 +19,22 @@ export default {
       projects: [
         {
           framework: "NEXT.JS",
-          date: "September 19, 2022",
+          date: "August 29, 2022",
           status: "Online",
           title: "Crappo App",
           description: "Free Cryptocurrency App",
           video: "Click here",
           url: "https://crappocoin-app.netlify.app/",
+          slides: "Slides",
+        },
+        {
+         framework: "NEXT.JS",
+          date: "August 22, 2022",
+          status: "Online",
+          title: "Deallus App",
+          description: "Church Development app",
+          video: "Click here",
+          url: "https://deallus-app.netlify.app/",
           slides: "Slides",
         },
         {
@@ -37,6 +47,7 @@ export default {
           url: "https://easymathgame.netlify.app/",
           slides: "Slides",
         },
+
         {
           framework: "VUE.JS",
           date: "July 22, 2022",
