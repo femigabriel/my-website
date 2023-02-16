@@ -20,7 +20,7 @@
           <span></span>
         </div>
         <div class="skills">
-          <p>HTML/CSS/SASS, Javascript, Vue JS, React JS</p>
+          <p>HTML/CSS/SASS, Javascript, Vue JS, React JS, Typescript</p>
         </div>
         <!-- <div class="divider">
           <p>Familiar With</p>
@@ -28,8 +28,8 @@
         </div> -->
         <!-- <div class="skills">
           <p>
-            Node JS, Express, Nuxt JS, Unit Testing, Web Sockets, PWAs,
-            Wordpress, SEO.
+            Node JS, Express, Nuxt JS, Unit Testing,
+            , SEO.
           </p>
         </div> -->
         <!-- <div class="divider">

@@ -18,6 +18,16 @@ export default {
     return {
       projects: [
         {
+          framework: "TYPESCRIPT",
+          date: "Dec, 2022",
+          status: "Online",
+          title: "Musica App",
+          description: "Latest Naija R & B Hits",
+          video: "Click here",
+          url: "https://musicamusic.netlify.app/",
+          slides: "Slides",
+        },
+        {
           framework: "NEXT.JS",
           date: "August 29, 2022",
           status: "Online",
@@ -27,18 +37,9 @@ export default {
           url: "https://crappocoin-app.netlify.app/",
           slides: "Slides",
         },
-              {
-          framework: "REACT JS",
-          date: "Dec, 2022",
-          status: "Online",
-          title: "Musica App",
-          description: "Latest Naija R & B Hits",
-          video: "Click here",
-          url: "https://naijamusica-app.netlify.app/",
-          slides: "Slides",
-        },
+
         {
-         framework: "NEXT.JS",
+          framework: "NEXT.JS",
           date: "August 22, 2022",
           status: "Online",
           title: "Deallus App",
