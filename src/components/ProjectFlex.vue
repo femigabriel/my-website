@@ -69,6 +69,17 @@ export default {
           url: "https://easymathgame.netlify.app/",
           slides: "Slides",
         },
+        {
+          date: "July 22, 2022",
+          status: "Online",
+          framework: "VUE.JS",
+          title: "JUNGIAN ARCHETYPE QUIZ",
+          description:
+            "Free Archetype Quiz Reveals Your Personality Quirks, Innate Talents, and Hidden Weaknesses!",
+          video: "Click here",
+          url: "https://archytype-quiz.netlify.app/",
+          slides: "Slides",
+        },
 
         {
           framework: "VUE.JS",
@@ -89,17 +100,6 @@ export default {
           description: "Local Host Chat Rooms",
           video: "Click here",
           url: "https://localhostchatrooms.netlify.app/",
-          slides: "Slides",
-        },
-        {
-          date: "July 22, 2022",
-          status: "Online",
-          framework: "VUE.JS",
-          title: "JUNGIAN ARCHETYPE QUIZ",
-          description:
-            "Free Archetype Quiz Reveals Your Personality Quirks, Innate Talents, and Hidden Weaknesses!",
-          video: "Click here",
-          url: "https://archytype-quiz.netlify.app/",
           slides: "Slides",
         },
       ],
