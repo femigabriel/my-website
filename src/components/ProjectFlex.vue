@@ -27,6 +27,7 @@ export default {
           url: "https://musicamusic.netlify.app/",
           slides: "Slides",
         },
+
         {
           framework: "NEXT.JS",
           date: "August 29, 2022",
@@ -35,6 +36,16 @@ export default {
           description: "Free Cryptocurrency App",
           video: "Click here",
           url: "https://crappocoin-app.netlify.app/",
+          slides: "Slides",
+        },
+        {
+          framework: "REACT.JS",
+          date: "Dec, 2022",
+          status: "Online",
+          title: "Musica App",
+          description: "",
+          video: "Click here",
+          url: "https://employment-dasboard.netlify.app/",
           slides: "Slides",
         },
 
