@@ -27,12 +27,22 @@ export default {
           url: "https://musicamusic.netlify.app/",
           slides: "Slides",
         },
+           {
+          framework: "REACT.JS",
+          date: "August 29, 2022",
+          status: "Online",
+          title: "Crappo App",
+          description: "Free Cryptocurrency App",
+          video: "Click here",
+          url: "crappocryptocurrency.netlify.app",
+          slides: "Slides",
+        },
 
         {
           framework: "NEXT.JS",
           date: "August 29, 2022",
           status: "Online",
-          title: "Crappo App",
+          title: "Crappo App Landing Page",
           description: "Free Cryptocurrency App",
           video: "Click here",
           url: "https://crappocoin-app.netlify.app/",
