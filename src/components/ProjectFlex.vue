@@ -27,7 +27,7 @@ export default {
           url: "https://musicamusic.netlify.app/",
           slides: "Slides",
         },
-           {
+        {
           framework: "REACT.JS",
           date: "August 29, 2022",
           status: "Online",
@@ -35,6 +35,17 @@ export default {
           description: "Free Cryptocurrency App",
           video: "Click here",
           url: "https://crappocryptocurrency.netlify.app/",
+          slides: "Slides",
+        },
+        {
+          date: "July 22, 2022",
+          status: "Online",
+          framework: "VUE.JS",
+          title: "JUNGIAN ARCHETYPE QUIZ",
+          description:
+            "Free Archetype Quiz Reveals Your Personality Quirks, Innate Talents, and Hidden Weaknesses!",
+          video: "Click here",
+          url: "https://archytype-quiz.netlify.app/",
           slides: "Slides",
         },
 
@@ -48,6 +59,7 @@ export default {
           url: "https://crappocoin-app.netlify.app/",
           slides: "Slides",
         },
+
         {
           framework: "REACT.JS",
           date: "Dec, 2022",
@@ -77,17 +89,6 @@ export default {
           description: "Simple Maths Game",
           video: "Click here",
           url: "https://easymathgame.netlify.app/",
-          slides: "Slides",
-        },
-        {
-          date: "July 22, 2022",
-          status: "Online",
-          framework: "VUE.JS",
-          title: "JUNGIAN ARCHETYPE QUIZ",
-          description:
-            "Free Archetype Quiz Reveals Your Personality Quirks, Innate Talents, and Hidden Weaknesses!",
-          video: "Click here",
-          url: "https://archytype-quiz.netlify.app/",
           slides: "Slides",
         },
 
