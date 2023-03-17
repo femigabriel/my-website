@@ -31,10 +31,10 @@ export default {
           framework: "REACT.JS",
           date: "August 29, 2022",
           status: "Online",
-          title: "Crappo App",
+          title: "Crappo Crypto Exchange App",
           description: "Free Cryptocurrency App",
           video: "Click here",
-          url: "https://crappocryptocurrency.netlify.app",
+          url: "https://crappocryptocurrency.netlify.app/",
           slides: "Slides",
         },
 
