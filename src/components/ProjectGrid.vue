@@ -54,6 +54,16 @@ export default {
           video: "Click here",
           slides: "Slides",
         },
+        {
+          date: " ",
+          status: "Online",
+          framework: "JS, HTML & CSS",
+          title: "Image Galary ",
+          description: "Flex Panel",
+          url: "https://amazing-murdock-3e0b46.netlify.app/",
+          video: "Click here",
+          slides: "Slides",
+        },
 
         {
           date: "July 22, 2020",
@@ -148,16 +158,7 @@ export default {
           video: "Click here",
           slides: "Slides",
         },
-        {
-          date: " ",
-          status: "Online",
-          framework: "JS, HTML & CSS",
-          title: "Image Galary ",
-          description: "Flex Panel",
-          url: "https://amazing-murdock-3e0b46.netlify.app/",
-          video: "Click here",
-          slides: "Slides",
-        },
+
         {
           date: "",
           status: "Online",
