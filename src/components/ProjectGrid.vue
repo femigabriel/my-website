@@ -56,7 +56,7 @@ export default {
         },
 
         {
-          date: "July 22, 2022",
+          date: "July 22, 2020",
           status: "Online",
           framework: "VUE.JS ",
           title: "Listing Resturant",
@@ -67,7 +67,7 @@ export default {
         },
 
         {
-          date: "March 7 2022, ",
+          date: "March 7 2020 ",
           status: "Online",
           framework: "JAVASCRIPT",
           title: "Currency Calculator",
@@ -77,7 +77,7 @@ export default {
           slides: "Slides",
         },
         {
-          date: "December 22, 2021",
+          date: "December 22, 2020",
           status: "Online",
           framework: "JAVASCRIPT",
           title: "Whack Game ",
@@ -87,7 +87,7 @@ export default {
           slides: "Slides",
         },
         {
-          date: "July 22, 2022",
+          date: "July 22, 2020",
           status: "Online",
           framework: "HTML & CSS",
           title: "Adeori Resturant",
@@ -97,7 +97,7 @@ export default {
           slides: "Slides",
         },
         {
-          date: "July 22, 2022",
+          date: "July 22, 2020",
           status: "Online",
           framework: "VUE.JS ",
           title: "Cash App ",
@@ -109,7 +109,7 @@ export default {
       ],
       grids: [
         {
-          date: "July 22, 2022",
+          date: "July 22, 2020",
           status: "Online",
           framework: "JS, HTML & CSS",
           title: "Friends Zone",
@@ -139,7 +139,7 @@ export default {
           slides: "Slides",
         },
         {
-          date: "March 17, 2022",
+          date: "March 17, 2020",
           status: "Online",
           framework: "VUE.JS ",
           title: "Digital Clock",

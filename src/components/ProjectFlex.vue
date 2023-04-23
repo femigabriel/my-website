@@ -18,13 +18,23 @@ export default {
     return {
       projects: [
         {
-          framework: "TYPESCRIPT",
-          date: "Dec, 2022",
+          framework: "REACT TYPESCRIPT",
+          date: "Dec, 2021",
           status: "Online",
           title: "Musica App",
           description: "Latest Naija R & B Hits",
           video: "Click here",
           url: "https://musicamusic.netlify.app/",
+          slides: "Slides",
+        },
+        {
+          framework: "REACT TYPESCRIPT",
+          date: "Nov, 2021",
+          status: "Online",
+          title: "Multi-Step Game",
+          description: "Multi step game form",
+          video: "Click here",
+          url: "https://multistepformgame.netlify.app/",
           slides: "Slides",
         },
         {
@@ -38,7 +48,7 @@ export default {
           slides: "Slides",
         },
         {
-          date: "July 22, 2022",
+          date: "July 22, 2021",
           status: "Online",
           framework: "VUE.JS",
           title: "JUNGIAN ARCHETYPE QUIZ",
@@ -51,7 +61,7 @@ export default {
 
         {
           framework: "NEXT.JS",
-          date: "August 29, 2022",
+          date: "August 29, 2021",
           status: "Online",
           title: "Crappo App Landing Page",
           description: "Free Cryptocurrency App",
@@ -62,7 +72,7 @@ export default {
 
         {
           framework: "REACT.JS",
-          date: "Dec, 2022",
+          date: "Dec, 2021",
           status: "Online",
           title: "Emploment Screening Dashboard",
           description: "creening Dashboard",
@@ -73,7 +83,7 @@ export default {
 
         {
           framework: "NEXT.JS",
-          date: "August 22, 2022",
+          date: "August 22, 2021",
           status: "Online",
           title: "Deallus App",
           description: "Church Development app",
@@ -83,7 +93,7 @@ export default {
         },
         {
           framework: "REACT JS",
-          date: "August 12, 2022",
+          date: "August 12, 2021",
           status: "Online",
           title: "Simple Maths Game",
           description: "Simple Maths Game",
@@ -94,7 +104,7 @@ export default {
 
         {
           framework: "VUE.JS",
-          date: "July 22, 2022",
+          date: "July 22, 2021",
           status: "Online",
           title: "API Dog App",
           description: "Random Dog App with images",
@@ -104,7 +114,7 @@ export default {
         },
 
         {
-          date: "July 22, 2022",
+          date: "July 22, 2021",
           status: "Online",
           framework: "VUE.JS",
           title: "LocaHost Chat rooms",
