@@ -45,13 +45,13 @@ export default {
     return {
       projects: [
         {
-          date: " ",
+          date: "July 22, 2020",
           status: "Online",
-          framework: "JS, HTML & CSS",
-          title: "Image Galary ",
-          description: "Flex Panel",
-          url: "https://amazing-murdock-3e0b46.netlify.app/",
-          video: "Click here",
+          framework: "VUE.JS ",
+          title: "Cash App ",
+          description: "Manage you cash",
+          video: "Click here.....",
+          url: "https://cashapphelp.netlify.app",
           slides: "Slides",
         },
         {
@@ -106,16 +106,6 @@ export default {
           video: "Click here",
           slides: "Slides",
         },
-        {
-          date: "July 22, 2020",
-          status: "Online",
-          framework: "VUE.JS ",
-          title: "Cash App ",
-          description: "Manage you cash",
-          video: "Click here.....",
-          url: "https://cashapphelp.netlify.app",
-          slides: "Slides",
-        },
       ],
       grids: [
         {
@@ -158,7 +148,16 @@ export default {
           video: "Click here",
           slides: "Slides",
         },
-
+        {
+          date: " ",
+          status: "Online",
+          framework: "JS, HTML & CSS",
+          title: "Image Galary ",
+          description: "Flex Panel",
+          url: "https://amazing-murdock-3e0b46.netlify.app/",
+          video: "Click here",
+          slides: "Slides",
+        },
         {
           date: "",
           status: "Online",
