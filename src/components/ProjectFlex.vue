@@ -28,6 +28,16 @@ export default {
           slides: "Slides",
         },
         {
+          framework: "REACT",
+          date: "Feb, 2022",
+          status: "Online",
+          description: "Maildrip helps users to Send drip emails that reach the heart of your audience with Maildrip’s easy-to-use platform, guaranteed to improve sales.",
+          title: "Maildrip ",
+          video: "Click here",
+          url: "https://https://app.maildrip.io/",
+          slides: "Slides",
+        },
+        {
           framework: "REACT TYPESCRIPT",
           date: "Nov, 2021",
           status: "Online",
