@@ -37,6 +37,16 @@ export default {
           url: "https://https://app.maildrip.io/",
           slides: "Slides",
         },
+         {
+          framework: "REACT",
+          date: "Feb, 2022",
+          status: "Online",
+          description: "Global healthcare delivery where users can pay for medications for loved ones anywhere around the world",
+          title: "Aluuka ",
+          video: "Click here",
+          url: "https://https://app.aluuka.io/",
+          slides: "Slides",
+        },
         {
           framework: "REACT TYPESCRIPT",
           date: "Nov, 2021",
