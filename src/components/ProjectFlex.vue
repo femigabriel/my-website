@@ -41,7 +41,7 @@ export default {
           framework: "REACT",
           date: "Feb, 2022",
           status: "Online",
-          description: "Global healthcare delivery where users can pay for medications for loved ones anywhere around the world",
+          description: "Global healthcare delivery where users can pay for medications for loved ones anywhere around the world.",
           title: "Aluuka ",
           video: "Click here",
           url: "https://https://app.aluuka.io/",
