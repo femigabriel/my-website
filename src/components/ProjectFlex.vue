@@ -101,16 +101,7 @@ export default {
           slides: "Slides",
         },
 
-        {
-          framework: "NEXT.JS",
-          date: "August 22, 2021",
-          status: "Online",
-          title: "Deallus App",
-          description: "Church Development app",
-          video: "Click here",
-          url: "https://deallus-app.netlify.app/",
-          slides: "Slides",
-        },   
+       
       ],
     };
   },
