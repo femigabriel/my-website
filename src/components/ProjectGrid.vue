@@ -84,6 +84,16 @@ export default {
           url: "https://localhostchatrooms.netlify.app/",
           slides: "Slides",
         },
+         {
+          framework: "VUE.JS",
+          date: "July 22, 2021",
+          status: "Online",
+          title: "API Dog App",
+          description: "Random Dog App with images",
+          video: "Click here",
+          url: "https://infinitedogapp.netlify.app",
+          slides: "Slides",
+        },
         {
           date: " ",
           status: "Online",
