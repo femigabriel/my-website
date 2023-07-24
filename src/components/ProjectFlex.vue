@@ -27,6 +27,16 @@ export default {
           url: "https://musicamusic.netlify.app/",
           slides: "Slides",
         },
+          {
+          framework: "REACT",
+          date: "Jan, 2022",
+          status: "Online",
+          title: "Adeori Car Rental App",
+          description: "Car rental services app",
+          video: "Click here",
+          url: "https://adeori-cars.vercel.app/",
+          slides: "Slides",
+        },
         {
           framework: "REACT",
           date: "Feb, 2022",
