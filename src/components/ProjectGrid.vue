@@ -54,6 +54,16 @@ export default {
           url: "https://cashapphelp.netlify.app",
           slides: "Slides",
         },
+          {
+          framework: "REACT JS",
+          date: "August 12, 2021",
+          status: "Online",
+          title: "Simple Maths Game",
+          description: "Simple Maths Game",
+          video: "Click here",
+          url: "https://easymathgame.netlify.app/",
+          slides: "Slides",
+        },
         {
           date: "July 22, 2020",
           status: "Online",
@@ -62,6 +72,16 @@ export default {
           description: "Listing Resturant",
           url: "https://listingapp.netlify.app/",
           video: "Click here",
+          slides: "Slides",
+        },
+         {
+          date: "July 22, 2021",
+          status: "Online",
+          framework: "VUE.JS",
+          title: "LocaHost Chat rooms",
+          description: "Local Host Chat Rooms",
+          video: "Click here",
+          url: "https://localhostchatrooms.netlify.app/",
           slides: "Slides",
         },
         {
