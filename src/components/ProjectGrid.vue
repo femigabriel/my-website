@@ -44,6 +44,50 @@ export default {
   data() {
     return {
       projects: [
+      
+        {
+          date: " ",
+          status: "Online",
+          framework: "JS, HTML & CSS",
+          title: "Image Galary ",
+          description: "Flex Panel",
+          url: "https://amazing-murdock-3e0b46.netlify.app/",
+          video: "Click here",
+          slides: "Slides",
+        },
+
+        {
+          date: "March 7 2020 ",
+          status: "Online",
+          framework: "JAVASCRIPT",
+          title: "Currency Calculator",
+          description: "World currency exchange calculator!",
+          url: "https://confident-hawking-810c06.netlify.app/",
+          video: "Click here",
+          slides: "Slides",
+        },
+        {
+          date: "December 22, 2020",
+          status: "Online",
+          framework: "JAVASCRIPT",
+          title: "Whack Game ",
+          description: "Whack a mole game",
+          url: "https://compassionate-mestorf-c92499.netlify.app/",
+          video: "Click here",
+          slides: "Slides",
+        },
+        {
+          date: "July 22, 2020",
+          status: "Online",
+          framework: "HTML & CSS",
+          title: "Adeori Resturant",
+          description: "Enjoy a nice meal at Adeori Resturant!",
+          url: "https://nostalgic-lovelace-acc728.netlify.app",
+          video: "Click here",
+          slides: "Slides",
+        },
+      ],
+      grids: [
         {
           date: "July 22, 2020",
           status: "Online",
@@ -104,49 +148,6 @@ export default {
           url: "https://infinitedogapp.netlify.app",
           slides: "Slides",
         },
-        {
-          date: " ",
-          status: "Online",
-          framework: "JS, HTML & CSS",
-          title: "Image Galary ",
-          description: "Flex Panel",
-          url: "https://amazing-murdock-3e0b46.netlify.app/",
-          video: "Click here",
-          slides: "Slides",
-        },
-
-        {
-          date: "March 7 2020 ",
-          status: "Online",
-          framework: "JAVASCRIPT",
-          title: "Currency Calculator",
-          description: "World currency exchange calculator!",
-          url: "https://confident-hawking-810c06.netlify.app/",
-          video: "Click here",
-          slides: "Slides",
-        },
-        {
-          date: "December 22, 2020",
-          status: "Online",
-          framework: "JAVASCRIPT",
-          title: "Whack Game ",
-          description: "Whack a mole game",
-          url: "https://compassionate-mestorf-c92499.netlify.app/",
-          video: "Click here",
-          slides: "Slides",
-        },
-        {
-          date: "July 22, 2020",
-          status: "Online",
-          framework: "HTML & CSS",
-          title: "Adeori Resturant",
-          description: "Enjoy a nice meal at Adeori Resturant!",
-          url: "https://nostalgic-lovelace-acc728.netlify.app",
-          video: "Click here",
-          slides: "Slides",
-        },
-      ],
-      grids: [
         {
           date: "July 22, 2020",
           status: "Online",
