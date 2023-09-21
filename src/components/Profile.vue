@@ -3,7 +3,7 @@
     <div class="upper-content">
       <div class="profile-name">
         <h1>Gabriel Femi</h1>
-        <h2>Front-End Developer</h2>
+        <h2>Software Developer</h2>
       </div>
       <div class="about">
         <p>
