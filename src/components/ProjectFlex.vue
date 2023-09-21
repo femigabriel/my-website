@@ -18,6 +18,16 @@ export default {
     return {
       projects: [
         {
+          framework: "Wordpress",
+          date: "May, 2023",
+          status: "Online",
+          title: "Whirlspot Media",
+          description: "Whirlspot Media officl page",
+          video: "Click here",
+          url: "https://whirlspotmedia.com/",
+          slides: "Slides",
+        },
+        {
           framework: "REACT TYPESCRIPT",
           date: "Dec, 2021",
           status: "Online",
@@ -27,6 +37,7 @@ export default {
           url: "https://musicamusic.netlify.app/",
           slides: "Slides",
         },
+
         {
           framework: "REACT",
           date: "Feb, 2022",
