@@ -6,7 +6,7 @@
         <div class="top_row">
           <h2>GABRIEL FEMI</h2>
         </div>
-        <p class="subheading">Frontend Developer</p>
+        <p class="subheading">Software Developer</p>
         <div class="summary">
           <p>
             Passionate front-end developer with a desire to learn and
