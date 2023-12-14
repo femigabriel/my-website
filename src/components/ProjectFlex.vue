@@ -18,6 +18,37 @@ export default {
     return {
       projects: [
         {
+          framework: "React",
+          date: "",
+          status: "Online",
+          title: "Orewa City",
+          description: "",
+          video: "Click here",
+          url: "https://app.orewacity.com/",
+          slides: "Slides",
+        },
+        {
+          framework: "React",
+          date: "",
+          status: "Online",
+          title: "Mualine",
+          description: "Makeup & Hair Service Provider",
+          video: "Click here",
+          url: "https://mualine.ng/",
+          slides: "Slides",
+        },
+        {
+          framework: "REACT",
+          date: "Feb, 2022",
+          status: "Online",
+          description:
+            "Maildrip helps users to Send drip emails that reach the heart of your audience with Maildrip’s easy-to-use platform, guaranteed to improve sales.",
+          title: "Maildrip ",
+          video: "Click here",
+          url: "https://app.maildrip.io/",
+          slides: "Slides",
+        },
+        {
           framework: "Wordpress",
           date: "May, 2023",
           status: "Online",
@@ -38,17 +69,6 @@ export default {
           slides: "Slides",
         },
 
-        {
-          framework: "REACT",
-          date: "Feb, 2022",
-          status: "Online",
-          description:
-            "Maildrip helps users to Send drip emails that reach the heart of your audience with Maildrip’s easy-to-use platform, guaranteed to improve sales.",
-          title: "Maildrip ",
-          video: "Click here",
-          url: "https://app.maildrip.io/",
-          slides: "Slides",
-        },
         {
           framework: "REACT",
           date: "Feb, 2022",
