@@ -49,13 +49,13 @@ export default {
           slides: "Slides",
         },
         {
-          framework: "Wordpress",
+          framework: "React",
           date: "May, 2023",
           status: "Online",
           title: "Whirlspot Media",
-          description: "Whirlspot Media officl page",
+          description: "Online story book with games",
           video: "Click here",
-          url: "https://whirlspotmedia.com/",
+          url: "https://book-app-nu.vercel.app/",
           slides: "Slides",
         },
         {
