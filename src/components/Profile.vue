@@ -2,14 +2,14 @@
   <div class="profile-page">
     <div class="upper-content">
       <div class="profile-name">
-        <h1>Gabriel Femi</h1>
+        <h1>Ogungbade Femi</h1>
         <h2>Front-End Developer</h2>
       </div>
       <div class="about">
         <p>
           i'm a passionate front-end developer with a desire to learn and grow
           in a collaborative team environment. I'm Skilled in HTML, CSS, and
-          JavaScript, Vue,Js.
+          JavaScript, Vue,Js, React Js.
         </p>
       </div>
       <div class="skills">
@@ -95,7 +95,7 @@ export default {
 }
 
 .profile-name h1 {
-  font-size: 62px;
+  font-size: 42px;
   letter-spacing: 5px;
   margin-bottom: 10px;
 }
