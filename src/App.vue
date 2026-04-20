@@ -74,9 +74,9 @@ export default {
           status: "Live",
           date: "2026",
           description:
-            "AI-driven content curation workflow for quality assurance, faster review loops, and better publishing consistency.",
+            "Curation AI authenticates digital content and analyzes real public sentiment before organizations make critical decisions.",
           highlight: "AI Product",
-          url: "https://curationqa.myaisells.com/",
+          url: "https://www.curationai.ai/",
           cta: "Visit project",
         },
         {
@@ -96,7 +96,7 @@ export default {
           status: "Live",
           date: "2026",
           description:
-            "Collaborative productivity interface with straightforward user flow and mobile-first layout decisions.",
+            "The modern HR platform built for teams that want to work smarter. Automate compliance, engage your workforce, and make data-driven decisions with WorkPadi's all-in-one solution.",
           highlight: "Collaboration",
           url: "https://work-padi.vercel.app/",
           cta: "Visit project",
@@ -110,6 +110,17 @@ export default {
             "Modern frontend implementation centered on clean component structure, scalability, and polished UX details.",
           highlight: "Frontend",
           url: "https://pathspring-frontend.vercel.app/",
+          cta: "Visit project",
+        },
+        {
+          title: "Complaint Fix",
+          framework: "AI Application",
+          status: "Live",
+          date: "2026",
+          description:
+            "A simple AI application that handles responses with a deep understanding of customer needs, delivering swift and accurate solutions while maintaining empathy and adherence to company policies and complaint regulatory guides.",
+          highlight: "Support AI",
+          url: "https://complaintgpt.vercel.app/",
           cta: "Visit project",
         },
       ],
