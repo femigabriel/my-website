@@ -5,7 +5,7 @@
       GitHub
     </a>
     <a
-      href="https://www.linkedin.com/in/ogungbade-oluwafemi-25b28619a/"
+      href="https://www.linkedin.com/in/gabriel-oluwafemi"
       target="_blank"
       rel="noreferrer"
     >

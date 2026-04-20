@@ -1,19 +1,33 @@
 <template>
   <aside class="profile-page">
-    <div>
+    <div class="profile-content">
       <div class="profile-head">
-        <img src="../images/LIN.jpg" alt="Ogungbade Femi" />
-        <div>
+        <img src="../images/fm.png" alt="Ogungbade Femi" />
+        <div class="identity">
+          <p class="availability">Available for roles</p>
           <h1>Ogungbade Femi</h1>
           <p>Frontend Developer</p>
         </div>
       </div>
 
       <p class="about">
-        I build clean, high-performing web products with Vue and React. I care
-        about thoughtful UI structure, smooth interaction, and mobile-first
-        delivery.
+        Frontend Developer with 3+ years of experience building responsive,
+        high-performance web applications using React, Next.js, Vue, and Nuxt.
+        I transform UI/UX ideas into scalable products that improve user
+        engagement and business outcomes.
       </p>
+
+      <div class="meta-list">
+        <p><i class="las la-map-marker"></i> Lagos, Nigeria</p>
+        <p><i class="las la-envelope"></i> timfemi@gmail.com</p>
+      </div>
+
+      <div class="skills-box">
+        <p class="skills-title">Core Skills</p>
+        <div class="skills-grid">
+          <span v-for="skill in skills" :key="skill">{{ skill }}</span>
+        </div>
+      </div>
 
       <ul class="nav-list">
         <li
@@ -33,7 +47,7 @@
         <i class="lab la-github"></i> GitHub
       </a>
       <a
-        href="https://www.linkedin.com/in/ogungbade-oluwafemi-25b28619a/"
+        href="https://www.linkedin.com/in/gabriel-oluwafemi"
         target="_blank"
         rel="noreferrer"
       >
@@ -55,6 +69,15 @@ export default {
         { id: 0, numb: "01", status: "PROJECTS" },
         { id: 1, numb: "02", status: "RESUME" },
       ],
+      skills: [
+        "HTML5",
+        "JavaScript",
+        "React",
+        "TypeScript",
+        "Next.js",
+        "Vue.js",
+        "Nuxt.js",
+      ],
     };
   },
   methods: {
@@ -74,6 +97,11 @@ export default {
   padding: 28px;
 }
 
+.profile-content {
+  display: grid;
+  gap: 16px;
+}
+
 .profile-head {
   display: flex;
   align-items: center;
@@ -82,19 +110,27 @@ export default {
 }
 
 .profile-head img {
-  width: 72px;
-  height: 72px;
+  width: 80px;
+  height: 80px;
   border-radius: 18px;
   object-fit: cover;
   border: 1px solid rgba(148, 163, 184, 0.35);
 }
 
-.profile-head h1 {
-  font-size: 1.4rem;
-  line-height: 1.2;
+.availability {
+  color: #67e8f9;
+  font-size: 0.75rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
 }
 
-.profile-head p {
+.profile-head h1 {
+  font-size: 1.55rem;
+  line-height: 1.2;
+  margin-top: 4px;
+}
+
+.identity p:last-child {
   color: #22d3ee;
   margin-top: 4px;
   font-size: 0.92rem;
@@ -102,8 +138,50 @@ export default {
 
 .about {
   color: #94a3b8;
-  line-height: 1.7;
-  margin-bottom: 28px;
+  line-height: 1.75;
+}
+
+.meta-list {
+  display: grid;
+  gap: 8px;
+}
+
+.meta-list p {
+  color: #b7c4d7;
+  font-size: 0.9rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.skills-box {
+  padding: 12px;
+  border-radius: 12px;
+  border: 1px solid rgba(148, 163, 184, 0.2);
+  background: rgba(15, 23, 42, 0.45);
+}
+
+.skills-title {
+  color: #93c5fd;
+  font-size: 0.8rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.skills-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.skills-grid span {
+  background: rgba(34, 211, 238, 0.1);
+  border: 1px solid rgba(34, 211, 238, 0.3);
+  color: #bff7ff;
+  font-size: 0.8rem;
+  padding: 4px 10px;
+  border-radius: 999px;
 }
 
 .nav-list {
@@ -167,6 +245,10 @@ export default {
 @media (max-width: 1080px) {
   .profile-page {
     gap: 20px;
+  }
+
+  .profile-content {
+    gap: 14px;
   }
 }
 

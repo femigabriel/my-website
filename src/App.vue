@@ -18,8 +18,8 @@
             <p class="eyebrow">Portfolio</p>
             <h2>Selected Work</h2>
             <p>
-              Recent product builds focused on growth, automation, and modern user
-              experience.
+              Production-ready applications across AI, HR, media, healthcare,
+              and workflow automation.
             </p>
           </header>
 
@@ -80,7 +80,40 @@ export default {
           cta: "Visit project",
         },
         {
-          title: "Hell Yes Media",
+          title: "Maildrip",
+          framework: "Email Automation Platform",
+          status: "Live",
+          date: "2025",
+          description:
+            "Developed responsive frontend workflows and optimized campaign creation experiences for modern email marketing automation.",
+          highlight: "SaaS Product",
+          url: "https://app.maildrip.io/",
+          cta: "Visit project",
+        },
+        {
+          title: "Almedin",
+          framework: "HR Management System",
+          status: "Live",
+          date: "2025",
+          description:
+            "Built dashboard interfaces and integrated APIs to support employee management, operations visibility, and workflow execution.",
+          highlight: "HR Tech",
+          url: "https://almedin-project.vercel.app/",
+          cta: "Visit project",
+        },
+        {
+          title: "Aluuka",
+          framework: "Healthcare Platform",
+          status: "Live",
+          date: "2025",
+          description:
+            "Implemented accessible service flows and clean UI architecture to improve healthcare navigation and service booking.",
+          highlight: "HealthTech",
+          url: "https://aluuka.io/",
+          cta: "Visit project",
+        },
+        {
+          title: "Hellyes Media",
           framework: "Marketing Platform",
           status: "Live",
           date: "2026",
@@ -91,7 +124,7 @@ export default {
           cta: "Visit project",
         },
         {
-          title: "Work Padi",
+          title: "WorkPadi",
           framework: "Web App",
           status: "Live",
           date: "2026",
@@ -99,17 +132,6 @@ export default {
             "The modern HR platform built for teams that want to work smarter. Automate compliance, engage your workforce, and make data-driven decisions with WorkPadi's all-in-one solution.",
           highlight: "Collaboration",
           url: "https://work-padi.vercel.app/",
-          cta: "Visit project",
-        },
-        {
-          title: "Pathspring Frontend",
-          framework: "Frontend Engineering",
-          status: "Live",
-          date: "2026",
-          description:
-            "Modern frontend implementation centered on clean component structure, scalability, and polished UX details.",
-          highlight: "Frontend",
-          url: "https://pathspring-frontend.vercel.app/",
           cta: "Visit project",
         },
         {
@@ -121,6 +143,17 @@ export default {
             "A simple AI application that handles responses with a deep understanding of customer needs, delivering swift and accurate solutions while maintaining empathy and adherence to company policies and complaint regulatory guides.",
           highlight: "Support AI",
           url: "https://complaintgpt.vercel.app/",
+          cta: "Visit project",
+        },
+        {
+          title: "Pathspring Frontend",
+          framework: "Frontend Engineering",
+          status: "Live",
+          date: "2026",
+          description:
+            "Modern frontend implementation centered on clean component structure, scalability, and polished UX details.",
+          highlight: "Frontend",
+          url: "https://pathspring-frontend.vercel.app/",
           cta: "Visit project",
         },
       ],

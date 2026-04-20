@@ -9,9 +9,20 @@
         <p class="role">Frontend Developer</p>
       </div>
 
+      <div class="contact-grid">
+        <a href="mailto:timfemi@gmail.com">timfemi@gmail.com</a>
+        <a href="tel:+2349061513696">+234 906 151 3696</a>
+        <a href="https://www.linkedin.com/in/gabriel-oluwafemi" target="_blank" rel="noreferrer">
+          linkedin.com/in/gabriel-oluwafemi
+        </a>
+      </div>
+
       <p class="summary">
-        Frontend developer focused on building responsive, conversion-friendly,
-        and maintainable web interfaces with Vue and React.
+        Front-End Developer with 3+ years of experience building responsive,
+        high-performance web applications with React, Next.js, Vue, and modern
+        JavaScript frameworks. Proven strength in translating UI/UX designs into
+        scalable components, optimizing performance, and delivering products
+        that drive engagement and measurable business value.
       </p>
 
       <div class="divider"><span></span></div>
@@ -19,9 +30,41 @@
       <section class="resume-section">
         <h3>Core Skills</h3>
         <p>
-          Vue.js, React, JavaScript, TypeScript, HTML5, CSS3, Responsive UI,
-          Component Architecture, API Integration
+          JavaScript (ES6+), TypeScript, HTML5, CSS3, Sass, React.js, Next.js,
+          Vue.js, Nuxt.js, TailwindCSS, Node.js, Express.js, REST APIs, Git,
+          Vercel, Figma, performance optimization, responsive design.
         </p>
+      </section>
+
+      <section class="resume-section">
+        <h3>Experience</h3>
+        <ul>
+          <li>
+            <strong>Front-End Developer, Bles Software (Remote)</strong>
+            <span>Dec 2023 - Present</span>
+          </li>
+          <li>
+            Built scalable responsive interfaces with React and TailwindCSS,
+            integrated REST APIs, and improved load performance with reusable
+            component architecture.
+          </li>
+          <li>
+            <strong>Front-End Developer, Charisol (Lagos)</strong>
+            <span>Feb 2020 - Dec 2023</span>
+          </li>
+          <li>
+            Developed websites, dashboards, and landing pages from concept to
+            deployment; refactored legacy codebases and improved cross-device UX.
+          </li>
+          <li>
+            <strong>Front-End Developer Intern, StarTimes (Lagos)</strong>
+            <span>Jan 2019 - Jan 2020</span>
+          </li>
+          <li>
+            Built user-friendly pages with HTML, CSS, and JavaScript while
+            supporting debugging, testing, and on-time feature delivery.
+          </li>
+        </ul>
       </section>
 
       <section class="resume-section">
@@ -89,6 +132,27 @@ h2 {
   line-height: 1.7;
 }
 
+.contact-grid {
+  margin-top: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.contact-grid a {
+  border: 1px solid rgba(148, 163, 184, 0.2);
+  border-radius: 999px;
+  padding: 4px 10px;
+  font-size: 0.78rem;
+  color: #cbd5e1;
+  text-decoration: none;
+}
+
+.contact-grid a:hover {
+  border-color: rgba(34, 211, 238, 0.55);
+  color: #bff7ff;
+}
+
 .divider {
   margin: 20px 0;
 }
@@ -118,10 +182,16 @@ h2 {
 ul {
   list-style: none;
   display: grid;
-  gap: 10px;
+  gap: 8px;
 }
 
 strong {
   color: #e2e8f0;
+}
+
+li span {
+  display: block;
+  color: #67e8f9;
+  font-size: 0.82rem;
 }
 </style>
