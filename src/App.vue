@@ -13,23 +13,28 @@
       />
 
       <main class="main-panel">
-        <section v-show="current === 0" class="projects-page">
-          <header class="section-header">
-            <p class="eyebrow">Portfolio</p>
-            <h2>Selected Work</h2>
-            <p>
-              Production-ready applications across AI, HR, media, healthcare,
-              and workflow automation.
-            </p>
-          </header>
+        <transition name="fade" mode="out-in">
+          <!-- Wrap both sections in a single div or use component :is -->
+          <div key="content">
+            <section v-show="current === 0" class="projects-page">
+              <header class="section-header">
+                <p class="eyebrow">Portfolio</p>
+                <h2>Selected Work</h2>
+                <p>
+                  Production-ready applications across AI, HR, media, healthcare,
+                  and workflow automation.
+                </p>
+              </header>
 
-          <ProjectFlex :projects="featuredProjects" />
-          <ProjectGrid :projects="remainingProjects" />
-        </section>
+              <ProjectFlex :projects="featuredProjects" />
+              <ProjectGrid :projects="remainingProjects" />
+            </section>
 
-        <section v-show="current === 1" class="resume-page">
-          <Resume :projects="projects" />
-        </section>
+            <section v-show="current === 1" class="resume-page">
+              <Resume :projects="projects" />
+            </section>
+          </div>
+        </transition>
 
         <SocialFooter class="socials-footer" />
       </main>
@@ -66,6 +71,17 @@ export default {
             "The all-in-one platform for creating, managing, and scaling events. Built for workshops through large conferences.",
           highlight: "Latest Build",
           url: "https://event-hub-three-red.vercel.app/",
+          cta: "Visit project",
+        },
+        {
+          title: "Digital Book App",
+          framework: "EdTech Platform",
+          status: "Live",
+          date: "2026",
+          description:
+            "Three Paths Ile Social Emotion Learning platform with a unique blend of reading and activities, inspired by Charlie's Big Gift.",
+          highlight: "Education",
+          url: "https://digital-book-app.vercel.app/",
           cta: "Visit project",
         },
         {
@@ -113,6 +129,39 @@ export default {
           cta: "Visit project",
         },
         {
+          title: "Speech Help",
+          framework: "Assistive Communication App",
+          status: "Live",
+          date: "2026",
+          description:
+            "Speech support platform focused on guided communication workflows. Demo access requires account login.",
+          highlight: "Accessible Tech",
+          url: "https://speech-help.vercel.app/",
+          cta: "Visit project",
+        },
+        {
+          title: "HomeSummo",
+          framework: "Property Platform",
+          status: "Client Host",
+          date: "2026",
+          description:
+            "Real estate experience deployed on client infrastructure. Availability may vary depending on host billing status.",
+          highlight: "Client Delivery",
+          url: "https://www.homesummo.com/",
+          cta: "Visit project",
+        },
+        {
+          title: "LawTabby",
+          framework: "Legal Tech Platform",
+          status: "Live",
+          date: "2026",
+          description:
+            "Legal workflow product with user onboarding and Google Single Sign-On authentication.",
+          highlight: "Legal Tech",
+          url: "https://lawtabby.onrender.com/",
+          cta: "Visit project",
+        },
+        {
           title: "Hellyes Media",
           framework: "Marketing Platform",
           status: "Live",
@@ -146,12 +195,12 @@ export default {
           cta: "Visit project",
         },
         {
-          title: "Pathspring Frontend",
+          title: "Pathspring",
           framework: "Frontend Engineering",
           status: "Live",
           date: "2026",
           description:
-            "Modern frontend implementation centered on clean component structure, scalability, and polished UX details.",
+            "The reading platform for every reader. Whether you're a school looking to transform reading instruction or a family wanting to nurture a love of reading, PathSpring has you covered.",
           highlight: "Frontend",
           url: "https://pathspring-frontend.vercel.app/",
           cta: "Visit project",
@@ -176,7 +225,7 @@ export default {
 </script>
 
 <style>
-@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700&display=swap");
 
 * {
   box-sizing: border-box;
@@ -185,32 +234,34 @@ export default {
 }
 
 :root {
-  --bg: #05070d;
-  --panel: rgba(15, 23, 42, 0.82);
-  --panel-border: rgba(148, 163, 184, 0.22);
-  --text: #e2e8f0;
-  --muted: #94a3b8;
-  --accent: #22d3ee;
-  --accent-strong: #38bdf8;
+  --bg-dark: #0a0a0f;
+  --bg-panel: rgba(18, 22, 35, 0.75);
+  --border-light: rgba(148, 163, 184, 0.15);
+  --text-primary: #f1f5f9;
+  --text-secondary: #94a3b8;
+  --accent-cyan: #22d3ee;
+  --accent-blue: #38bdf8;
+  --glow-cyan: rgba(34, 211, 238, 0.2);
+  --card-bg: rgba(30, 35, 50, 0.5);
+  --transition-fast: 0.2s ease;
+  --transition-smooth: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 html,
 body,
 #app {
   min-height: 100%;
+  scroll-behavior: smooth;
 }
 
 body {
-  color: var(--text);
-  background:
-    radial-gradient(circle at 15% 20%, rgba(34, 211, 238, 0.16), transparent 38%),
-    radial-gradient(circle at 80% 0%, rgba(56, 189, 248, 0.2), transparent 42%),
-    var(--bg);
-  font-family: "Space Grotesk", sans-serif;
-}
-
-a {
-  color: inherit;
+  font-family: "Inter", sans-serif;
+  background-color: var(--bg-dark);
+  color: var(--text-primary);
+  background-image: 
+    radial-gradient(circle at 10% 20%, rgba(34, 211, 238, 0.08) 0%, transparent 50%),
+    radial-gradient(circle at 90% 70%, rgba(56, 189, 248, 0.06) 0%, transparent 55%);
+  background-attachment: fixed;
 }
 
 .app-shell {
@@ -224,54 +275,74 @@ a {
   position: fixed;
   inset: 0;
   pointer-events: none;
-  background:
-    linear-gradient(125deg, rgba(34, 211, 238, 0.08), transparent 35%),
-    linear-gradient(320deg, rgba(56, 189, 248, 0.08), transparent 45%);
+  background: 
+    linear-gradient(135deg, rgba(34, 211, 238, 0.05) 0%, transparent 40%),
+    linear-gradient(225deg, rgba(56, 189, 248, 0.05) 0%, transparent 45%);
+  z-index: 0;
 }
 
 .app-layout {
   position: relative;
   z-index: 1;
-  max-width: 1280px;
+  max-width: 1400px;
   margin: 0 auto;
   display: grid;
-  grid-template-columns: 320px 1fr;
-  gap: 24px;
-}
-
-.profile-panel,
-.main-panel {
-  background: var(--panel);
-  border: 1px solid var(--panel-border);
-  backdrop-filter: blur(12px);
-  border-radius: 22px;
+  grid-template-columns: 340px 1fr;
+  gap: 28px;
 }
 
 .main-panel {
-  padding: 34px;
+  background: var(--bg-panel);
+  backdrop-filter: blur(16px);
+  border: 1px solid var(--border-light);
+  border-radius: 28px;
+  padding: 36px;
+  transition: all var(--transition-smooth);
 }
 
 .section-header {
-  margin-bottom: 24px;
+  margin-bottom: 32px;
 }
 
 .eyebrow {
   text-transform: uppercase;
-  letter-spacing: 0.14em;
-  color: var(--accent);
-  font-size: 12px;
-  margin-bottom: 10px;
-}
-
-.section-header h2 {
-  font-size: clamp(1.8rem, 2.8vw, 2.4rem);
+  letter-spacing: 0.12em;
+  color: var(--accent-cyan);
+  font-size: 0.75rem;
+  font-weight: 600;
   margin-bottom: 12px;
 }
 
+.section-header h2 {
+  font-size: clamp(1.8rem, 3vw, 2.6rem);
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  margin-bottom: 14px;
+  background: linear-gradient(135deg, #fff, var(--accent-blue));
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
 .section-header p {
-  color: var(--muted);
+  color: var(--text-secondary);
   max-width: 680px;
-  line-height: 1.7;
+  line-height: 1.6;
+}
+
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 0.25s ease, transform 0.25s ease;
+}
+
+.fade-enter-from {
+  opacity: 0;
+  transform: translateY(8px);
+}
+
+.fade-leave-to {
+  opacity: 0;
+  transform: translateY(-8px);
 }
 
 .socials-footer {
@@ -281,29 +352,26 @@ a {
 @media (max-width: 1080px) {
   .app-layout {
     grid-template-columns: 1fr;
+    gap: 24px;
   }
 
   .main-panel {
-    padding: 26px;
+    padding: 28px;
   }
 }
 
 @media (max-width: 640px) {
   .app-shell {
-    padding: 12px;
+    padding: 16px;
   }
 
   .main-panel {
-    padding: 18px;
-  }
-
-  .section-header {
-    margin-bottom: 18px;
+    padding: 20px;
   }
 
   .socials-footer {
     display: block;
-    margin-top: 18px;
+    margin-top: 28px;
   }
 }
 </style>

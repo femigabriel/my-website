@@ -41,6 +41,7 @@ export default {};
   text-decoration: none;
   color: #cbd5e1;
   font-size: 0.85rem;
+  transition: all 0.2s ease;
 }
 
 .mobile-footer a:hover {

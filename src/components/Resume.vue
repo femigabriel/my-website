@@ -69,9 +69,20 @@
 
       <section class="resume-section">
         <h3>Project Highlights</h3>
-        <ul>
+        <ul class="project-list">
           <li v-for="project in projects" :key="project.title">
-            <strong>{{ project.title }}:</strong> {{ project.description }}
+            <a 
+              :href="project.url" 
+              target="_blank" 
+              rel="noreferrer"
+              class="project-link"
+            >
+              <strong>{{ project.title }}:</strong>
+            </a>
+            {{ project.description }}
+            <span v-if="project.demoNote" class="demo-hint">
+              ({{ project.demoNote }})
+            </span>
           </li>
         </ul>
       </section>
@@ -146,6 +157,7 @@ h2 {
   font-size: 0.78rem;
   color: #cbd5e1;
   text-decoration: none;
+  transition: all 0.2s ease;
 }
 
 .contact-grid a:hover {
@@ -171,6 +183,7 @@ h2 {
 .resume-section h3 {
   font-size: 1rem;
   margin-bottom: 8px;
+  color: #e2e8f0;
 }
 
 .resume-section p,
@@ -185,13 +198,62 @@ ul {
   gap: 8px;
 }
 
-strong {
+/* Project List Styles */
+.project-list li {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 4px;
+}
+
+.project-link {
+  text-decoration: none;
+  transition: all 0.2s ease;
+  display: inline-block;
+}
+
+.project-link strong {
   color: #e2e8f0;
+  transition: color 0.2s ease;
+}
+
+.project-link:hover {
+  transform: translateX(2px);
+}
+
+.project-link:hover strong {
+  color: #22d3ee;
+}
+
+.demo-hint {
+  font-size: 0.75rem;
+  color: #67e8f9;
+  background: rgba(34, 211, 238, 0.1);
+  padding: 2px 6px;
+  border-radius: 12px;
+  margin-left: 6px;
 }
 
 li span {
   display: block;
   color: #67e8f9;
   font-size: 0.82rem;
+}
+
+/* Responsive */
+@media (max-width: 640px) {
+  .project-list li {
+    flex-direction: column;
+    gap: 6px;
+    margin-bottom: 12px;
+    padding-bottom: 12px;
+    border-bottom: 1px solid rgba(148, 163, 184, 0.1);
+  }
+  
+  .demo-hint {
+    display: inline-block;
+    margin-left: 0;
+    margin-top: 4px;
+  }
 }
 </style>

@@ -1,110 +1,216 @@
 <template>
-  <article class="project-box">
-    <div class="meta-row">
-      <p class="framework">{{ framework }}</p>
-      <span class="pill">{{ highlight || status }}</span>
+  <div class="project-single" @click="openProject">
+    <div class="project-header">
+      <div class="project-badge">
+        <span class="highlight-badge" v-if="highlight">{{ highlight }}</span>
+        <span class="status-badge" :class="statusClass">{{ status }}</span>
+      </div>
+      <div class="project-date">{{ date }}</div>
     </div>
-
-    <h3>{{ title }}</h3>
-    <p class="description">{{ description }}</p>
-
-    <div class="bottom-row">
-      <small>{{ date }}</small>
-      <a target="_blank" rel="noreferrer" :href="url">
-        {{ video }}
-        <i class="las la-arrow-right"></i>
-      </a>
+    
+    <h3 class="project-title">{{ title }}</h3>
+    <p class="project-framework">{{ framework }}</p>
+    <p class="project-description">{{ description }}</p>
+    
+    <div class="demo-note" v-if="demoNote">
+      <i class="las la-info-circle"></i>
+      <span>{{ demoNote }}</span>
     </div>
-  </article>
+    
+    <div class="project-footer">
+      <span class="cta-link">{{ cta || 'Explore project' }} <i class="las la-arrow-right"></i></span>
+    </div>
+    
+    <div class="card-glow"></div>
+  </div>
 </template>
 
 <script>
 export default {
-  props: [
-    "framework",
-    "title",
-    "status",
-    "video",
-    "date",
-    "description",
-    "url",
-    "highlight",
-  ],
+  props: {
+    title: String,
+    framework: String,
+    status: String,
+    date: String,
+    description: String,
+    highlight: String,
+    url: String,
+    cta: String,
+    demoNote: String
+  },
+  computed: {
+    statusClass() {
+      return {
+        'status-live': this.status === 'Live',
+        'status-demo': this.status === 'Demo Available',
+        'status-unknown': this.status === 'Status Unknown',
+        'status-signup': this.status === 'Requires Signup'
+      };
+    }
+  },
+  methods: {
+    openProject() {
+      if (this.url) {
+        window.open(this.url, '_blank');
+      }
+    }
+  }
 };
 </script>
 
 <style scoped>
-.project-box {
-  background: linear-gradient(160deg, rgba(15, 23, 42, 0.9), rgba(15, 23, 42, 0.6));
-  border: 1px solid rgba(148, 163, 184, 0.22);
-  border-radius: 16px;
-  padding: 18px;
-  display: grid;
-  gap: 14px;
-  min-height: 220px;
-  transition: transform 0.22s ease, border-color 0.22s ease;
-}
-
-.project-box:hover {
-  transform: translateY(-3px);
-  border-color: rgba(34, 211, 238, 0.55);
-}
-
-.meta-row {
+.project-single {
+  background: rgba(18, 22, 35, 0.6);
+  border: 1px solid var(--border-light);
+  border-radius: 24px;
+  padding: 24px;
+  cursor: pointer;
+  transition: all var(--transition-smooth);
+  position: relative;
+  overflow: hidden;
+  height: 100%;
   display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 12px;
+  flex-direction: column;
 }
 
-.framework {
-  color: #93c5fd;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-  font-size: 0.72rem;
+.project-single:hover {
+  transform: translateY(-6px);
+  border-color: rgba(34, 211, 238, 0.4);
+  background: rgba(30, 35, 50, 0.7);
+  box-shadow: 0 20px 30px -12px rgba(0, 0, 0, 0.3);
 }
 
-.pill {
-  border-radius: 999px;
-  padding: 4px 10px;
-  background: rgba(34, 211, 238, 0.12);
-  border: 1px solid rgba(34, 211, 238, 0.35);
-  color: #22d3ee;
-  font-size: 0.72rem;
+.card-glow {
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle at 70% 20%, rgba(34, 211, 238, 0.08), transparent 70%);
+  opacity: 0;
+  transition: opacity var(--transition-smooth);
+  pointer-events: none;
 }
 
-h3 {
-  font-size: 1.28rem;
-  line-height: 1.3;
+.project-single:hover .card-glow {
+  opacity: 1;
 }
 
-.description {
-  color: #94a3b8;
-  line-height: 1.65;
-}
-
-.bottom-row {
-  margin-top: auto;
+.project-header {
   display: flex;
-  align-items: center;
   justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.project-badge {
+  display: flex;
   gap: 10px;
+  flex-wrap: wrap;
 }
 
-small {
-  color: #64748b;
-  font-size: 0.78rem;
+.highlight-badge {
+  background: linear-gradient(135deg, rgba(34, 211, 238, 0.2), rgba(56, 189, 248, 0.1));
+  color: var(--accent-cyan);
+  font-size: 0.7rem;
+  font-weight: 600;
+  padding: 4px 10px;
+  border-radius: 30px;
+  border: 1px solid rgba(34, 211, 238, 0.3);
 }
 
-a {
+.status-badge {
+  font-size: 0.7rem;
+  font-weight: 600;
+  padding: 4px 10px;
+  border-radius: 30px;
+  background: rgba(16, 185, 129, 0.15);
+  color: #34d399;
+  border: 1px solid rgba(16, 185, 129, 0.3);
+}
+
+.status-demo {
+  background: rgba(34, 211, 238, 0.15);
   color: #22d3ee;
-  text-decoration: none;
+  border-color: rgba(34, 211, 238, 0.3);
+}
+
+.status-unknown {
+  background: rgba(245, 158, 11, 0.15);
+  color: #fbbf24;
+  border-color: rgba(245, 158, 11, 0.3);
+}
+
+.status-signup {
+  background: rgba(139, 92, 246, 0.15);
+  color: #a78bfa;
+  border-color: rgba(139, 92, 246, 0.3);
+}
+
+.project-date {
+  font-size: 0.7rem;
+  color: var(--text-secondary);
+  font-weight: 500;
+}
+
+.project-title {
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin-bottom: 6px;
+  letter-spacing: -0.02em;
+}
+
+.project-framework {
+  font-size: 0.75rem;
+  color: var(--accent-blue);
+  margin-bottom: 14px;
+  font-weight: 500;
+}
+
+.project-description {
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+  line-height: 1.5;
+  margin-bottom: 16px;
+  flex-grow: 1;
+}
+
+.demo-note {
+  background: rgba(0, 0, 0, 0.3);
+  border-radius: 12px;
+  padding: 10px 12px;
+  margin-bottom: 16px;
+  font-size: 0.75rem;
+  color: #cbd5e1;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  border-left: 2px solid var(--accent-cyan);
+}
+
+.demo-note i {
+  color: var(--accent-cyan);
+  font-size: 1rem;
+}
+
+.project-footer {
+  margin-top: auto;
+  padding-top: 16px;
+}
+
+.cta-link {
+  font-size: 0.8rem;
+  font-weight: 500;
+  color: var(--text-primary);
   display: inline-flex;
   align-items: center;
-  gap: 5px;
+  gap: 8px;
+  transition: gap var(--transition-fast);
 }
 
-a:hover {
-  color: #67e8f9;
+.project-single:hover .cta-link {
+  gap: 12px;
+  color: var(--accent-cyan);
+}
+
+.cta-link i {
+  font-size: 1rem;
 }
 </style>

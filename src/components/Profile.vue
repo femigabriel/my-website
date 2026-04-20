@@ -1,12 +1,15 @@
 <template>
-  <aside class="profile-page">
+  <aside class="profile-panel">
     <div class="profile-content">
       <div class="profile-head">
-        <img src="../images/fm.png" alt="Ogungbade Femi" />
+        <div class="avatar-wrapper">
+          <img src='../images/fm.png' alt="Ogungbade Femi" />
+          <div class="online-dot"></div>
+        </div>
         <div class="identity">
           <p class="availability">Available for roles</p>
           <h1>Ogungbade Femi</h1>
-          <p>Frontend Developer</p>
+          <p class="role">Frontend Developer</p>
         </div>
       </div>
 
@@ -36,8 +39,9 @@
           :class="['nav-item', { active: li.id === activeId }]"
           @click="setActivePage(li.id)"
         >
-          <span>{{ li.numb }}</span>
-          <p>{{ li.status }}</p>
+          <span class="nav-number">{{ li.numb }}</span>
+          <p class="nav-status">{{ li.status }}</p>
+          <div class="nav-glow"></div>
         </li>
       </ul>
     </div>
@@ -89,175 +93,272 @@ export default {
 </script>
 
 <style scoped>
-.profile-page {
-  min-height: 100%;
+.profile-panel {
+  background: var(--bg-panel);
+  backdrop-filter: blur(16px);
+  border: 1px solid var(--border-light);
+  border-radius: 28px;
+  padding: 28px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  padding: 28px;
+  height: fit-content;
+  position: sticky;
+  top: 28px;
+  transition: transform var(--transition-smooth), box-shadow var(--transition-smooth);
+}
+
+.profile-panel:hover {
+  box-shadow: 0 20px 35px -12px rgba(0, 0, 0, 0.3);
+  border-color: rgba(34, 211, 238, 0.25);
 }
 
 .profile-content {
-  display: grid;
-  gap: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
 }
 
 .profile-head {
   display: flex;
   align-items: center;
-  gap: 12px;
-  margin-bottom: 20px;
+  gap: 16px;
+}
+
+.avatar-wrapper {
+  position: relative;
 }
 
 .profile-head img {
-  width: 80px;
-  height: 80px;
-  border-radius: 18px;
+  width: 85px;
+  height: 85px;
+  border-radius: 24px;
   object-fit: cover;
-  border: 1px solid rgba(148, 163, 184, 0.35);
+  border: 2px solid rgba(34, 211, 238, 0.5);
+  box-shadow: 0 8px 20px -6px rgba(0, 0, 0, 0.4);
+  transition: transform var(--transition-fast);
+}
+
+.profile-head img:hover {
+  transform: scale(1.02);
+}
+
+.online-dot {
+  position: absolute;
+  bottom: 4px;
+  right: 4px;
+  width: 14px;
+  height: 14px;
+  background-color: #10b981;
+  border-radius: 50%;
+  border: 2px solid var(--bg-panel);
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0% { opacity: 1; transform: scale(1); }
+  50% { opacity: 0.7; transform: scale(1.1); }
+  100% { opacity: 1; transform: scale(1); }
 }
 
 .availability {
-  color: #67e8f9;
-  font-size: 0.75rem;
-  letter-spacing: 0.08em;
+  color: var(--accent-cyan);
+  font-size: 0.7rem;
+  font-weight: 500;
+  letter-spacing: 0.1em;
   text-transform: uppercase;
+  background: rgba(34, 211, 238, 0.1);
+  display: inline-block;
+  padding: 2px 8px;
+  border-radius: 20px;
+  width: fit-content;
 }
 
 .profile-head h1 {
-  font-size: 1.55rem;
+  font-size: 1.65rem;
+  font-weight: 600;
   line-height: 1.2;
-  margin-top: 4px;
+  margin-top: 8px;
+  letter-spacing: -0.02em;
 }
 
-.identity p:last-child {
-  color: #22d3ee;
-  margin-top: 4px;
-  font-size: 0.92rem;
+.role {
+  color: var(--accent-blue);
+  font-size: 0.9rem;
+  margin-top: 6px;
+  font-weight: 500;
 }
 
 .about {
-  color: #94a3b8;
-  line-height: 1.75;
+  color: var(--text-secondary);
+  line-height: 1.6;
+  font-size: 0.9rem;
 }
 
 .meta-list {
-  display: grid;
-  gap: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 8px 0;
 }
 
 .meta-list p {
-  color: #b7c4d7;
-  font-size: 0.9rem;
+  color: #cbd5e1;
+  font-size: 0.85rem;
   display: inline-flex;
   align-items: center;
-  gap: 8px;
+  gap: 10px;
+  background: rgba(255, 255, 255, 0.03);
+  padding: 6px 12px;
+  border-radius: 40px;
+  width: fit-content;
 }
 
 .skills-box {
-  padding: 12px;
-  border-radius: 12px;
-  border: 1px solid rgba(148, 163, 184, 0.2);
-  background: rgba(15, 23, 42, 0.45);
+  padding: 18px 16px;
+  border-radius: 20px;
+  background: rgba(15, 23, 42, 0.6);
+  border: 1px solid var(--border-light);
 }
 
 .skills-title {
-  color: #93c5fd;
-  font-size: 0.8rem;
-  letter-spacing: 0.08em;
+  color: var(--accent-blue);
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
   text-transform: uppercase;
-  margin-bottom: 10px;
+  margin-bottom: 14px;
 }
 
 .skills-grid {
   display: flex;
   flex-wrap: wrap;
-  gap: 8px;
+  gap: 10px;
 }
 
 .skills-grid span {
-  background: rgba(34, 211, 238, 0.1);
-  border: 1px solid rgba(34, 211, 238, 0.3);
+  background: rgba(34, 211, 238, 0.08);
+  border: 1px solid rgba(34, 211, 238, 0.2);
   color: #bff7ff;
-  font-size: 0.8rem;
-  padding: 4px 10px;
-  border-radius: 999px;
+  font-size: 0.75rem;
+  font-weight: 500;
+  padding: 6px 14px;
+  border-radius: 40px;
+  transition: all var(--transition-fast);
+}
+
+.skills-grid span:hover {
+  background: rgba(34, 211, 238, 0.2);
+  transform: translateY(-2px);
+  border-color: var(--accent-cyan);
 }
 
 .nav-list {
   list-style: none;
-  display: grid;
+  display: flex;
+  flex-direction: column;
   gap: 12px;
+  margin-top: 8px;
 }
 
 .nav-item {
   display: flex;
   align-items: center;
-  gap: 10px;
-  padding: 12px 14px;
-  border: 1px solid rgba(148, 163, 184, 0.18);
-  border-radius: 12px;
-  color: #a8b6cc;
+  gap: 14px;
+  padding: 14px 18px;
+  border: 1px solid var(--border-light);
+  border-radius: 18px;
+  background: rgba(0, 0, 0, 0.2);
   cursor: pointer;
-  transition: all 0.25s ease;
+  transition: all var(--transition-smooth);
+  position: relative;
+  overflow: hidden;
 }
 
-.nav-item span {
-  font-size: 0.78rem;
-  letter-spacing: 0.14em;
+.nav-glow {
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle at 30% 50%, rgba(34, 211, 238, 0.15), transparent 70%);
+  opacity: 0;
+  transition: opacity var(--transition-smooth);
 }
 
-.nav-item p {
-  letter-spacing: 0.08em;
-  font-size: 0.82rem;
+.nav-item:hover .nav-glow,
+.nav-item.active .nav-glow {
+  opacity: 1;
 }
 
 .nav-item:hover,
 .nav-item.active {
-  color: #e2e8f0;
-  border-color: rgba(34, 211, 238, 0.5);
-  background: rgba(34, 211, 238, 0.08);
+  border-color: rgba(34, 211, 238, 0.6);
+  background: rgba(34, 211, 238, 0.05);
+  transform: translateX(4px);
+}
+
+.nav-number {
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  color: var(--accent-cyan);
+}
+
+.nav-status {
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  font-size: 0.85rem;
+  color: var(--text-primary);
 }
 
 .social-wrap {
-  display: grid;
-  gap: 10px;
-  margin-top: 20px;
+  display: flex;
+  gap: 18px;
+  margin-top: 32px;
+  padding-top: 20px;
+  border-top: 1px solid var(--border-light);
 }
 
 .social-wrap a {
   display: inline-flex;
   align-items: center;
   gap: 8px;
-  color: #cbd5e1;
+  color: var(--text-secondary);
   text-decoration: none;
-  font-size: 0.93rem;
+  font-size: 0.85rem;
+  font-weight: 500;
+  transition: all var(--transition-fast);
+  padding: 4px 8px;
+  border-radius: 30px;
 }
 
 .social-wrap a:hover {
-  color: #22d3ee;
-}
-
-.lab {
-  font-size: 1.1rem;
-}
-
-@media (max-width: 1080px) {
-  .profile-page {
-    gap: 20px;
-  }
-
-  .profile-content {
-    gap: 14px;
-  }
+  color: var(--accent-cyan);
+  transform: translateY(-2px);
+  background: rgba(34, 211, 238, 0.1);
 }
 
 @media (max-width: 640px) {
-  .profile-page {
-    padding: 18px;
+  .profile-panel {
+    position: relative;
+    top: 0;
+    padding: 20px;
+  }
+
+  .profile-head {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .meta-list p {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .skills-grid {
+    justify-content: center;
   }
 
   .social-wrap {
+    justify-content: center;
     display: none;
   }
 }

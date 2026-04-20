@@ -4,7 +4,6 @@
       v-for="project in projects"
       :key="project.title"
       :description="project.description"
-      :video="project.cta"
       :url="project.url"
       :framework="project.framework"
       :title="project.title"
@@ -32,13 +31,15 @@ export default {
 <style scoped>
 .featured-grid {
   display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 16px;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+  margin-bottom: 24px;
 }
 
 @media (max-width: 900px) {
   .featured-grid {
     grid-template-columns: 1fr;
+    gap: 20px;
   }
 }
 </style>

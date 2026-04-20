@@ -6,7 +6,6 @@
       :date="project.date"
       :status="project.status"
       :description="project.description"
-      :video="project.cta"
       :url="project.url"
       :framework="project.framework"
       :title="project.title"
@@ -19,9 +18,7 @@
 import ProjectSingle from "./ProjectSingle.vue";
 
 export default {
-  components: {
-    ProjectSingle,
-  },
+  components: { ProjectSingle },
   props: {
     projects: {
       type: Array,
@@ -34,14 +31,15 @@ export default {
 <style scoped>
 .project-grid {
   display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 16px;
-  margin-top: 16px;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+  margin-top: 8px;
 }
 
 @media (max-width: 900px) {
   .project-grid {
     grid-template-columns: 1fr;
+    gap: 20px;
   }
 }
 </style>
