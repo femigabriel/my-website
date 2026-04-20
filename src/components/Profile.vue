@@ -3,7 +3,7 @@
     <div class="profile-content">
       <div class="profile-head">
         <div class="avatar-wrapper">
-          <img src='../images/fm.png' alt="Ogungbade Femi" />
+          <img src='../images/new.jpg' alt="Ogungbade Femi" />
           <div class="online-dot"></div>
         </div>
         <div class="identity">
