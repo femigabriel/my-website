@@ -1,190 +1,110 @@
 <template>
-  <div class="project-box" :class="!isRectangle ? 'isRectangle' : ''">
-    <div class="status">
-      <div class="framework">
-        <p>{{ framework }}</p>
-      </div>
-      <div class="status">
-        <p>{{ status }}</p>
-      </div>
-
-      <div class="date">
-        <p>{{ date }}</p>
-      </div>
+  <article class="project-box">
+    <div class="meta-row">
+      <p class="framework">{{ framework }}</p>
+      <span class="pill">{{ highlight || status }}</span>
     </div>
-    <div class="space">
-      <div class="title">
-        <h2>{{ title }}</h2>
-        <p>{{ description }}</p>
-      </div>
 
-      <div class="main flex">
-        <div class="rating flex">
-          <div class="icon"><i class="las la-external-link-alt"></i></div>
-          <a target="_blank" :href="url">{{ video }}</a>
-        </div>
+    <h3>{{ title }}</h3>
+    <p class="description">{{ description }}</p>
 
-        <div class="rating flex"></div>
-      </div>
+    <div class="bottom-row">
+      <small>{{ date }}</small>
+      <a target="_blank" rel="noreferrer" :href="url">
+        {{ video }}
+        <i class="las la-arrow-right"></i>
+      </a>
     </div>
-  </div>
+  </article>
 </template>
 
 <script>
 export default {
   props: [
     "framework",
-    "isRectangle",
     "title",
     "status",
     "video",
     "date",
     "description",
     "url",
+    "highlight",
   ],
-  data() {
-    return {};
-  },
 };
 </script>
 
 <style scoped>
 .project-box {
-  width: 100%;
-  background: rgb(32, 32, 34);
-  padding: 40px;
-  padding-bottom: 0;
-  border-radius: 2px;
-  cursor: pointer;
-  line-height: 1.8;
-  transition: all 0.2s ease-in-out;
-  display: flex;
-    flex-direction: column;
-    justify-content: space-around;
+  background: linear-gradient(160deg, rgba(15, 23, 42, 0.9), rgba(15, 23, 42, 0.6));
+  border: 1px solid rgba(148, 163, 184, 0.22);
+  border-radius: 16px;
+  padding: 18px;
+  display: grid;
+  gap: 14px;
+  min-height: 220px;
+  transition: transform 0.22s ease, border-color 0.22s ease;
 }
+
 .project-box:hover {
-  width: 100%;
-  box-shadow: 2px 9px 19px 15px #0000001f;
-  transform: scale(1.1);
-  -webkit-transition: all 200ms ease-in;
-  -webkit-transform: scale(1.1);
-  -ms-transition: all 200ms ease-in;
-  -ms-transform: scale(1.1);
-  -moz-transition: all 200ms ease-in;
-  -moz-transform: scale(1.1);
-  transition: all 200ms ease-in;
-  padding-left: 40px;
-  padding-right: 40px;
-}
-.status p {
-  color: rgb(148, 148, 149);
-  font-size: 14px;
-}
-.isRectangle {
-  height: 400px;
+  transform: translateY(-3px);
+  border-color: rgba(34, 211, 238, 0.55);
 }
 
-.framework p {
-  letter-spacing: 5px;
-  font-size: 12px;
-  color: rgb(255, 255, 255);
+.meta-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
 }
- .title h2 {
+
+.framework {
+  color: #93c5fd;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  font-size: 0.72rem;
+}
+
+.pill {
+  border-radius: 999px;
+  padding: 4px 10px;
+  background: rgba(34, 211, 238, 0.12);
+  border: 1px solid rgba(34, 211, 238, 0.35);
+  color: #22d3ee;
+  font-size: 0.72rem;
+}
+
+h3 {
+  font-size: 1.28rem;
   line-height: 1.3;
-  font-size: 22px;
 }
 
-.title p {
-  color: rgb(148, 148, 149);
-  font-size: 14px;
+.description {
+  color: #94a3b8;
+  line-height: 1.65;
 }
 
-.main {
-  padding-top: 30px;
+.bottom-row {
+  margin-top: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
 }
-.rating a {
-  margin: 5px 10px;
+
+small {
+  color: #64748b;
+  font-size: 0.78rem;
+}
+
+a {
+  color: #22d3ee;
   text-decoration: none;
-  color: rgb(148, 148, 149);
-  font-size: 14px;
-  padding-bottom: 20px;
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
 }
-.icon {
-}
-.las {
-  color: rgb(148, 148, 149);
-  font-size: 22px;
-  margin: 8px 2px;
-}
-.main p {
-  font-size: 18px;
-}
-@media (max-width: 480px) {
-  .projects {
-    line-height: 1;
-    width: 100%;
-    overflow-x: hidden;
-  }
 
-  .rating a {
-    font-size: 12px;
-  }
-  .project-box h2 {
-    font-size: 18px;
-  }
-  .project-box h3 {
-    font-size: 12px;
-  }
-  .project-box p {
-    line-height: 1.5;
-    font-size: 12px;
-    width: 10em;
-  }
-  .lar {
-    font-size: 16px;
-  }
-}
-@media (max-width: 420px) {
-  .projects {
-    line-height: 1;
-    width: 100%;
-    overflow-x: hidden;
-  }
-  .project-box {
-    width: 100%;
-    line-height: 3.3;
-  }
-
-  .project-box h2 {
-    font-size: 14px;
-  }
-  .project-box h3 {
-    font-size: 12px;
-  }
-  .project-box p {
-    line-height: 1.5;
-    font-size: 12px;
-    width: 14em;
-  }
-  .title {
-    margin-top: 0px;
-  }
-  .title h2 {
-    line-height: 1.3;
-    font-size: 20px;
-    width: 10em;
-    padding-top: 20px;
-  }
-  .title p {
-    font-size: 14px;
-  }
-  .las {
-    font-size: 20px;
-    margin: 15px 0px;
-  }
-
-  .rating a {
-    font-size: 12px;
-  }
+a:hover {
+  color: #67e8f9;
 }
 </style>

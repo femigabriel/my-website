@@ -1,28 +1,21 @@
 <template>
-  <footer>
-    <div class="profile-pics flex">
-      <img src="../images/mypics4.png" alt="" />
-      <div class="socials flex">
-        <a href="https://github.com/femigabriel">
-          <i class="lab la-github"></i>Github</a
-        >
-      </div>
-      <div class="socials flex">
-        <a href="facebook.com/femigabriel89">
-          <i class="lab la-facebook"></i>Facebook</a
-        >
-      </div>
-      <div class="socials flex">
-        <a href="https://twitter.com/FemiGab2018">
-          <i class="lab la-twitter"></i>Twitter</a
-        >
-      </div>
-      <div class="socials flex">
-        <a href="https://www.linkedin.com/in/ogungbade-oluwafemi-25b28619a/">
-          <i class="lab la-linkedin"></i>Linkedin</a
-        >
-      </div>
-    </div>
+  <footer class="mobile-footer">
+    <a href="https://github.com/femigabriel" target="_blank" rel="noreferrer">
+      <i class="lab la-github"></i>
+      GitHub
+    </a>
+    <a
+      href="https://www.linkedin.com/in/ogungbade-oluwafemi-25b28619a/"
+      target="_blank"
+      rel="noreferrer"
+    >
+      <i class="lab la-linkedin"></i>
+      LinkedIn
+    </a>
+    <a href="https://twitter.com/FemiGab2018" target="_blank" rel="noreferrer">
+      <i class="lab la-twitter"></i>
+      Twitter
+    </a>
   </footer>
 </template>
 
@@ -31,89 +24,32 @@ export default {};
 </script>
 
 <style scoped>
-footer {
-}
-ul {
-  list-style-type: none;
-  padding: 30px 0px;
-}
-li {
-  font-size: 10px;
-  margin: 45px 10px;
-  letter-spacing: 5px;
-}
-.profile-pics {
-  margin: 20px 0px;
-  color: rgb(148, 148, 149);
-}
-.socials {
+.mobile-footer {
+  border: 1px solid rgba(148, 163, 184, 0.2);
+  border-radius: 14px;
+  padding: 12px;
   display: flex;
-  flex-direction: column;
-  text-align: center;
-  justify-content: center;
-
+  justify-content: space-between;
+  gap: 8px;
+  background: rgba(15, 23, 42, 0.6);
 }
-.socials a {
-  /*  */
-  color: rgb(255, 255, 255);
-  font-size: 14px;
-  margin: 2px 7px;
+
+.mobile-footer a {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
   text-decoration: none;
+  color: #cbd5e1;
+  font-size: 0.85rem;
 }
-.lab {
-  font-size: 24px;
-  
-  margin: 3px 10px;
-}
-img {
-  width: 55px;
-  height: 55px;
-  border-radius: 50%;
-}
-@media (max-width: 480px) {
-  .lab {
-    font-size: 16px;
-    margin-bottom: 5px;
-  }
-  .socials {
-    padding: 5px 2px;
-  }
-  .socials a {
-    font-size: 12px;
-    margin-top: 12px;
-  }
 
-  .profile-pics {
-    padding-bottom: 20px;
-  }
-  img {
-    width: 45px;
-    height: 45px;
-    border-radius: 50%;
-    margin: 1px 0px;
-  }
+.mobile-footer a:hover {
+  color: #22d3ee;
 }
-@media (max-width: 380px) {
-  .lab {
-    font-size: 24px;
-    margin-bottom: 5px;
-  }
-  .socials {
-    padding: 2px 0px;
-  }
-  .socials a {
-    font-size: 7px;
-    margin: 5px 5px;
-    /* display: none; */
-  }
 
-  .profile-pics {
-    padding-bottom: 20px;
-  }
-  img {
-    width: 45px;
-    height: 45px;
-    border-radius: 50%;
+@media (min-width: 641px) {
+  .mobile-footer {
+    display: none;
   }
 }
 </style>

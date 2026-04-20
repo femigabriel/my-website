@@ -1,65 +1,49 @@
 <template>
-  <div class="profile-page">
-    <div class="upper-content">
-      <div class="profile-name">
-        <h1>Ogungbade Femi</h1>
-        <h2>Front-End Developer</h2>
+  <aside class="profile-page">
+    <div>
+      <div class="profile-head">
+        <img src="../images/LIN.jpg" alt="Ogungbade Femi" />
+        <div>
+          <h1>Ogungbade Femi</h1>
+          <p>Frontend Developer</p>
+        </div>
       </div>
-      <div class="about">
-        <p>
-          i'm a passionate front-end developer with a desire to learn and grow
-          in a collaborative team environment. I'm Skilled in HTML, CSS, and
-          JavaScript, Vue,Js, React Js.
-        </p>
-      </div>
-      <div class="skills">
-        <ul class="">
-          <li
-            v-bind:class="{ active: li.id === activeId }"
-            v-on:click="setActivePage(li.id)"
-            class="list flex"
-            v-for="li in lists"
-            :key="li"
-          >
-            <div></div>
-            <span v-bind:class="{ active: li.id === activeId }">{{
-              li.numb
-            }}</span>
-            <div class="flex" v-bind:class="{ active: li.id === activeId }">
-              <div v-bind:class="{ lineActive: li.id === activeId }">
-                <div class="line"></div>
-              </div>
 
-              {{ li.status }}
-            </div>
-          </li>
-        </ul>
-      </div>
+      <p class="about">
+        I build clean, high-performing web products with Vue and React. I care
+        about thoughtful UI structure, smooth interaction, and mobile-first
+        delivery.
+      </p>
+
+      <ul class="nav-list">
+        <li
+          v-for="li in lists"
+          :key="li.id"
+          :class="['nav-item', { active: li.id === activeId }]"
+          @click="setActivePage(li.id)"
+        >
+          <span>{{ li.numb }}</span>
+          <p>{{ li.status }}</p>
+        </li>
+      </ul>
     </div>
-    <div class="lower-content">
-      <div class="profile-pics flex">
-        <img src="../images/LIN.jpg" alt="" />
-        <div class="socials flex">
-          <i class="lab la-github"></i>
-          <a href="https://github.com/femigabriel">Github</a>
-        </div>
-        <div class="socials flex">
-          <i class="lab la-facebook"></i>
-          <a href="facebook.com/femigabriel89">Facebook</a>
-        </div>
-        <div class="socials flex">
-          <i class="lab la-twitter"></i>
-          <a href="https://twitter.com/FemiGab2018">Twitter</a>
-        </div>
-        <div class="socials flex">
-          <i class="lab la-linkedin"></i>
-          <a href="https://www.linkedin.com/in/ogungbade-oluwafemi-25b28619a/"
-            >Linkedin</a
-          >
-        </div>
-      </div>
+
+    <div class="social-wrap">
+      <a href="https://github.com/femigabriel" target="_blank" rel="noreferrer">
+        <i class="lab la-github"></i> GitHub
+      </a>
+      <a
+        href="https://www.linkedin.com/in/ogungbade-oluwafemi-25b28619a/"
+        target="_blank"
+        rel="noreferrer"
+      >
+        <i class="lab la-linkedin"></i> LinkedIn
+      </a>
+      <a href="https://twitter.com/FemiGab2018" target="_blank" rel="noreferrer">
+        <i class="lab la-twitter"></i> Twitter
+      </a>
     </div>
-  </div>
+  </aside>
 </template>
 
 <script>
@@ -68,13 +52,11 @@ export default {
   data() {
     return {
       lists: [
-        { id: 0, numb: "01", status: "PROJECT" },
+        { id: 0, numb: "01", status: "PROJECTS" },
         { id: 1, numb: "02", status: "RESUME" },
-        // { id: 2, numb: "03", status: "WORK" },
       ],
     };
   },
-  emits: [],
   methods: {
     setActivePage(value) {
       this.$emit("setActivePage", value);
@@ -82,305 +64,119 @@ export default {
   },
 };
 </script>
+
 <style scoped>
 .profile-page {
+  min-height: 100%;
   display: flex;
   flex-direction: column;
-  padding: 60px;
-  flex-basis: 40%;
-  justify-content: space-around;
-}
-.profile-name {
-  line-height: 1;
+  justify-content: space-between;
+  padding: 28px;
 }
 
-.profile-name h1 {
-  font-size: 42px;
-  letter-spacing: 5px;
-  margin-bottom: 10px;
-}
-
-h2 {
-  font-size: 24px;
-  margin-bottom: px;
-}
-
-.about p {
-  color: rgb(148, 148, 149);
-  line-height: 1.9;
-  width: 32em;
-  font-size: 16px;
-  padding-top: 40px;
-}
-.upper-content {
+.profile-head {
   display: flex;
-  flex-direction: column;
-}
-.lower-content {
-}
-
-.about span {
-  color: rgb(255, 255, 255);
-  text-decoration: underline;
-}
-.line {
-  background: rgb(255, 255, 255);
-  width: 5em;
-  height: 2px;
-  margin: 5px 20px;
-  cursor: pointer;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 20px;
 }
 
-.active {
-  color: rgb(255, 255, 255);
-}
-.lineActive {
-  background: rgb(255, 255, 255);
-  height: 2px;
-  margin: 5px 10px;
-}
-
-.list {
-  color: rgb(148, 148, 149);
-  cursor: pointer;
-}
-.list:hover {
-  color: rgb(255, 255, 255);
-  transition: all 0.2s ease-in-out;
+.profile-head img {
+  width: 72px;
+  height: 72px;
+  border-radius: 18px;
+  object-fit: cover;
+  border: 1px solid rgba(148, 163, 184, 0.35);
 }
 
-.list .line {
+.profile-head h1 {
+  font-size: 1.4rem;
+  line-height: 1.2;
+}
+
+.profile-head p {
+  color: #22d3ee;
+  margin-top: 4px;
+  font-size: 0.92rem;
+}
+
+.about {
+  color: #94a3b8;
+  line-height: 1.7;
+  margin-bottom: 28px;
+}
+
+.nav-list {
+  list-style: none;
+  display: grid;
+  gap: 12px;
+}
+
+.nav-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 14px;
+  border: 1px solid rgba(148, 163, 184, 0.18);
+  border-radius: 12px;
+  color: #a8b6cc;
   cursor: pointer;
-  background: rgb(148, 148, 149);
-  width: 3em;
-  cursor: pointer;
-  margin: 0px 15px;
+  transition: all 0.25s ease;
 }
-.list .line:hover {
-  width: 5em;
-  transition: all 0.2s ease-in-out;
-  background: rgb(255, 255, 255);
+
+.nav-item span {
+  font-size: 0.78rem;
+  letter-spacing: 0.14em;
 }
-.skills {
-  padding-top: 10px;
-  margin: -10px 0px;
+
+.nav-item p {
+  letter-spacing: 0.08em;
+  font-size: 0.82rem;
 }
-ul {
-  list-style-type: none;
-  padding: 30px 0px;
+
+.nav-item:hover,
+.nav-item.active {
+  color: #e2e8f0;
+  border-color: rgba(34, 211, 238, 0.5);
+  background: rgba(34, 211, 238, 0.08);
 }
-li {
-  font-size: 12px;
-  margin: 45px 10px;
-  letter-spacing: 5px;
+
+.social-wrap {
+  display: grid;
+  gap: 10px;
+  margin-top: 20px;
 }
-.profile-pics {
-  margin: 10px 0px;
-  color: rgb(148, 148, 149);
-}
-.socials {
-  padding: 15px 5px;
-}
-.socials a {
-  color: rgb(255, 255, 255);
-  font-size: 14px;
-  margin: 15px 0px;
+
+.social-wrap a {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: #cbd5e1;
   text-decoration: none;
+  font-size: 0.93rem;
 }
+
+.social-wrap a:hover {
+  color: #22d3ee;
+}
+
 .lab {
-  font-size: 24px;
-  margin: 10px 5px;
+  font-size: 1.1rem;
 }
-img {
-  width: 75px;
-  height: 75px;
-  border-radius: 50%;
-}
-@media (max-width: 680px) {
-  .profile-name h1 {
-    font-size: 38px;
-  }
-}
-@media (max-width: 480px) {
-  .profile-name h1 {
-    font-size: 45px;
-    margin-bottom: 10px;
-  }
-  .profile-name h2 {
-    font-size: 1.4em;
-    margin-bottom: 32px;
-    width: 18em;
-  }
 
-  .skills {
-    padding-bottom: 10px;
-    margin: -70px 0px;
-  }
-  .about p {
-    line-height: 1.5;
-    width: 28em;
-    font-size: 12px;
-    padding-bottom: 20px;
-  }
-  .profile-pics {
-  }
-}
-@media (max-width: 420px) {
-  .profile {
-    display: flex;
-    flex-direction: column;
-    padding: 20px;
-  }
-  .profile-name {
-    line-height: 1;
-  }
-  .profile-name h1 {
-    font-size: 32px;
-    width: 12em;
-    margin-bottom: 10px;
-  }
-  .profile-name h2 {
-    font-size: 1.4em;
-    margin-bottom: 32px;
-    width: 18em;
-  }
-
-  .skills {
-    display: block;
-  }
-  .about p {
-    line-height: 1.5;
-    font-size: 12px;
-    padding-bottom: 20px;
-  }
-  li {
-    font-size: 12px;
-    letter-spacing: 5px;
-  }
-  .profile-pics {
-  }
-}
-@media (max-width: 280px) {
-  .profile {
-    display: flex;
-    flex-direction: column;
-  }
-  .profile-name {
-    line-height: 1;
-  }
-  .profile-name h1 {
-    font-size: 28px;
-    width: 12em;
-    /* margin-bottom: 10px; */
-  }
-  .profile-name h2 {
-    font-size: 0.9em;
-    margin-bottom: 32px;
-  }
-  .about p {
-    line-height: 1.5;
-    width: 26em;
-    font-size: 9px;
-    margin: -20px 0px;
-    /* padding-bottom: 20px; */
-  }
-  .skills {
-    display: block;
-    font-size: 10px;
-  }
-  ul {
-    list-style-type: none;
-    padding: 30px 0px;
-  }
-  li {
-    font-size: 10px;
-    margin: 25px 10px;
-    letter-spacing: 5px;
-  }
-  .active {
-    color: rgb(255, 255, 255);
-  }
-  .lineActive {
-    background: rgb(255, 255, 255);
-    height: 2px;
-    margin: 5px 10px;
-  }
-
-  .list {
-    color: rgb(148, 148, 149);
-    cursor: pointer;
-    font-size: 10px;
-  }
-  .list:hover {
-    color: rgb(255, 255, 255);
-    transition: all 0.2s ease-in-out;
-  }
-
-  .list .line {
-    cursor: pointer;
-    background: rgb(148, 148, 149);
-    width: 3em;
-    cursor: pointer;
-    margin: 0px 15px;
-  }
-  .list .line:hover {
-    width: 5em;
-    transition: all 0.2s ease-in-out;
-    background: rgb(255, 255, 255);
-  }
-  .skills {
-    padding-top: 20px;
-    padding-bottom: 20px;
-  }
-
-  .profile-pics {
+@media (max-width: 1080px) {
+  .profile-page {
+    gap: 20px;
   }
 }
 
-@media (max-width: 480px) {
-  .lab {
-    font-size: 16px;
-    margin-bottom: px;
-  }
-  .socials {
-    padding: 5px 5px;
-  }
-  .socials a {
-    font-size: 12px;
-    margin-top: 12px;
+@media (max-width: 640px) {
+  .profile-page {
+    padding: 18px;
   }
 
-  .profile-pics {
-    padding-bottom: 20px;
+  .social-wrap {
     display: none;
-  }
-  img {
-    width: 45px;
-    height: 45px;
-    border-radius: 50%;
-  }
-}
-@media (max-width: 360px) {
-  .lab {
-    font-size: 12px;
-    margin-bottom: 5px;
-  }
-  .socials {
-    padding: px 0px;
-  }
-  .socials a {
-    font-size: 7px;
-    margin-top: 12px;
-  }
-
-  .profile-pics {
-    padding-bottom: 20px;
-    display: none;
-  }
-  img {
-    width: 35px;
-    height: 35px;
-    border-radius: 50%;
   }
 }
 </style>

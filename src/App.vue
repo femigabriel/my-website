@@ -3,27 +3,36 @@
     rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/line-awesome/1.3.0/line-awesome/css/line-awesome.min.css"
   />
-  <div class="app">
-    <Profile
-       :activeId="current"
-      @setActivePage="setActivePage"
-      class="profile"
-    />
-    <div class="current">
-      
-        <div v-show="current == 0" class="project-flex">
-          <div class="project-flex-class">
-            <div class="header">
-              <h3>Projects</h3>
-            </div>
-            <ProjectFlex />
-          </div>
-          <ProjectGrid />
-        </div>
-        <div v-show="current == 1">
-          <Resume />
-        </div>
+  <div class="app-shell">
+    <div class="bg-gradient"></div>
+    <div class="app-layout">
+      <Profile
+        :activeId="current"
+        @setActivePage="setActivePage"
+        class="profile-panel"
+      />
+
+      <main class="main-panel">
+        <section v-show="current === 0" class="projects-page">
+          <header class="section-header">
+            <p class="eyebrow">Portfolio</p>
+            <h2>Selected Work</h2>
+            <p>
+              Recent product builds focused on growth, automation, and modern user
+              experience.
+            </p>
+          </header>
+
+          <ProjectFlex :projects="featuredProjects" />
+          <ProjectGrid :projects="remainingProjects" />
+        </section>
+
+        <section v-show="current === 1" class="resume-page">
+          <Resume :projects="projects" />
+        </section>
+
         <SocialFooter class="socials-footer" />
+      </main>
     </div>
   </div>
 </template>
@@ -47,7 +56,72 @@ export default {
   data() {
     return {
       current: 0,
+      projects: [
+        {
+          title: "EventHub",
+          framework: "Vue, Product Platform",
+          status: "Live",
+          date: "2026",
+          description:
+            "The all-in-one platform for creating, managing, and scaling events. Built for workshops through large conferences.",
+          highlight: "Latest Build",
+          url: "https://event-hub-three-red.vercel.app/",
+          cta: "Visit project",
+        },
+        {
+          title: "Curation AI",
+          framework: "AI Workflow App",
+          status: "Live",
+          date: "2026",
+          description:
+            "AI-driven content curation workflow for quality assurance, faster review loops, and better publishing consistency.",
+          highlight: "AI Product",
+          url: "https://curationqa.myaisells.com/",
+          cta: "Visit project",
+        },
+        {
+          title: "Hell Yes Media",
+          framework: "Marketing Platform",
+          status: "Live",
+          date: "2026",
+          description:
+            "A conversion-focused digital media experience with clear messaging, polished interactions, and modern visual hierarchy.",
+          highlight: "Brand Experience",
+          url: "https://aihellyesmedia.com/",
+          cta: "Visit project",
+        },
+        {
+          title: "Work Padi",
+          framework: "Web App",
+          status: "Live",
+          date: "2026",
+          description:
+            "Collaborative productivity interface with straightforward user flow and mobile-first layout decisions.",
+          highlight: "Collaboration",
+          url: "https://work-padi.vercel.app/",
+          cta: "Visit project",
+        },
+        {
+          title: "Pathspring Frontend",
+          framework: "Frontend Engineering",
+          status: "Live",
+          date: "2026",
+          description:
+            "Modern frontend implementation centered on clean component structure, scalability, and polished UX details.",
+          highlight: "Frontend",
+          url: "https://pathspring-frontend.vercel.app/",
+          cta: "Visit project",
+        },
+      ],
     };
+  },
+  computed: {
+    featuredProjects() {
+      return this.projects.slice(0, 2);
+    },
+    remainingProjects() {
+      return this.projects.slice(2);
+    },
   },
   methods: {
     setActivePage(value) {
@@ -58,146 +132,134 @@ export default {
 </script>
 
 <style>
-@import url("https://rsms.me/inter/inter.css");
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap");
 
-*,
-:after,
-:before {
+* {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
-body {
-  line-height: 1;
-  color: rgb(255, 255, 255);
-  background: rgb(21, 21, 21);
-  font-family: "Inter var", sans-serif;
-  width: 100%;
-  height: auto;
-  position: fixed;
+
+:root {
+  --bg: #05070d;
+  --panel: rgba(15, 23, 42, 0.82);
+  --panel-border: rgba(148, 163, 184, 0.22);
+  --text: #e2e8f0;
+  --muted: #94a3b8;
+  --accent: #22d3ee;
+  --accent-strong: #38bdf8;
 }
 
-.project-flex-class {
+html,
+body,
+#app {
+  min-height: 100%;
+}
+
+body {
+  color: var(--text);
+  background:
+    radial-gradient(circle at 15% 20%, rgba(34, 211, 238, 0.16), transparent 38%),
+    radial-gradient(circle at 80% 0%, rgba(56, 189, 248, 0.2), transparent 42%),
+    var(--bg);
+  font-family: "Space Grotesk", sans-serif;
+}
+
+a {
+  color: inherit;
+}
+
+.app-shell {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  padding: 28px;
+}
+
+.bg-gradient {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  background:
+    linear-gradient(125deg, rgba(34, 211, 238, 0.08), transparent 35%),
+    linear-gradient(320deg, rgba(56, 189, 248, 0.08), transparent 45%);
+}
+
+.app-layout {
+  position: relative;
+  z-index: 1;
+  max-width: 1280px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 320px 1fr;
+  gap: 24px;
+}
+
+.profile-panel,
+.main-panel {
+  background: var(--panel);
+  border: 1px solid var(--panel-border);
+  backdrop-filter: blur(12px);
+  border-radius: 22px;
+}
+
+.main-panel {
+  padding: 34px;
+}
+
+.section-header {
+  margin-bottom: 24px;
+}
+
+.eyebrow {
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  color: var(--accent);
+  font-size: 12px;
   margin-bottom: 10px;
 }
 
-.app {
-  display: flex;
-  margin-left: auto;
-  margin-right: auto;
-}
-.current {
-  display: block;
-  flex-grow: 1;
-  max-height: 100vh;
-  overflow-y: auto;
-  padding: 60px;
+.section-header h2 {
+  font-size: clamp(1.8rem, 2.8vw, 2.4rem);
+  margin-bottom: 12px;
 }
 
-.flex {
-  display: flex;
-}
-span {
-  color: rgb(148, 148, 149);
-}
-.header {
-  display: none;
+.section-header p {
+  color: var(--muted);
+  max-width: 680px;
+  line-height: 1.7;
 }
 
 .socials-footer {
   display: none;
 }
-.resume {
-  display: block;
-}
-@media (max-width: 820px) {
-  .app {
-    margin-left: auto;
-    margin-right: auto;
-    overflow-x: hidden;
-    display: block;
-    position: relative;
+
+@media (max-width: 1080px) {
+  .app-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .main-panel {
+    padding: 26px;
   }
 }
 
-@media (max-width: 420px) {
-  body {
-    position: relative;
+@media (max-width: 640px) {
+  .app-shell {
+    padding: 12px;
+  }
+
+  .main-panel {
+    padding: 18px;
+  }
+
+  .section-header {
+    margin-bottom: 18px;
   }
 
   .socials-footer {
     display: block;
-  }
-  .current {
-    max-height: initial;
-    padding: 20px;
-  }
-  .header {
-    color: rgb(255, 255, 255);
-    padding: 10px 0px;
-    display: block;
-    font-weight: 700;
-    font-size: 12px;
-    padding-top: 30px;
-    padding-bottom: 20px;
-    position: sticky;
-    letter-spacing: 5px;
-    text-transform: uppercase;
-  }
-}
-
-@media (max-width: 280px) {
-  #app {
-    margin-top: 20px;
-    width: 100%;
-  }
-  .app {
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: 10px;
-    padding-right: 10px;
-    /* overflow-x: hidden; */
-    display: block;
-    overflow-y: auto;
-    /* max-height: 100vh; */
-    height: auto;
-    overflow: initial;
-    width: 100%;
-  }
-  .socials-footer {
-    display: block;
-  }
-  .header {
-    color: rgb(255, 255, 255);
-    padding: 10px 0px;
-    display: block;
-    font-weight: 700;
-    font-size: 12px;
-    padding-top: 30px;
-    position: sticky;
-    letter-spacing: 3px;
-    text-transform: uppercase;
-  }
-}
-@media (max-width: 30px) {
-  #app {
-    margin-top: 20px;
-    width: 100%;
-  }
-  .app {
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: 10px;
-    padding-right: 10px;
-    /* overflow-x: hidden; */
-    display: block;
-    overflow-y: auto;
-    /* max-height: 100vh; */
-    height: auto;
-    overflow: initial;
-  }
-  .socials-footer {
-    display: block;
+    margin-top: 18px;
   }
 }
 </style>

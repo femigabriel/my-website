@@ -1,87 +1,44 @@
 <template>
-  <div class="single-item" v-for="project in projects" :key="project">
+  <section class="featured-grid">
     <ProjectSingle
+      v-for="project in projects"
+      :key="project.title"
       :description="project.description"
-      :video="project.video"
+      :video="project.cta"
       :url="project.url"
-      :isRectangle="true"
       :framework="project.framework"
       :title="project.title"
+      :status="project.status"
+      :date="project.date"
+      :highlight="project.highlight"
     />
-  </div>
+  </section>
 </template>
 
 <script>
 import ProjectSingle from "./ProjectSingle.vue";
+
 export default {
-  data() {
-    return {
-      projects: [
-        {
-          framework: "VUE.JS",
-          date: "July 22, 2022",
-          status: "Online",
-          title: "API Dog App",
-          description: "Random Dog App with images",
-          video: "Click here",
-          url: "https://infinitedogapp.netlify.app",
-          slides: "Slides",
-        },
-         {
-          framework: "REACT JS",
-          date: "August 12, 2022",
-          status: "Online",
-          title: "Simple Maths Game",
-          description: "Simple Maths Game",
-          video: "Click here",
-          url: "https://easymathgame.netlify.app/",
-          slides: "Slides",
-        },
-        {
-          date: "July 22, 2022",
-          status: "Online",
-          framework: "HTML, CSS, & JAVASCRIPT",
-          title: "Adeori Resturant",
-          description: "Resturant design with sticky header",
-          video: "Click here",
-          url: "https://adeori-resturant.netlify.app/",
-          slides: "Slides",
-        },
-        {
-          date: "July 22, 2022",
-          status: "Online",
-          framework: "VUE.JS",
-          title: "LocaHost Chat rooms",
-          description: "Local Host Chat Rooms",
-          video: "Click here",
-          url: "https://localhostchatrooms.netlify.app/",
-          slides: "Slides",
-        },
-        {
-          date: "July 22, 2022",
-          status: "Online",
-          framework: "VUE.JS",
-          title: "JUNGIAN ARCHETYPE QUIZ",
-          description:
-            "Free Archetype Quiz Reveals Your Personality Quirks, Innate Talents, and Hidden Weaknesses!",
-          video: "Click here",
-          url: "https://archytype-quiz.netlify.app/",
-          slides: "Slides",
-        },
-      ],
-    };
-  },
   components: { ProjectSingle },
+  props: {
+    projects: {
+      type: Array,
+      default: () => [],
+    },
+  },
 };
 </script>
 
 <style scoped>
-.single-item {
-  margin-bottom: 10px;
+.featured-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
 }
-@media (max-width: 380px) {
-  .single-item {
-    margin-top: 10px;
+
+@media (max-width: 900px) {
+  .featured-grid {
+    grid-template-columns: 1fr;
   }
 }
 </style>
