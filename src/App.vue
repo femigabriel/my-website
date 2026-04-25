@@ -202,7 +202,7 @@ export default {
           description:
             "The reading platform for every reader. Whether you're a school looking to transform reading instruction or a family wanting to nurture a love of reading, PathSpring has you covered.",
           highlight: "Frontend",
-          url: "https://pathspring-frontend.vercel.app/",
+          url: "https://pathspring.vercel.app/",
           cta: "Visit project",
         },
       ],
