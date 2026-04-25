@@ -118,6 +118,17 @@ export default {
           cta: "Visit project",
         },
         {
+  title: "EduPlatform",
+  framework: "EdTech Platform",
+  status: "Live",
+  date: "2025",
+  description:
+    "A comprehensive school management platform that streamlines student and teacher administration while integrating CBT exams with automated grading and performance reporting.",
+  highlight: "Education",
+  url: "https://edu-platform-app.vercel.app/",
+  cta: "Visit project",
+},
+        {
           title: "Aluuka",
           framework: "Healthcare Platform",
           status: "Live",
